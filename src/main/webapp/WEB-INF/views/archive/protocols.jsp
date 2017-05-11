@@ -132,7 +132,6 @@
                                        width="100%">
                                     <thead>
                                     <tr>
-                                        <%--<th>ID</th>--%>
                                         <th>Название</th>
                                         <th>Дата</th>
                                         <th>Время</th>
@@ -145,8 +144,7 @@
                                     <tbody>
                                     <c:forEach items="${entityProtocolOutputList}" var="protocol">
                                         <tr>
-                                                <%--<td><c:out value="${doc.id}"/></td>--%>
-                                            <td><a href="protocols/${protocol.id}"/> <c:out value="${protocol.name}"/></td>
+                                            <td><a target="_blank" href=<spring:url value="protocols/${protocol.id}"/>/><c:out value="${protocol.name}"/></td>
                                             <td><c:out value="${protocol.date}"/></td>
                                             <td><c:out value="${protocol.time}"/></td>
                                             <td><c:out value="${protocol.userLastName}"/></td>

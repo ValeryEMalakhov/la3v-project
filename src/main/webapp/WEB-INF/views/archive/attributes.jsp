@@ -124,7 +124,6 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <%--<h2> ${entityDocumentAttribute} </h2>--%>
                                 <c:forEach items="${entityDocumentAttribute}" var="attr">
                                     ${attr}<br />
                                 </c:forEach>

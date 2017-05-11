@@ -23,35 +23,27 @@
                                 <img src="../../../resources/images/icon_user.png" alt="">${pageContext.request.userPrincipal.name}
                                 <span class=" fa fa-angle-down"></span>
                             </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="<spring:url value="profile/"/>"> Профиль </a></li>
+                                <li><a href="<spring:url value="settings/"/>"> Настройки </a></li>
+                                <li><a href="<spring:url value="help/"/>"> Помощь </a></li>
+                                <form id="logoutForm" method="post" action="${contextPath}/logout">
+                                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                                </form>
+                                <li><a onclick="document.forms['logoutForm'].submit()"><i class="fa fa-sign-out pull-right"></i> Выход </a></li>
+                            </ul>
                         </c:when>
                         <c:otherwise>
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <img src="../../../resources/images/icon_guest.png" alt="">Guest
                                 <span class=" fa fa-angle-down"></span>
                             </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="<spring:url value="help/"/>"> Помощь </a></li>
+                                <li><a href="/login"><i class="fa fa-sign-in pull-right"></i> Вход </a></li>
+                            </ul>
                         </c:otherwise>
                     </c:choose>
-                    <ul class="dropdown-menu dropdown-usermenu pull-right">
-                        <li><a href="javascript:;"> Профиль </a></li>
-                        <li>
-                            <a href="javascript:;">
-                                <%--<span class="badge bg-red pull-right">50%</span>--%>
-                                <span> Настройки </span>
-                            </a>
-                        </li>
-                        <li><a href="javascript:;"> Помощь </a></li>
-                        <c:choose>
-                            <c:when test="${pageContext.request.userPrincipal.name != null}">
-                                <form id="logoutForm" method="post" action="${contextPath}/logout">
-                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                                </form>
-                                <li><a onclick="document.forms['logoutForm'].submit()"><i class="fa fa-sign-out pull-right"></i> Выход </a></li>
-                            </c:when>
-                            <c:otherwise>
-                                <li><a href="<spring:url value="/login"/>"><i class="fa fa-sign-in pull-right"></i> Вход </a></li>
-                            </c:otherwise>
-                        </c:choose>
-                    </ul>
                 </li>
 
                 <li role="presentation" class="dropdown">

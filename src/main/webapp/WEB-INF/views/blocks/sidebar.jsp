@@ -20,11 +20,9 @@
             </li>
             <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="127.0.0.1:80/owncloud" target="_blank"> Облачное хранилище </a></li>
-                    <li><a href="<spring:url value="/document/all"/>"> Список документов </a></li>
-                    <li><a href="<spring:url value="/document/analytics"/>"> Аналитика </a></li>
-                    <li><a href="<spring:url value="/document/pattern_gen"/>"> Генератор шаблонов </a></li>
-
+                    <li><a href="<spring:url value="/document/all"/>"> Активный список </a></li>
+                    <li><a href="<spring:url value="/document/editor"/>"> Редактор файлов </a></li>
+                    <li><a href="<spring:url value="/document/archive"/>"> Архив </a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-archive"></i> Архив <span class="fa fa-chevron-down"></span></a>
@@ -43,7 +41,7 @@
             <li><a><i class="fa fa-bug"></i> Кабинет <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<spring:url value="/profile/"/>"> Профиль </a></li>
-                    <%--<li><a href="<spring:url value="/document/personal"/>"> Личные документы </a></li>--%>
+                    <li><a href="<spring:url value="/profile/docs"/>"> Личные документы </a></li>
                 </ul>
             </li>
             <%--                            <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>

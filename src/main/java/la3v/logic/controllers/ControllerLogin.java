@@ -51,8 +51,9 @@ public class ControllerLogin {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
-        log.info(String.format("Logger in ControllerLogin"));
-
+//        log.info(String.format("Logger in ControllerLogin"));
+//        log.info(String.format("Error: %s", error));
+//        log.info(String.format("logout: %s", logout));
         if (error != null) {
             model.addAttribute("error", "Username or password is incorrect.");
         }

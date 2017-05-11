@@ -1,7 +1,6 @@
 package la3v.logic.controllers;
 
 import la3v.logic.entities.EntityDocument;
-import la3v.logic.repositories.interfaces.IRepositoryArchive;
 import la3v.logic.repositories.interfaces.IRepositoryDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -35,14 +34,14 @@ public class ControllerDocument {
         return "doc/document";
     }
 
-//    @RequestMapping("/analytics")
-//    public String showAnalytics(Model model){
-//        IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
-//        /*List<EntityProtocolOfDeleteOutput> entityDeleteProtocolList = repositoryArchive.getAllProtocolOfDeleteList();
-//        model.addAttribute("entityDeleteProtocolOutputList", entityDeleteProtocolList);*/
-//
-//        return "doc/analytics";
-//    }
+    @RequestMapping("/archive")
+    public String showArchievedDocumentList(Model model){
+        IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);
+        List<EntityDocument> entityDocumentList = repositoryDocument.getAllArchivedDocumentList();
+        model.addAttribute("entityDocumentList", entityDocumentList);
+
+        return "archive/archive";
+    }
 
 //    @RequestMapping("/{id}")
 //    public String showInfo(Model model, @PathVariable("id") Integer id){

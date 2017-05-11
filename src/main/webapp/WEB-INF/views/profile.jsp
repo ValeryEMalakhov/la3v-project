@@ -1,7 +1,7 @@
 <%--
   User: Vladyslav V. Drabynka
-  Date: 03.04.2017
-  Time: 23:21
+  Date: 11.05.2017
+  Time: 18:27
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
@@ -65,17 +65,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="../views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="../views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../blocks/header.jsp"></jsp:include>
+        <jsp:include page="../views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -83,7 +83,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Архивированные документы</h3>
+                        <h3>Профиль</h3>
                     </div>
 
                     <div class="title_right">
@@ -104,7 +104,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <%--<h2>Окно 1</h2>--%>
+                                <h2>${pageContext.request.userPrincipal.name}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -124,44 +124,10 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-
-                                <table id="datatable-responsive"
-                                       class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
-                                       width="100%">
-                                    <thead>
-                                    <tr>
-                                        <th>Название</th>
-                                        <th>Автор</th>
-                                        <th>Версия</th>
-                                        <th>Путь</th>
-                                        <th>Дата создания</th>
-                                        <th>Дата архивации</th>
-                                        <th>Атрибуты</th>
-                                        <th>Комментарии</th>
-                                        <th>Путь в архиве</th>
-                                        <th>Срок хранения</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${entityArchivedDocumentList}" var="doc">
-                                        <tr>
-                                            <td><a target="_blank" href=<spring:url value="all/${doc.id}"/>/><c:out value="${doc.name}"/></td>
-                                            <td><c:out value="${doc.author}"/></td>
-                                            <td><c:out value="${doc.version}"/></td>
-                                            <td><c:out value="${doc.path}"/></td>
-                                            <td><c:out value="${doc.dateOfCreation}"/></td>
-                                            <td><c:out value="${doc.dateOfArchiving}"/></td>
-                                            <td><a href=<spring:url value="all/documentattributes/${doc.id}"/>/>
-                                                <button type="reset">Атрибуты</button>
-                                            </td>
-                                            <td><c:out value="${doc.comments}"/></td>
-                                            <td><c:out value="${doc.archivePath}"/></td>
-                                            <td><c:out value="${doc.archivingTerm}"/></td>
-                                        </tr>
-                                    </c:forEach>
-                                    </tbody>
-                                </table>
-
+                                    ${position} <br />
+                                    ${firstName} <br />
+                                    ${patronymicName} <br />
+                                    ${lastName} <br />
                             </div>
                         </div>
                     </div>
@@ -171,7 +137,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="../views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>
@@ -189,17 +155,8 @@
 <!-- iCheck -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 
-<!-- Datatables -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables-fixedheader/2.1.1/dataTables.fixedHeader.min.js"></script>
-
-<%--<script src="../../resources/libs/datatables.net/js/jquery.dataTables.min.js"></script>--%>
-<script src="../../../resources/libs/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<%--<script src="../../resources/libs/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>--%>
-<script src="../../../resources/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../../resources/libs/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-
 <!-- Custom Theme Scripts -->
 <script src="<c:url value="/resources/js/custom.min.js"/>"></script>
 </body>
 </html>
+

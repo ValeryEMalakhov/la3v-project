@@ -132,7 +132,6 @@
                                        width="100%">
                                     <thead>
                                     <tr>
-                                        <%--<th>ID</th>--%>
                                         <th>Название</th>
                                         <th>Дата</th>
                                         <th>Время</th>
@@ -150,8 +149,7 @@
                                     <tbody>
                                     <c:forEach items="${entityDeleteProtocolOutputList}" var="dprotocol">
                                         <tr>
-                                            <%--<td><c:out value="${doc.id}"/></td>--%>
-                                            <td><a href="dprotocols/${dprotocol.id}"/> <c:out value="${dprotocol.name}"/></td>
+                                            <td><a target="_blank" href=<spring:url value="dprotocols/${dprotocol.id}"/>/><c:out value="${dprotocol.name}"/></td>
                                             <td><c:out value="${dprotocol.date}"/></td>
                                             <td><c:out value="${dprotocol.time}"/></td>
                                             <td><c:out value="${dprotocol.comments}"/></td>
