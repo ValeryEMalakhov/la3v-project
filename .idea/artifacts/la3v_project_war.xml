@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="la3v-project:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="la3v-project-2.war">
+      <element id="artifact" artifact-name="la3v-project:war exploded" />
+    </root>
+  </artifact>
+</component>
