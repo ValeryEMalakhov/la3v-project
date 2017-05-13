@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
@@ -26,28 +28,18 @@ public class ControllerDocument {
 
     @RequestMapping("/all")
     public String showDocumentList(Model model) {
-        //ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
-//        IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);
-//        List<EntityDocument> entityDocumentList = repositoryDocument.getAllDocumentList();
-//        model.addAttribute("entityDocumentList", entityDocumentList);
+        IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);
+        List<EntityDocument> entityDocumentList = repositoryDocument.getAllDocumentList();
+        model.addAttribute("entityDocumentList", entityDocumentList);
 
         return "doc/document";
     }
 
-    @RequestMapping("/archive")
-    public String showArchievedDocumentList(Model model){
+    @RequestMapping("/{id}")
+    public String showInfo(Model model, @PathVariable("id") String id) {
         IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);
-        List<EntityDocument> entityDocumentList = repositoryDocument.getAllArchivedDocumentList();
-        model.addAttribute("entityDocumentList", entityDocumentList);
+        model.addAttribute("document", repositoryDocument.findByHash(id));
 
-        return "archive/archive";
+        return "doc/analytics";
     }
-
-//    @RequestMapping("/{id}")
-//    public String showInfo(Model model, @PathVariable("id") Integer id){
-//        IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);
-//        model.addAttribute("document",  repositoryDocument.findById(id));
-//
-//        return "info/documentInfo";
-//    }
 }

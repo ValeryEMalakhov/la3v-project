@@ -48,9 +48,10 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img src="<c:url value="/resources/images/logo-blue.png"/>"
-                                                                                           width="50"
-                                                                                           class="img-circle"> <span>LA3V</span></a>
+                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img
+                            src="<c:url value="/resources/images/logo-blue.png"/>"
+                            width="50"
+                            class="img-circle"> <span>LA3V</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -132,22 +133,18 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <%--<p class="text-muted font-13 m-b-30">--%>
-                                <%--Вывод существующих документов.--%>
-                                <%--</p>--%>
+                                <p class="text-muted font-13 m-b-30">
+                                    Вывод существующих документов.
+                                </p>
 
-                                <!--                                <table id="datatable-responsive"
+                                <
+                                <table id="datatable-responsive"
                                        class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
                                        width="100%">
                                     <thead>
                                     <tr>
                                         <%--<th>ID</th>--%>
                                         <th>Название</th>
-                                        <th>Тип</th>
-                                        <th>Версия</th>
-                                        <th>Дата создания</th>
-                                        <th>Дата редактирования</th>
-                                        <%--<th>Дата архивации</th>--%>
                                         <th>Путь</th>
                                     </tr>
                                     </thead>
@@ -155,17 +152,13 @@
                                     <c:forEach items="${entityDocumentList}" var="doc">
                                         <tr>
                                                 <%--<td><c:out value="${doc.id}"/></td>--%>
-                                            <td><a href="${doc.id}"/> <c:out value="${doc.name}"/></td>
-                                            <td><c:out value="${doc.type}"/></td>
-                                            <td><c:out value="${doc.version}"/></td>
-                                            <td><c:out value="${doc.creationDate}"/></td>
-                                            <td><c:out value="${doc.updDate}"/></td>
-                                                <%--<td><c:out value="${doc.archivingDate}"/></td>--%>
+                                            <td><a href="${doc.pathHash}"/> <c:out value="${doc.name}"/></td>
                                             <td><c:out value="${doc.path}"/></td>
+                                                <%--<td><c:out value="${doc.archivingDate}"/></td>--%>
                                         </tr>
                                     </c:forEach>
                                     </tbody>
-                                </table>-->
+                                </table>
                             </div>
                         </div>
                     </div>

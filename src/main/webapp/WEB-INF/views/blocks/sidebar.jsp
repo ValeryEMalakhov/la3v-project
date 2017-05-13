@@ -4,7 +4,7 @@
   Time: 15:35
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-               pageEncoding="UTF-8" %>
+         pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -20,9 +20,10 @@
             </li>
             <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<spring:url value="/document/all"/>"> Активный список </a></li>
-                    <li><a href="<spring:url value="/document/editor"/>"> Редактор файлов </a></li>
-                    <li><a href="<spring:url value="/document/archive"/>"> Архив </a></li>
+                    <li><a href="<spring:url value="/document/all"/>"> Документы </a></li>
+                    <li><a href="<spring:url value="/document/analytics"/>"> Аналитика </a></li>
+                    <li><a href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
+                    <li><a href="<spring:url value="/document/pattern"/>"> Генератор шаблонов </a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-archive"></i> Архив <span class="fa fa-chevron-down"></span></a>
@@ -41,7 +42,7 @@
             <li><a><i class="fa fa-bug"></i> Кабинет <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<spring:url value="/profile/"/>"> Профиль </a></li>
-                    <li><a href="<spring:url value="/profile/docs"/>"> Личные документы </a></li>
+                    <%--<li><a href="<spring:url value="/profile/docs"/>"> Личные документы </a></li>--%>
                 </ul>
             </li>
             <%--                            <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>

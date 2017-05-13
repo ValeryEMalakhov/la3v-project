@@ -18,10 +18,12 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
 
     private JdbcTemplate template;
 
-    private static final String GET_ALL_DOCUMENT_LIST = "SELECT * FROM \"admin\".\"document\" WHERE doc_date_archiving IS NULL";
-    private static final String FIND_BY_ID_QUERY = "SELECT * FROM \"admin\".\"document\" WHERE doc_id = ?";
-    private static final String FIND_BY_DOC_TEMPLATE_ID_QUERY = "SELECT * FROM \"admin\".\"document\" WHERE doc_template_id = ?";
-    private static final String FIND_ARCHIVED_DOCUMENT = "SELECT * FROM \"admin\".\"document\" WHERE doc_date_archiving IS NOT NULL";
+    private static final String FIND_ALL_DOCUMENT =
+            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file where st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls') order by file.storage, file.name;";
+
+    private static final String FIND_ALL_DOCUMENT_ID =
+            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file where path_hash = ? and st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls');";
+
 
     @Autowired
     public ImplementationRepositoryDocument(DataSource dataSource) {
@@ -30,21 +32,18 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
 
     @Override
     public EntityDocument findById(Integer id) {
-        return this.template.queryForObject(FIND_BY_ID_QUERY, new Object[]{id}, new MapperDocument());
+        return null;
+    }
+
+    @Override
+    public EntityDocument findByHash(String hash) {
+        return this.template.queryForObject(FIND_ALL_DOCUMENT_ID, new Object[]{hash}, new MapperDocument());
     }
 
     @Override
     public List<EntityDocument> getAllDocumentList() {
-        return this.template.query(GET_ALL_DOCUMENT_LIST, new Object[]{}, new MapperDocument());
+        //return this.template.query(GET_ALL_DOCUMENT_LIST, new Object[]{}, new MapperDocument());
+        return this.template.query(FIND_ALL_DOCUMENT, new Object[]{}, new MapperDocument());
     }
 
-    @Override
-    public List<EntityDocument> getAllArchivedDocumentList(){
-        return this.template.query(FIND_ARCHIVED_DOCUMENT, new Object[] {}, new MapperDocument());
-    }
-
-    @Override
-    public EntityDocument findByDocTemplateId(Integer id) {
-        return this.template.queryForObject(FIND_BY_DOC_TEMPLATE_ID_QUERY, new Object[]{id}, new MapperDocument());
-    }
 }

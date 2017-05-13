@@ -11,7 +11,5 @@ public interface IRepositoryDocument extends IRepository<EntityDocument> {
 
     List<EntityDocument> getAllDocumentList();
 
-    List<EntityDocument> getAllArchivedDocumentList();
-
-    EntityDocument findByDocTemplateId(Integer id);
+    EntityDocument findByHash(String hash);
 }

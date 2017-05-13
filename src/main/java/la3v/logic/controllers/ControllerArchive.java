@@ -1,6 +1,7 @@
 package la3v.logic.controllers;
 
 import la3v.logic.attributes.*;
+import la3v.logic.entities.EntityDocument;
 import la3v.logic.entities.archive.*;
 import la3v.logic.repositories.interfaces.IRepositoryArchive;
 import com.google.gson.*;
@@ -8,8 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.*;
 
@@ -31,7 +35,7 @@ public class ControllerArchive {
     @RequestMapping("/all")
     public String showDocumentList(Model model) {
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
-        List<EntityDocument> entityArchivedDocumentList = repositoryArchive.getAllArchivedDocumentList();
+        List<la3v.logic.entities.archive.EntityDocument> entityArchivedDocumentList = repositoryArchive.getAllArchivedDocumentList();
         model.addAttribute("entityArchivedDocumentList", entityArchivedDocumentList);
 
         return "archive/archive";
@@ -67,7 +71,7 @@ public class ControllerArchive {
     @RequestMapping("all/documentattributes/{id}")
     public String showAttributes(Model model, @PathVariable("id") Integer id){
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
-        EntityDocument entityDocumentAttribute = repositoryArchive.findById(id);
+        la3v.logic.entities.archive.EntityDocument entityDocumentAttribute = repositoryArchive.findById(id);
 
         JsonObject jsonObj = entityDocumentAttribute.getAttributes();
 
@@ -110,5 +114,21 @@ public class ControllerArchive {
         return "archive/attributes";
     }
 
+    @RequestMapping(value = "/archivation/{id}", method = RequestMethod.GET)
+    public String showArchivation(Model model, @PathVariable("id") String pathHash){
+        IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
+        EntityDocument documentToArchive = repositoryArchive.findByHash(pathHash);
+        model.addAttribute("documentToArchive", documentToArchive);
+        model.addAttribute("diplomaAttributes", new DiplomaAttributes());
+        return "archive/toarchive";
+    }
+
+    @RequestMapping(value = "/archivation/{id}", method = RequestMethod.POST)
+    public String showArchivation(@ModelAttribute("diplomaAttributes") DiplomaAttributes diplomaAttributes, BindingResult bindingResult, Model model) {
+
+
+
+       return "redirect:/archive/all";
+    }
 
 }

@@ -7,22 +7,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by Valery E. Malakhov on 02.04.2017.
+ * Created by Marmonth on 13.05.2017.
  */
 public class MapperDocument implements RowMapper<EntityDocument> {
 
     public EntityDocument mapRow(ResultSet rs, int rowNum) throws SQLException {
         EntityDocument entityDocument = new EntityDocument();
 
-        entityDocument.setId(rs.getInt("doc_id"));
-        entityDocument.setName(rs.getString("doc_name"));
-        entityDocument.setTemplateId(rs.getInt("doc_template_id"));
-        entityDocument.setType(rs.getString("doc_type"));
-        entityDocument.setVersion(rs.getString("doc_version"));
-        entityDocument.setPath(rs.getString("doc_path"));
-        entityDocument.setCreationDate(rs.getDate("doc_date_creation"));
-        entityDocument.setUpdDate(rs.getDate("doc_date_last_upd"));
-        entityDocument.setArchivingDate(rs.getDate("doc_date_archiving"));
+        entityDocument.setUid(rs.getString("uid"));
+        entityDocument.setStorage(rs.getInt("storage"));
+        entityDocument.setName(rs.getString("name"));
+        entityDocument.setPath(rs.getString("path"));
+        entityDocument.setPathHash(rs.getString("path_hash"));
 
         return entityDocument;
     }
