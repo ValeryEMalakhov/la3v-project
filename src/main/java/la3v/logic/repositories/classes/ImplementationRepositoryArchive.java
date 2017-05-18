@@ -5,12 +5,20 @@ import la3v.logic.entities.archive.*;
 import la3v.logic.mappers.MapperDocument;
 import la3v.logic.mappers.archive.*;
 import la3v.logic.repositories.interfaces.IRepositoryArchive;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.io.UnsupportedEncodingException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Marmonth on 21.04.2017.
@@ -29,15 +37,29 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
             "JOIN \"archive\".\"User\" as Usr ON Usr.userid = Prot.protocoluserid;";
 
     //private static final String FIND_ALL_DELETE_PROTOCOLS = "SELECT * FROM \"archive\".\"ProtocolOfDelete\"";
-    private static final String FIND_ALL_DELETE_PROTOCOLS = "SELECT protocoldelid, protocoldelname, protocoldeldate, protocoldeltime, protocoldelcomments, userlastname, protocoldeldocname, protocoldeldocauthor, protocoldeldocarchivepath, protocolDelDocDateOfCreation, protocolDelDocDateOfArchiving, protocolDelDocArchivingTerm, protocolDelDocComments\n" +
+    private static final String FIND_ALL_DELETE_PROTOCOLS =
+            "SELECT protocoldelid, protocoldelname, protocoldeldate, protocoldeltime, protocoldelcomments, userlastname, protocoldeldocname, protocoldeldocauthor, protocoldeldocarchivepath, protocolDelDocDateOfCreation, protocolDelDocDateOfArchiving, protocolDelDocArchivingTerm, protocolDelDocComments\n" +
             "FROM \"archive\".\"ProtocolOfDelete\" as Prot \n" +
             "JOIN \"archive\".\"User\" as Usr ON Usr.userid = Prot.protocoldeluserid;";
 
     private static final String FIND_ALL_DOCUMENT_OWNCLOUD =
-            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file where st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls') order by file.storage, file.name;";
+            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file " +
+                    "where st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' " +
+                    "and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls') order by file.storage, file.name;";
 
     private static final String FIND_ALL_DOCUMENT_OWNCLOUD_ID =
-            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file where path_hash = ? and st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls');";
+            "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file " +
+                    "where path_hash = ? and st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' " +
+                    "and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls');";
+
+    private static final String INSERT_INTO_DOCUMENT =
+            "INSERT INTO \"archive\".\"Document\" (documentname, documentauthor, documentpath, documentdateofcreation, " +
+                    "documentdateofarchiving, documentattributes, documentcomments, documentarchivepath, documentarchivingterm) " +
+                    "VALUES(?, ?, ?, ?::DATE, ?::DATE, ?::JSONB, ?, ?, ?);";
+
+
+    // Инициализация логера
+    private static final Logger log = LoggerFactory.getLogger(ImplementationRepositoryArchive.class);
 
     @Autowired
     public ImplementationRepositoryArchive(DataSource dataSource) {
@@ -72,5 +94,60 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
     @Override
     public List<EntityDocument> getAllDocumentList() {
         return this.template.query(FIND_ALL_DOCUMENT_OWNCLOUD, new Object[]{}, new MapperDocument());
+    }
+
+//    private String convertToUTF8 (String str)
+//    {
+//        byte[] b1 = new byte[0];
+//        try {
+//            b1 = str.getBytes("UTF-8");
+//            return new String(b1, "UTF-8");
+//        } catch (UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        }
+//        return "";
+//    }
+
+    @Override
+    public void insertDocument(la3v.logic.entities.archive.EntityDocument entityDocument)
+    {
+        /*DateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+        Date dateOfArchiving, dateOfCreation;
+        try {
+            dateOfArchiving = format.parse(entityDocument.getDateOfArchiving());
+            dateOfCreation = format.parse(entityDocument.getDateOfCreation());
+        } catch (ParseException e) {
+            log.info(String.format("---------------------------------------"));
+            log.info(String.format("ERROR WITH DATE!!!. dateOfArchiving %s, dateOfCreation %s", entityDocument.getDateOfArchiving(), entityDocument.getDateOfCreation()));
+            log.info(String.format("---------------------------------------"));
+            e.printStackTrace();
+            return;
+        }*/
+
+        log.info(String.format("---------------------------------------"));
+        log.info(String.format("INSERT"));
+        log.info(String.format("getName %s", entityDocument.getName()));
+        log.info(String.format("getAuthor %s", entityDocument.getAuthor()));
+        log.info(String.format("getPath %s", entityDocument.getPath()));
+        log.info(String.format("getComments %s", entityDocument.getComments()));
+        log.info(String.format("getArchivePath %s", entityDocument.getArchivePath()));
+        log.info(String.format("getAttributes %s", entityDocument.getAttributes().toString()));
+        log.info(String.format("getArchivingTerm %s", entityDocument.getArchivingTerm()));
+        log.info(String.format("getDateOfCreation %s", entityDocument.getDateOfCreation()));
+        log.info(String.format("getDateOfArchiving %s", entityDocument.getDateOfArchiving()));
+
+        this.template.update(INSERT_INTO_DOCUMENT, new Object[]{
+                entityDocument.getName(),
+                entityDocument.getAuthor(),
+                entityDocument.getPath(),
+                entityDocument.getDateOfCreation(),
+                entityDocument.getDateOfArchiving(),
+                entityDocument.getAttributes().toString(),
+                entityDocument.getComments(),
+                entityDocument.getArchivePath(),
+                entityDocument.getArchivingTerm()
+        });
+        log.info(String.format("AFTER INSERT"));
+        log.info(String.format("---------------------------------------"));
     }
 }

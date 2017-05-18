@@ -24,6 +24,8 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
     private static final String FIND_ALL_DOCUMENT_ID =
             "select u.uid, file.storage, file.name, file.path, file.path_hash from oc_users as u, oc_storages as st, oc_filecache as file where path_hash = ? and st.id = 'home::' || u.uid and file.storage = st.numeric_id and u.uid = 'main' and (file.path like '%.doc' or file.path like '%.docx'  or file.path like '%.pdf' or file.path like '%.xls');";
 
+    private static final String FIND_ALL_ATTRIBUTES =
+            "select file.storage, file.name, file.path, file.path_hash, st.name from oc_filecache as file, oc_systemtag as st, oc_systemtag_object_mapping as stm where st.id=stm.systemtagid and stm.objectid::int=file.fileid;";
 
     @Autowired
     public ImplementationRepositoryDocument(DataSource dataSource) {

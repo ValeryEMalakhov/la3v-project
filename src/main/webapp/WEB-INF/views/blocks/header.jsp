@@ -20,7 +20,7 @@
                     <c:choose>
                         <c:when test="${pageContext.request.userPrincipal.name != null}">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="../../../resources/images/icon_user.png" alt="">${pageContext.request.userPrincipal.name}
+                                <img src="<c:url value="/resources/images/icon_user.png"/>" alt="">${pageContext.request.userPrincipal.name}
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -35,7 +35,7 @@
                         </c:when>
                         <c:otherwise>
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="../../../resources/images/icon_guest.png" alt="">Guest
+                                <img src="<c:url value="/resources/images/icon_guest.png"/>" alt="">Guest
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">

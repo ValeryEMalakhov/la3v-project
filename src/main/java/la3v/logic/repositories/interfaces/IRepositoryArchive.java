@@ -19,4 +19,6 @@ public interface IRepositoryArchive extends IRepository<la3v.logic.entities.arch
     EntityDocument findByHash(String hash);
 
     List<EntityDocument> getAllDocumentList();
+
+    void insertDocument(la3v.logic.entities.archive.EntityDocument entityDocument);
 }

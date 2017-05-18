@@ -1,19 +1,20 @@
 <%--
   User: Vladyslav V. Drabynka
-  Date: 03.04.2017
-  Time: 23:21
+  Date: 17.05.2017
+  Time: 14:11
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -83,7 +84,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Архивированные документы</h3>
+                        <h3>Архивация</h3>
                     </div>
 
                     <div class="title_right">
@@ -104,7 +105,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <%--<h2>Окно 1</h2>--%>
+                                <h2>${archivedDocument.name}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -124,42 +125,98 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
+                                <spring:url value="/archive/archivation/${addressPart}/attributes/researchWork"
+                                            var="formUrl"/>
+                                <form:form method="post" modelAttribute="researchWorkAttributes"
+                                           action="/archive/archivation/{${addressPart}}/attributes/researchWork"
+                                           class="form-horizontal">
 
-                                <table id="datatable-responsive"
-                                       class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
-                                       width="100%">
-                                    <thead>
-                                    <tr>
-                                        <th>Название</th>
-                                        <th>Автор</th>
-                                        <th>Путь</th>
-                                        <th>Дата создания</th>
-                                        <th>Дата архивации</th>
-                                        <th>Атрибуты</th>
-                                        <th>Комментарии</th>
-                                        <th>Путь в архиве</th>
-                                        <th>Срок хранения</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${entityArchivedDocumentList}" var="doc">
-                                        <tr>
-                                            <td><a target="_blank" href=<spring:url value="all/${doc.id}"/>/><c:out value="${doc.name}"/></td>
-                                            <td><c:out value="${doc.author}"/></td>
-                                            <td><c:out value="${doc.path}"/></td>
-                                            <td><c:out value="${doc.dateOfCreation}"/></td>
-                                            <td><c:out value="${doc.dateOfArchiving}"/></td>
-                                            <td><a href=<spring:url value="all/documentattributes/${doc.id}"/>/>
-                                                <button type="reset">Атрибуты</button>
-                                            </td>
-                                            <td><c:out value="${doc.comments}"/></td>
-                                            <td><c:out value="${doc.archivePath}"/></td>
-                                            <td><c:out value="${doc.archivingTerm}"/></td>
-                                        </tr>
-                                    </c:forEach>
-                                    </tbody>
-                                </table>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="process">Процесс:</label>
+                                        <div class="col-xs-9">
+                                            <input name="process" type="text" class="form-control" id="process"
+                                                   readonly value="Научный">
+                                        </div>
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="docType">Тип документа:</label>
+                                        <div class="col-xs-9">
+                                            <input name="docType" type="text" class="form-control" id="docType"
+                                                   value="НИР">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="name">Название:</label>
+                                        <div class="col-xs-9">
+                                            <input name="name" type="text" class="form-control" id="name"
+                                                   readonly value=${archivedDocument.name}>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="number">Номер:</label>
+                                        <div class="col-xs-9">
+                                            <input name="number" type="text" class="form-control" id="number"
+                                                   readonly value="23234567">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="startDate">Дата начала:</label>
+                                        <div class="col-xs-9">
+                                            <input name="startDate" type="text" class="form-control" id="startDate"
+                                                   readonly value="2015-04-01">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="endDate">Дата конца:</label>
+                                        <div class="col-xs-9">
+                                            <input name="endDate" type="text" class="form-control" id="endDate"
+                                                   readonly value="2015-07-11">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="plan">План:</label>
+                                        <div class="col-xs-9">
+                                            <input name="plan" type="text" class="form-control" id="plan"
+                                                   readonly value="План">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="stagePlan">План этапов:</label>
+                                        <div class="col-xs-9">
+                                            <input name="stagePlan" type="text" class="form-control" id="stagePlan"
+                                                   readonly value="План этапа">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="report">Аннотированные отчёты:</label>
+                                        <div class="col-xs-9">
+                                            <input name="report" type="text" class="form-control" id="report"
+                                                   readonly value="Отчёт">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="finalReport">Итоговый отчёт:</label>
+                                        <div class="col-xs-9">
+                                            <input name="finalReport" type="text" class="form-control" id="finalReport"
+                                                   readonly value="Финальный отчёт">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-offset-3 col-xs-9">
+                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
+                                        </div>
+                                    </div>
+                                </form:form>
                             </div>
                         </div>
                     </div>
@@ -187,17 +244,8 @@
 <!-- iCheck -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 
-<!-- Datatables -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables-fixedheader/2.1.1/dataTables.fixedHeader.min.js"></script>
-
-<%--<script src="../../resources/libs/datatables.net/js/jquery.dataTables.min.js"></script>--%>
-<script src="../../../resources/libs/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<%--<script src="../../resources/libs/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>--%>
-<script src="../../../resources/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../../resources/libs/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-
 <!-- Custom Theme Scripts -->
 <script src="<c:url value="/resources/js/custom.min.js"/>"></script>
 </body>
 </html>
+

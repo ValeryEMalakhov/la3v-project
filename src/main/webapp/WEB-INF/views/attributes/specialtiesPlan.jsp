@@ -1,19 +1,20 @@
 <%--
-  User: Valery E. Malakhov
-  Date: 01.04.2017
-  Time: 20:52
+  User: Vladyslav V. Drabynka
+  Date: 17.05.2017
+  Time: 14:12
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +23,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Bootlint -->
+    <%--<!-- Bootlint -->--%>
     <link href="https://maxcdn.bootstrapcdn.com/bootlint/0.14.2/bootlint.min.js" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -31,12 +32,6 @@
 
     <!-- iCheck -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
-    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/scroller/1.4.2/css/scroller.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="<c:url value="/resources/css/custom.min.css"/>" rel="stylesheet">
@@ -48,9 +43,9 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img src="<c:url value="/resources/images/logo-blue.png"/>"
-                                                                                           width="50"
-                                                                                           class="img-circle"> <span>LA3V</span></a>
+                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img
+                            src="<c:url value="/resources/images/logo-blue.png"/>"
+                            width="50" class="img-circle"> <span>LA3V</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -89,7 +84,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Документы</h3>
+                        <h3>Архивация</h3>
                     </div>
 
                     <div class="title_right">
@@ -110,9 +105,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2> Вывод таблицы документов
-                                    <%--<small>Users</small>--%>
-                                </h2>
+                                <h2>${archivedDocument.name}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -120,9 +113,9 @@
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                            aria-expanded="false"><i class="fa fa-wrench"></i></a>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#"> Конфигурация 1 </a>
+                                            <li><a href="#">Внешний вид 1</a>
                                             </li>
-                                            <li><a href="#"> Конфигурация 2 </a>
+                                            <li><a href="#">Внешний вид 2</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -132,37 +125,66 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <%--<p class="text-muted font-13 m-b-30">--%>
-                                <%--Вывод существующих документов.--%>
-                                <%--</p>--%>
-                                    <table id="datatable-responsive"
-                                       class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
-                                       width="100%">
-                                        <thead>
-                                            <tr>
-                                                <%--<th>ID</th>--%>
-                                                <%--<th>uid</th>--%>
-                                                <%--<th>storage</th>--%>
-                                                <th>Название</th>
-                                                <th>Путь</th>
-                                                <th>Архивация</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <c:forEach items="${entityDocumentList}" var="doc">
-                                            <tr>
-                                                <%--<td><c:out value="${doc.uid}"/></td>--%>
-                                                <%--<td><c:out value="${doc.storage}"/></td>--%>
-                                                <td><c:out value="${doc.name}"/></td>
-                                                <td><c:out value="${doc.path}"/></td>
-                                                <td>
-                                                    <a href=<spring:url value="/archive/archivation/${doc.pathHash}"/>/>
-                                                    <button type="reset">Архивировать</button>
-                                                </td>
-                                            </tr>
-                                        </c:forEach>
-                                    </tbody>
-                                </table>
+                                <spring:url value="/archive/archivation/${addressPart}/attributes/specialtiesPlan"
+                                            var="formUrl"/>
+                                <form:form method="post" modelAttribute="specialtiesPlanAttributes"
+                                           action="/archive/archivation/{${addressPart}}/attributes/specialtiesPlan"
+                                           class="form-horizontal">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="process">Процесс:</label>
+                                        <div class="col-xs-9">
+                                            <input name="process" type="text" class="form-control" id="process"
+                                                   readonly value="Учебный">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="docType">Тип документа:</label>
+                                        <div class="col-xs-9">
+                                            <input name="docType" type="text" class="form-control" id="docType"
+                                                   value="Учебный план специальности">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="approvalYear">Год утверждения:</label>
+                                        <div class="col-xs-9">
+                                            <input name="approvalYear" type="text" class="form-control" id="approvalYear"
+                                                   readonly value="2014">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="specialtyName">Название специальности:</label>
+                                        <div class="col-xs-9">
+                                            <input name="specialtyName" type="text" class="form-control" id="specialtyName"
+                                                   readonly value="КС">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="level">Уровень:</label>
+                                        <div class="col-xs-9">
+                                            <input name="level" type="text" class="form-control" id="level"
+                                                   readonly value="Магистр">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="studyForm">Форма обучения:</label>
+                                        <div class="col-xs-9">
+                                            <input name="studyForm" type="text" class="form-control" id="studyForm"
+                                                   readonly value="Стационар">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-offset-3 col-xs-9">
+                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
+                                        </div>
+                                    </div>
+                                </form:form>
                             </div>
                         </div>
                     </div>
@@ -189,26 +211,9 @@
 
 <!-- iCheck -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-<!-- Datatables -->
-<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.flash.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.print.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.colVis.min.js"></script>
-<script src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.min.js"></script>
-<script src="https://cdn.datatables.net/keytable/2.2.1/js/dataTables.keyTable.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.1.1/js/responsive.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.28/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.28/vfs_fonts.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="<c:url value="/resources/js/custom.min.js"/>"></script>
-
 </body>
 </html>
+

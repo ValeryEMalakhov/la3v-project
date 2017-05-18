@@ -8,19 +8,30 @@ import com.google.gson.*;
 public class EntityDocument {
 
     private Integer id;
-    private String name, author, version, path, comments, archivePath;
+    private String name, author, path, comments, archivePath;
     private JsonObject attributes;
     private double archivingTerm;
-    private Date dateOfCreation, dateOfArchiving;
+    private String dateOfCreation, dateOfArchiving;
 
     public EntityDocument() {
     }
 
-    public EntityDocument(Integer id, String name, String author, String version, String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, Date dateOfCreation, Date dateOfArchiving) {
+    public EntityDocument(Integer id, String name, String author,  String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfCreation, String dateOfArchiving) {
         this.id = id;
         this.name = name;
         this.author = author;
-        this.version = version;
+        this.path = path;
+        this.comments = comments;
+        this.archivePath = archivePath;
+        this.attributes = attributes;
+        this.archivingTerm = archivingTerm;
+        this.dateOfCreation = dateOfCreation;
+        this.dateOfArchiving = dateOfArchiving;
+    }
+
+    public EntityDocument(String name, String author, String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfCreation, String dateOfArchiving) {
+        this.name = name;
+        this.author = author;
         this.path = path;
         this.comments = comments;
         this.archivePath = archivePath;
@@ -52,14 +63,6 @@ public class EntityDocument {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public void setVersion(String version) {
-        this.version = version;
     }
 
     public String getPath() {
@@ -102,19 +105,19 @@ public class EntityDocument {
         this.archivingTerm = archivingTerm;
     }
 
-    public Date getDateOfCreation() {
+    public String getDateOfCreation() {
         return dateOfCreation;
     }
 
-    public void setDateOfCreation(Date dateOfCreation) {
+    public void setDateOfCreation(String dateOfCreation) {
         this.dateOfCreation = dateOfCreation;
     }
 
-    public Date getDateOfArchiving() {
+    public String getDateOfArchiving() {
         return dateOfArchiving;
     }
 
-    public void setDateOfArchiving(Date dateOfArchiving) {
+    public void setDateOfArchiving(String dateOfArchiving) {
         this.dateOfArchiving = dateOfArchiving;
     }
 }
