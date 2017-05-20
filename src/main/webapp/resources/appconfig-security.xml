@@ -10,6 +10,7 @@
     <http auto-config="true">
         <intercept-url pattern="/" access="hasAnyRole('ROLE_ANONYMOUS', 'ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
         <intercept-url pattern="/main" access="hasAnyRole('ROLE_ANONYMOUS', 'ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
+        <intercept-url pattern="/schedule" access="hasAnyRole('ROLE_ANONYMOUS', 'ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
         <intercept-url pattern="/archive/*" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
         <intercept-url pattern="/document/*" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
 

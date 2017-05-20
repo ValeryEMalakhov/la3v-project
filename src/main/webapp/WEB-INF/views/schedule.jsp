@@ -1,3 +1,13 @@
+<%--
+  User: Valery E. Malakhov
+  Date: 11.03.2017
+  Time: 20:33
+--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +33,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/green.css" rel="stylesheet">
 
     <!-- FullCalendar -->
-    <link href="../../resources/libs/fullcalendar/fullcalendar.min.css" rel="stylesheet">
-    <link href="../../resources/libs/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="<c:url value="/resources/libs/fullcalendar/fullcalendar.min.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/libs/fullcalendar/fullcalendar.print.css"/>" rel="stylesheet" media="print">
 
     <!-- Custom Theme Style -->
-    <link href="../../resources/css/custom.min.css" rel="stylesheet">
+    <link href="<c:url value="/resources/css/custom.min.css"/>" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -37,163 +47,39 @@
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
                     <a href="${pageContext.request.contextPath}/" class="site_title"> <img
-                            src="../../resources/images/logo-blue.png"
-                        width="50" class="img-circle"> <span>LA3V</span></a>
+                            src="<c:url value="/resources/images/logo-blue.png"/>"
+                            width="50" class="img-circle"> <span>LA3V</span></a>
                 </div>
 
                 <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
+                <%--                <div class="profile clearfix">
+                                    <div class="profile_pic">
+                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                                    </div>
+                                    <div class="profile_info">
+                                        <span>Welcome,</span>
+                                        <h2>Admin</h2>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>--%>
                 <!-- /menu profile quick info -->
 
                 <br/>
 
                 <!-- sidebar menu -->
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-                    <div class="menu_section">
-                        <h3> Основной блок </h3>
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Главная <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="${pageContext.request.contextPath}/"> Новости </a></li>
-                                    <li><a href="../../schedule"> Рассписание </a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="../../document/all"> Документы </a></li>
-                                    <li><a href="../../document/analytics"> Аналитика </a></li>
-                                    <li><a href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
-                                    <li><a href="../../document/pattern"> Генератор шаблонов </a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-archive"></i> Архив <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="../../archive/all"> Документы </a></li>
-                                    <li><a href="../../archive/protocols"> Общие протоколы </a></li>
-                                    <li><a href="../../archive/dprotocols"> Протоколы удаления </a></li>
-                                    <li><a href="../../archive/analytics"> Аналитика </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu_section">
-                        <h3> Вспомогательный блок </h3>
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-bug"></i> Кабинет <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="../../profile/"> Профиль </a></li>
-                                    <%--<li><a href="../../profile/docs"> Личные документы </a></li>--%>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <jsp:include page="../views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <!--<jsp:include page="../views/blocks/sidebar_footer.jsp"></jsp:include>-->
+                <jsp:include page="../views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <div class="top_nav">
-            <div class="nav_menu">
-                <nav>
-                    <div class="nav toggle">
-                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-                    </div>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="false">
-                                <img src="images/img.jpg" alt="">John Doe
-                                <span class=" fa fa-angle-down"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="javascript:;"> Profile</a></li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                                <li><a href="javascript:;">Help</a></li>
-                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-                            </ul>
-                        </li>
-
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
-                               aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
-                            </a>
-                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="text-center">
-                                        <a>
-                                            <strong>See All Alerts</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <jsp:include page="../views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -258,12 +144,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-            <div class="pull-right">
-                LA3V Bootstrap Admin Template
-            </div>
-            <div class="clearfix"></div>
-        </footer>
+        <jsp:include page="../views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
 
         <!-- calendar modal -->
@@ -362,11 +243,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 
 <!-- FullCalendar -->
-<script src="../../resources/libs/fullcalendar/lib/moment.min.js"></script>
-<script src="../../resources/libs/fullcalendar/fullcalendar.js"></script>
+<script src="<c:url value="/resources/libs/fullcalendar/lib/moment.min.js"/>"></script>
+<script src="<c:url value="/resources/libs/fullcalendar/fullcalendar.js"/>"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="../../resources/js/custom.js"></script>
+<script src="<c:url value="/resources/js/custom.js"/>"></script>
 </body>
 </html>
 
