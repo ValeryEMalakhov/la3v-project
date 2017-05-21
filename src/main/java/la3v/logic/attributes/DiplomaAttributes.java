@@ -18,7 +18,8 @@ public class DiplomaAttributes implements IAttributes {
     public DiplomaAttributes() {
     }
 
-    public static DiplomaAttributes getFromJson(JsonObject jsonObject) {
+    @Override
+    public DiplomaAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), DiplomaAttributes.class);
     }
 

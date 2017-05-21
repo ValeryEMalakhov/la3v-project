@@ -19,7 +19,7 @@ public class PatentAttributes implements IAttributes {
     public PatentAttributes() {
     }
 
-    public static PatentAttributes getFromJson(JsonObject jsonObject) {
+    public PatentAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PatentAttributes.class);
     }
 

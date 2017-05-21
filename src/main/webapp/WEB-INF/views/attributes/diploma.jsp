@@ -127,7 +127,7 @@
                             <div class="x_content">
                                 <spring:url value="/archive/archivation/${addressPart}/attributes/diploma"
                                             var="formUrl"/>
-                                <form:form method="post" modelAttribute="diplomaAttributes"
+                                <form:form method="post" modelAttribute="attributes"
                                            action="/archive/archivation/{${addressPart}}/attributes/diploma"
                                            class="form-horizontal">
 

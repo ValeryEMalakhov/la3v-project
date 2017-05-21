@@ -19,7 +19,7 @@ public class ResearchWorkReportAttributes implements IAttributes {
     public ResearchWorkReportAttributes() {
     }
 
-    public static ResearchWorkReportAttributes getFromJson(JsonObject jsonObject) {
+    public ResearchWorkReportAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ResearchWorkReportAttributes.class);
     }
 

@@ -19,7 +19,7 @@ public class ConferenceIncomingAttributes implements IAttributes {
     public ConferenceIncomingAttributes() {
     }
 
-    public static ConferenceIncomingAttributes getFromJson(JsonObject jsonObject) {
+    public ConferenceIncomingAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ConferenceIncomingAttributes.class);
     }
 

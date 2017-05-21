@@ -19,7 +19,7 @@ public class EducationalEditionAttributes implements IAttributes {
     public EducationalEditionAttributes() {
     }
 
-    public static EducationalEditionAttributes getFromJson(JsonObject jsonObject) {
+    public EducationalEditionAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), EducationalEditionAttributes.class);
     }
 

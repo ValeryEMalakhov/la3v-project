@@ -19,7 +19,7 @@ public class LecturerFormAttributes implements IAttributes {
     public LecturerFormAttributes() {
     }
 
-    public static LecturerFormAttributes getFromJson(JsonObject jsonObject) {
+    public LecturerFormAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), LecturerFormAttributes.class);
     }
 

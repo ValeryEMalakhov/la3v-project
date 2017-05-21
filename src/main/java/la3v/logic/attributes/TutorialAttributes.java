@@ -19,7 +19,7 @@ public class TutorialAttributes implements IAttributes {
     public TutorialAttributes() {
     }
 
-    public static TutorialAttributes getFromJson(JsonObject jsonObject) {
+    public TutorialAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), TutorialAttributes.class);
     }
 

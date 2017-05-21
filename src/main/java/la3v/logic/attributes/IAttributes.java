@@ -12,4 +12,5 @@ public interface IAttributes {
     List<String> toListString ();
     String getDocType();
     String getProcess();
+    IAttributes getFromJson(JsonObject jsonObject);
 }

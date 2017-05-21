@@ -19,7 +19,7 @@ public class ScientificSeminarProtocolAttributes implements IAttributes {
     public ScientificSeminarProtocolAttributes() {
     }
 
-    public static ScientificSeminarProtocolAttributes getFromJson(JsonObject jsonObject) {
+    public ScientificSeminarProtocolAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ScientificSeminarProtocolAttributes.class);
     }
 

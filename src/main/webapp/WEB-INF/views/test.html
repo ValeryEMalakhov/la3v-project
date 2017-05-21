@@ -12,7 +12,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Bootlint -->
+    <%--<!-- Bootlint -->--%>
     <link href="https://maxcdn.bootstrapcdn.com/bootlint/0.14.2/bootlint.min.js" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -21,10 +21,6 @@
 
     <!-- iCheck -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/green.css" rel="stylesheet">
-
-    <!-- FullCalendar -->
-    <link href="../../resources/libs/fullcalendar/fullcalendar.min.css" rel="stylesheet">
-    <link href="../../resources/libs/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
 
     <!-- Custom Theme Style -->
     <link href="../../resources/css/custom.min.css" rel="stylesheet">
@@ -38,12 +34,24 @@
                 <div class="navbar nav_title" style="border: 0;">
                     <a href="${pageContext.request.contextPath}/" class="site_title"> <img
                             src="../../resources/images/logo-blue.png"
-                        width="50" class="img-circle"> <span>LA3V</span></a>
+                            width="50" class="img-circle"> <span>LA3V</span></a>
                 </div>
 
                 <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
+                <%--
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>Welcome,</span>
+                        <h2>Admin</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                --%>
                 <!-- /menu profile quick info -->
 
                 <br/>
@@ -56,23 +64,14 @@
                             <li><a><i class="fa fa-home"></i> Главная <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="${pageContext.request.contextPath}/"> Новости </a></li>
-                                    <li><a href="../../schedule"> Рассписание </a></li>
+                                    <li><a target="_blank" href="/schedule"> Рассписание </a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="../../document/all"> Документы </a></li>
-                                    <li><a href="../../document/analytics"> Аналитика </a></li>
-                                    <li><a href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
-                                    <li><a href="../../document/pattern"> Генератор шаблонов </a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-archive"></i> Архив <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="../../archive/all"> Документы </a></li>
-                                    <li><a href="../../archive/protocols"> Общие протоколы </a></li>
-                                    <li><a href="../../archive/dprotocols"> Протоколы удаления </a></li>
-                                    <li><a href="../../archive/analytics"> Аналитика </a></li>
+                                    <li><a href="/document/all"> Активный список </a></li>
+                                    <li><a href="/document/editor"> Редактор файлов </a></li>
+                                    <li><a href="/document/archive"> Архив </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -82,17 +81,64 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-bug"></i> Кабинет <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="../../profile/"> Профиль </a></li>
-                                    <%--<li><a href="../../profile/docs"> Личные документы </a></li>--%>
+                                    <li><a href="/profile/docs"> Личные документы </a></li>
+                                    <li><a href="/profile/all"> Профиль </a></li>
                                 </ul>
                             </li>
+                            <%--
+                            <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="page_403.html">403 Error</a></li>
+                                    <li><a href="page_404.html">404 Error</a></li>
+                                    <li><a href="page_500.html">500 Error</a></li>
+                                    <li><a href="test.html">Plain Page</a></li>
+                                    <li><a href="login.html">Login Page</a></li>
+                                    <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span
+                                    class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#level1_1">Level One</a>
+                                    <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li class="sub_menu"><a href="level2.html">Level Two</a>
+                                            </li>
+                                            <li><a href="#level2_1">Level Two</a>
+                                            </li>
+                                            <li><a href="#level2_2">Level Two</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#level1_2">Level One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            --%>
+                            <%--
+                            <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span
+                                    class="label label-success pull-right">Coming Soon</span></a></li>
+                            --%>
                         </ul>
                     </div>
                 </div>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <!--<jsp:include page="../views/blocks/sidebar_footer.jsp"></jsp:include>-->
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Настройки">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Что-то">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Полный экран">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Выход" href="login.html">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
                 <!-- /menu footer buttons -->
             </div>
         </div>
@@ -109,19 +155,19 @@
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                aria-expanded="false">
-                                <img src="images/img.jpg" alt="">John Doe
+                                <img src="images/img.jpg" alt="">Admin
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="javascript:;"> Profile</a></li>
+                                <li><a href="javascript:;"> Профиль </a></li>
                                 <li>
                                     <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
+                                        <%--<span class="badge bg-red pull-right">50%</span>--%>
+                                        <span> Настройки </span>
                                     </a>
                                 </li>
-                                <li><a href="javascript:;">Help</a></li>
-                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                <li><a href="javascript:;"> Помощь </a></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Выход </a></li>
                             </ul>
                         </li>
 
@@ -129,57 +175,23 @@
                             <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
                                aria-expanded="false">
                                 <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
+                                <span class="badge bg-green">0</span>
                             </a>
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                <%--
                                 <li>
                                     <a>
                                         <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
+                  <span>John Smith</span>
+                  <span class="time">3 mins ago</span>
+                </span>
                                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
+                  Film festivals used to be do-or-die moments for movie makers. They were where...
+                </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
-                                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                                    </a>
-                                </li>
+                                --%>
                                 <li>
                                     <div class="text-center">
                                         <a>
@@ -201,17 +213,15 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Calendar
-                            <small>Click to add/edit events</small>
-                        </h3>
+                        <h3>Новости</h3>
                     </div>
 
                     <div class="title_right">
                         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for...">
+                                <input type="text" class="form-control" placeholder="Поиск...">
                                 <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
+                      <button class="btn btn-default" type="button">Искать</button>
                     </span>
                             </div>
                         </div>
@@ -221,12 +231,10 @@
                 <div class="clearfix"></div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Calendar Events
-                                    <small>Sessions</small>
-                                </h2>
+                                <h2>Окно 1</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -234,9 +242,9 @@
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                            aria-expanded="false"><i class="fa fa-wrench"></i></a>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Settings 1</a>
+                                            <li><a href="#">Внешний вид 1</a>
                                             </li>
-                                            <li><a href="#">Settings 2</a>
+                                            <li><a href="#">Внешний вид 2</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -246,9 +254,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-
-                                <div id='calendar'></div>
-
+                                Add content to the page ...
                             </div>
                         </div>
                     </div>
@@ -265,86 +271,6 @@
             <div class="clearfix"></div>
         </footer>
         <!-- /footer content -->
-
-        <!-- calendar modal -->
-        <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="myModalLabel">New Calendar Entry</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div id="testmodal" style="padding: 5px 20px;">
-                            <form id="antoform" class="form-horizontal calender" role="form">
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Title</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="title" name="title">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Description</label>
-                                    <div class="col-sm-9">
-                                        <textarea class="form-control" style="height:55px;" id="descr"
-                                                  name="descr"></textarea>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary antosubmit">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="myModalLabel2">Edit Calendar Entry</h4>
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="testmodal2" style="padding: 5px 20px;">
-                            <form id="antoform2" class="form-horizontal calender" role="form">
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Title</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="title2" name="title2">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Description</label>
-                                    <div class="col-sm-9">
-                                        <textarea class="form-control" style="height:55px;" id="descr2"
-                                                  name="descr"></textarea>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary antosubmit2">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
-        <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
-        <!-- /calendar modal -->
-
     </div>
 </div>
 
@@ -361,12 +287,7 @@
 <!-- iCheck -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 
-<!-- FullCalendar -->
-<script src="../../resources/libs/fullcalendar/lib/moment.min.js"></script>
-<script src="../../resources/libs/fullcalendar/fullcalendar.js"></script>
-
 <!-- Custom Theme Scripts -->
-<script src="../../resources/js/custom.js"></script>
+<script src="../../resources/js/custom.min.js"></script>
 </body>
 </html>
-

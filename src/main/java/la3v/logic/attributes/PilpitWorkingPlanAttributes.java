@@ -18,7 +18,7 @@ public class PilpitWorkingPlanAttributes implements IAttributes {
     public PilpitWorkingPlanAttributes() {
     }
 
-    public static PilpitWorkingPlanAttributes getFromJson(JsonObject jsonObject) {
+    public PilpitWorkingPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PilpitWorkingPlanAttributes.class);
     }
 

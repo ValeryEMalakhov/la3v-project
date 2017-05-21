@@ -26,7 +26,7 @@ public class StudentsListAttributes implements IAttributes {
         return output;
     }
 
-    public static StudentsListAttributes getFromJson(JsonObject jsonObject) {
+    public StudentsListAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), StudentsListAttributes.class);
     }
 

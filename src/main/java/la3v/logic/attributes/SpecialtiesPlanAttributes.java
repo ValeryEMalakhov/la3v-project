@@ -19,7 +19,7 @@ public class SpecialtiesPlanAttributes implements IAttributes {
     public SpecialtiesPlanAttributes() {
     }
 
-    public static SpecialtiesPlanAttributes getFromJson(JsonObject jsonObject) {
+    public SpecialtiesPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), SpecialtiesPlanAttributes.class);
     }
 

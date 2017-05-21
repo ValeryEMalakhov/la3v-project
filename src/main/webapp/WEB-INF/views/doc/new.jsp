@@ -1,20 +1,19 @@
 <%--
-  User: Vladyslav V. Drabynka
-  Date: 17.05.2017
-  Time: 14:07
+  User: Valery E. Malakhov
+  Date: 20.05.2017
+  Time: 20:34
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +22,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
-    <%--<!-- Bootlint -->--%>
+    <!-- Bootlint -->
     <link href="https://maxcdn.bootstrapcdn.com/bootlint/0.14.2/bootlint.min.js" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -49,34 +48,20 @@
                 </div>
 
                 <div class="clearfix"></div>
-
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
-
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="../../views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="../../views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../blocks/header.jsp"></jsp:include>
+        <jsp:include page="../../views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -84,7 +69,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Архивация</h3>
+                        <h3>Новости</h3>
                     </div>
 
                     <div class="title_right">
@@ -105,7 +90,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>${archivedDocument.name}</h2>
+                                <h2>Окно 1</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -125,48 +110,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/conferenceIncoming" var="formUrl"/>
-                                <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/conferenceIncoming" class="form-horizontal">
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="process">Процесс:</label>
-                                        <div class="col-xs-9">
-                                            <input name="process" type="text" class="form-control" id="process"
-                                                   readonly value="Научный">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="docType">Тип документа:</label>
-                                        <div class="col-xs-9">
-                                            <input name="docType" type="text" class="form-control" id="docType"
-                                                   readonly  value="Проводимая конференция">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="name">Название:</label>
-                                        <div class="col-xs-9">
-                                            <input name="name" type="text" class="form-control" id="name"
-                                                   readonly value="Название">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="data">Дата:</label>
-                                        <div class="col-xs-9">
-                                            <input name="data" type="text" class="form-control" id="data"
-                                                   readonly value="2016-08-14">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-xs-offset-3 col-xs-9">
-                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
-                                        </div>
-                                    </div>
-                                </form:form>
+                                Add content to the page ...
                             </div>
                         </div>
                     </div>
@@ -176,7 +120,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="../../views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>

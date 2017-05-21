@@ -19,7 +19,7 @@ public class TraineeshipAttributes implements IAttributes {
     public TraineeshipAttributes() {
     }
 
-    public static TraineeshipAttributes getFromJson(JsonObject jsonObject) {
+    public TraineeshipAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), TraineeshipAttributes.class);
     }
 

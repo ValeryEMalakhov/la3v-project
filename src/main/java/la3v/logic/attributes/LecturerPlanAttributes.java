@@ -18,7 +18,7 @@ public class LecturerPlanAttributes implements IAttributes {
     public LecturerPlanAttributes() {
     }
 
-    public static LecturerPlanAttributes getFromJson(JsonObject jsonObject) {
+    public LecturerPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), LecturerPlanAttributes.class);
     }
 

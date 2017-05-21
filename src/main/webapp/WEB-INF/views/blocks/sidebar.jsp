@@ -15,14 +15,15 @@
             <li><a><i class="fa fa-home"></i> Главная <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="${pageContext.request.contextPath}/"> Новости </a></li>
-                    <li><a href="<spring:url value="/schedule"/>"> Рассписание </a></li>
+                    <li><a href="<spring:url value="/schedule"/>"> Расписание </a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<spring:url value="/document/all"/>"> Документы </a></li>
+                    <li><a href="<spring:url value="/document/new"/>"> Загрузить документ </a></li>
                     <li><a href="<spring:url value="/document/analytics"/>"> Аналитика </a></li>
-                    <li><a href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
+                    <li><a target="_blank" href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
                     <li><a href="<spring:url value="/document/pattern"/>"> Генератор шаблонов </a></li>
                 </ul>
             </li>

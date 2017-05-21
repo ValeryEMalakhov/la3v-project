@@ -35,6 +35,11 @@ public class ControllerDocument {
         return "doc/document";
     }
 
+    @RequestMapping("/new")
+    public String showCreateDocumentForm(Model model) {
+        return "doc/new";
+    }
+
     @RequestMapping("/{id}")
     public String showInfo(Model model, @PathVariable("id") String id) {
         IRepositoryDocument repositoryDocument = context.getBean(IRepositoryDocument.class);

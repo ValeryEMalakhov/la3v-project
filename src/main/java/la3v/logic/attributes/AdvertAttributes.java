@@ -19,7 +19,7 @@ public class AdvertAttributes implements IAttributes {
     public AdvertAttributes() {
     }
 
-    public static AdvertAttributes getFromJson(JsonObject jsonObject) {
+    public AdvertAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), AdvertAttributes.class);
     }
 

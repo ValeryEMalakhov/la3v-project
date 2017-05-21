@@ -19,7 +19,7 @@ public class CourseWorkAttributes implements IAttributes {
     public CourseWorkAttributes() {
     }
 
-    public static CourseWorkAttributes getFromJson(JsonObject jsonObject) {
+    public CourseWorkAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), CourseWorkAttributes.class);
     }
 

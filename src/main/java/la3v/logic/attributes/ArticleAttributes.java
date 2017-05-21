@@ -19,7 +19,7 @@ public class ArticleAttributes implements IAttributes{
     public ArticleAttributes() {
     }
 
-    public static ArticleAttributes getFromJson(JsonObject jsonObject) {
+    public ArticleAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ArticleAttributes.class);
     }
 

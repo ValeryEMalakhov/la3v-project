@@ -19,7 +19,7 @@ public class MonographAttributes implements IAttributes {
     public MonographAttributes() {
     }
 
-    public static MonographAttributes getFromJson(JsonObject jsonObject) {
+    public MonographAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), MonographAttributes.class);
     }
 

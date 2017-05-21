@@ -19,7 +19,7 @@ public class ProtocolStatementsAttributes implements IAttributes {
     public ProtocolStatementsAttributes() {
     }
 
-    public static ProtocolStatementsAttributes getFromJson(JsonObject jsonObject) {
+    public ProtocolStatementsAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ProtocolStatementsAttributes.class);
     }
 

@@ -19,7 +19,7 @@ public class ConferenceThesisAttributes implements IAttributes{
     public ConferenceThesisAttributes() {
     }
 
-    public static ConferenceThesisAttributes getFromJson(JsonObject jsonObject) {
+    public ConferenceThesisAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ConferenceThesisAttributes.class);
     }
 

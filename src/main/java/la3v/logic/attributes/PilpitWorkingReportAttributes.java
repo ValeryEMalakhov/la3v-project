@@ -18,7 +18,7 @@ public class PilpitWorkingReportAttributes implements IAttributes {
     public PilpitWorkingReportAttributes() {
     }
 
-    public static PilpitWorkingReportAttributes getFromJson(JsonObject jsonObject) {
+    public PilpitWorkingReportAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PilpitWorkingReportAttributes.class);
     }
 
