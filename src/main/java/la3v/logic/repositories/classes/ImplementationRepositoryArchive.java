@@ -1,8 +1,8 @@
 package la3v.logic.repositories.classes;
 
-import la3v.logic.entities.EntityDocument;
+import la3v.logic.entities.document.EntityDocument;
 import la3v.logic.entities.archive.*;
-import la3v.logic.mappers.MapperDocument;
+import la3v.logic.mappers.document.MapperDocument;
 import la3v.logic.mappers.archive.*;
 import la3v.logic.repositories.interfaces.IRepositoryArchive;
 import org.slf4j.Logger;
@@ -29,14 +29,12 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
     private JdbcTemplate template;
 
     private static final String FIND_ARCHIVED_DOCUMENT = "SELECT * FROM \"archive\".\"Document\" ORDER BY documentId ASC";
-    private static final String FIND_DOCUMENT_BY_ID = "SELECT * FROM \"archive\".\"Document\" WHERE documentId = ?";
-    //private static final String FIND_ALL_PROTOCOLS = "SELECT * FROM \"archive\".\"Protocol\"";
+    private static final String FIND_ARCHIVED_DOCUMENT_BY_ID = "SELECT * FROM \"archive\".\"Document\" WHERE documentId = ?";
     private static final String FIND_ALL_PROTOCOLS = "SELECT protocolid, protocolname, protocoldate, protocoltime, userlastname, protocolaction, protocolcomments, documentname\n" +
             "FROM \"archive\".\"Protocol\" as Prot \n" +
             "JOIN \"archive\".\"Document\" as Doc ON Prot.protocoldocumentid = Doc.documentid\n" +
             "JOIN \"archive\".\"User\" as Usr ON Usr.userid = Prot.protocoluserid;";
 
-    //private static final String FIND_ALL_DELETE_PROTOCOLS = "SELECT * FROM \"archive\".\"ProtocolOfDelete\"";
     private static final String FIND_ALL_DELETE_PROTOCOLS =
             "SELECT protocoldelid, protocoldelname, protocoldeldate, protocoldeltime, protocoldelcomments, userlastname, protocoldeldocname, protocoldeldocauthor, protocoldeldocarchivepath, protocolDelDocDateOfCreation, protocolDelDocDateOfArchiving, protocolDelDocArchivingTerm, protocolDelDocComments\n" +
             "FROM \"archive\".\"ProtocolOfDelete\" as Prot \n" +
@@ -57,6 +55,12 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
                     "documentdateofarchiving, documentattributes, documentcomments, documentarchivepath, documentarchivingterm) " +
                     "VALUES(?, ?, ?, ?::DATE, ?::DATE, ?::JSONB, ?, ?, ?);";
 
+    private static final String FIND_DOCUMENT_BY_ID = "SELECT * FROM \"document\".\"document\" WHERE doc_id = ?";
+
+    private static final String DELETE_FROM_DOCUMENT = "DELETE FROM \"document\".\"document\" WHERE doc_id = ?";
+    private static final String DELETE_FROM_DOC_PROC = "DELETE FROM \"document\".\"doc_proc\" WHERE doc_id = ?;";
+    private static final String DELETE_FROM_DOC_COAUTHOR = "DELETE FROM \"document\".\"doc_coauthor\" WHERE doc_id = ?;";
+
 
     // Инициализация логера
     private static final Logger log = LoggerFactory.getLogger(ImplementationRepositoryArchive.class);
@@ -73,7 +77,7 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
 
     @Override
     public la3v.logic.entities.archive.EntityDocument findById(Integer id) {
-        return this.template.queryForObject(FIND_DOCUMENT_BY_ID, new Object[]{id}, new la3v.logic.mappers.archive.MapperDocument());
+        return this.template.queryForObject(FIND_ARCHIVED_DOCUMENT_BY_ID, new Object[]{id}, new la3v.logic.mappers.archive.MapperDocument());
     }
 
     @Override
@@ -96,18 +100,6 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
         return this.template.query(FIND_ALL_DOCUMENT_OWNCLOUD, new Object[]{}, new MapperDocument());
     }
 
-//    private String convertToUTF8 (String str)
-//    {
-//        byte[] b1 = new byte[0];
-//        try {
-//            b1 = str.getBytes("UTF-8");
-//            return new String(b1, "UTF-8");
-//        } catch (UnsupportedEncodingException e) {
-//            e.printStackTrace();
-//        }
-//        return "";
-//    }
-
     @Override
     public void insertDocument(la3v.logic.entities.archive.EntityDocument entityDocument)
     {
@@ -124,7 +116,7 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
             return;
         }*/
 
-        log.info(String.format("---------------------------------------"));
+        /*log.info(String.format("---------------------------------------"));
         log.info(String.format("INSERT"));
         log.info(String.format("getName %s", entityDocument.getName()));
         log.info(String.format("getAuthor %s", entityDocument.getAuthor()));
@@ -134,7 +126,7 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
         log.info(String.format("getAttributes %s", entityDocument.getAttributes().toString()));
         log.info(String.format("getArchivingTerm %s", entityDocument.getArchivingTerm()));
         log.info(String.format("getDateOfCreation %s", entityDocument.getDateOfCreation()));
-        log.info(String.format("getDateOfArchiving %s", entityDocument.getDateOfArchiving()));
+        log.info(String.format("getDateOfArchiving %s", entityDocument.getDateOfArchiving()));*/
 
         this.template.update(INSERT_INTO_DOCUMENT, new Object[]{
                 entityDocument.getName(),
@@ -147,7 +139,31 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
                 entityDocument.getArchivePath(),
                 entityDocument.getArchivingTerm()
         });
-        log.info(String.format("AFTER INSERT"));
-        log.info(String.format("---------------------------------------"));
+        /*log.info(String.format("AFTER INSERT"));
+        log.info(String.format("---------------------------------------"));*/
+    }
+
+    @Override
+    public void deleteFromDocument(Integer id)
+    {
+        this.template.update(DELETE_FROM_DOCUMENT, new Object[]{id});
+    }
+
+    @Override
+    public void deleteFromProcess(Integer id)
+    {
+        this.template.update(DELETE_FROM_DOC_PROC, new Object[]{id}, new MapperDocument());
+    }
+
+    @Override
+    public void deleteFromCoauthor(Integer id)
+    {
+        this.template.update(DELETE_FROM_DOC_COAUTHOR, new Object[]{id}, new MapperDocument());
+    }
+
+    @Override
+    public EntityDocument findDocumentById(Integer id)
+    {
+        return this.template.queryForObject(FIND_DOCUMENT_BY_ID, new Object[]{id}, new MapperDocument());
     }
 }

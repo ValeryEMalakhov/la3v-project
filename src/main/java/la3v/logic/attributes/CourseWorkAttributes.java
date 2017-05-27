@@ -27,6 +27,9 @@ public class CourseWorkAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Тема курсовой работы: " + this.topic);
         output.add("Автор: " + this.author);
         output.add("Научный руководитель: " + this.supervisor);

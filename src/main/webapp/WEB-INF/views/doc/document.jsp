@@ -48,25 +48,13 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img src="<c:url value="/resources/images/logo-blue.png"/>"
-                                                                                           width="50"
-                                                                                           class="img-circle"> <span>LA3V</span></a>
+                    <a href="${pageContext.request.contextPath}/" class="site_title"> <img
+                            src="<c:url value="/resources/images/logo-blue.png"/>"
+                            width="50"
+                            class="img-circle"> <span>LA3V</span></a>
                 </div>
 
                 <div class="clearfix"></div>
-
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
 
                 <br/>
 
@@ -116,16 +104,6 @@
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#"> Конфигурация 1 </a>
-                                            </li>
-                                            <li><a href="#"> Конфигурация 2 </a>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
                                 </ul>
@@ -135,32 +113,49 @@
                                 <%--<p class="text-muted font-13 m-b-30">--%>
                                 <%--Вывод существующих документов.--%>
                                 <%--</p>--%>
-                                    <table id="datatable-responsive"
+                                <table id="datatable-responsive"
                                        class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
                                        width="100%">
-                                        <thead>
-                                            <tr>
-                                                <%--<th>ID</th>--%>
-                                                <%--<th>uid</th>--%>
-                                                <%--<th>storage</th>--%>
-                                                <th>Название</th>
-                                                <th>Путь</th>
-                                                <th>Архивация</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <c:forEach items="${entityDocumentList}" var="doc">
-                                            <tr>
-                                                <%--<td><c:out value="${doc.uid}"/></td>--%>
-                                                <%--<td><c:out value="${doc.storage}"/></td>--%>
-                                                <td><c:out value="${doc.name}"/></td>
-                                                <td><c:out value="${doc.path}"/></td>
-                                                <td>
-                                                    <a href=<spring:url value="/archive/archivation/${doc.pathHash}"/>/>
-                                                    <button type="reset">Архивировать</button>
-                                                </td>
-                                            </tr>
-                                        </c:forEach>
+                                    <thead>
+                                    <tr>
+                                        <%--<th>ID</th>--%>
+                                        <%--<th>uid</th>--%>
+                                        <%--<th>storage</th>--%>
+                                        <th>Название</th>
+                                        <th>Авторы/Соавторы</th>
+                                        <th>Тип документа</th>
+                                        <th>Тип процесса</th>
+                                        <th>Дата</th>
+                                        <th>Атрибуты</th>
+                                        <th>Описание</th>
+                                        <%--<th>Путь к файлу</th>--%>
+                                        <th>Редактирование</th>
+                                        <th>Архивация</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <c:forEach items="${entityDocumentList}" var="doc">
+                                        <tr>
+                                                <%--<td><c:out value="${doc.docid}"/></td>--%>
+                                            <td><c:out value="${doc.docTitle}"/></td>
+                                            <td><c:out value="${doc.authorName}"/></td>
+                                            <td><c:out value="${doc.docType}"/></td>
+                                            <td><c:out value="${doc.docProcess}"/></td>
+                                            <td><c:out value="${doc.docDate}"/></td>
+                                            <td><c:out value="${doc.attributes}"/></td>
+                                            <td><c:out value="${doc.docDescription}"/></td>
+
+                                            <%-- кнопки --%>
+                                            <td>
+                                                <a href=<spring:url value="/doc/edit/${doc.docId}"/>/>
+                                                <button type="reset">Редактировать</button>
+                                            </td>
+                                            <td>
+                                                <a href=<spring:url value="/archive/archivation/${doc.docId}"/>/>
+                                                <button type="reset">Архивировать</button>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>

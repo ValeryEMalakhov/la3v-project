@@ -1,6 +1,7 @@
 package la3v.logic.repositories.interfaces;
 
-import la3v.logic.entities.EntityDocument;
+import la3v.logic.entities.document.EntityDocument;
+import la3v.logic.entities.document.EntityDocumentType;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
  */
 public interface IRepositoryDocument extends IRepository<EntityDocument> {
 
-    List<EntityDocument> getAllDocumentList();
+    List<EntityDocument> getAllDocumentList(String fileUser);
 
-    EntityDocument findByHash(String hash);
+    List<EntityDocumentType> getAllDocumentType();
 }

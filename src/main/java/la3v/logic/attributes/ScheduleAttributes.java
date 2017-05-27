@@ -27,6 +27,9 @@ public class ScheduleAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Семестр: " + this.semester);
         output.add("Преподаватель: " + this.lecturer);
         output.add("День недели: " + this.dayOfWeek);

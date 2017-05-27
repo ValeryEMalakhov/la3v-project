@@ -2,24 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66657783-8f40-4ba0-8a77-0376fde7e403" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerFileUpload.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentAuthor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentProc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/entities/FileBucket.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/validators/FileValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocumentAuthor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocumentType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/edit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/err/page_error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/scheduler.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/scheduler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/scheduler.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/scheduler.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.hotkeys/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.hotkeys/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.hotkeys/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.hotkeys/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.date.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.dependencyLib.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.numeric.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.phone.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/inputmask.regex.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/inputmask/jquery.inputmask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/jquery.inputmask.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.date.extensions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.dependencyLib.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.extensions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.numeric.extensions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.phone.extensions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/inputmask.regex.extensions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/inputmask/jquery.inputmask.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/bindings/inputmask.binding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/dependencyLibs/inputmask.dependencyLib.jqlite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/dependencyLibs/inputmask.dependencyLib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/phone-codes/phone-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/phone-codes/phone-codes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/phone-codes/phone-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/phone-codes/phone-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.inputmask/extra/phone-codes/phone-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/dist/jquery.tagsinput.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/grunt-tasks/assets_production.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/grunt-tasks/options/cssmin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/grunt-tasks/options/uglify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/src/jquery.tagsinput.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/libs/jquery.tagsinput/src/jquery.tagsinput.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ArticleAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ArticleAttributes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AttributesMap.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AttributesMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CommonScheduleAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CommonScheduleAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceIncomingAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceIncomingAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceThesisAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceThesisAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CourseWorkAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CourseWorkAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DiplomaAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DiplomaAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/EducationalEditionAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/EducationalEditionAttributes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/IAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/IAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerFormAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerFormAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerPlanAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/MonographAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/MonographAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PatentAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PatentAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitSessionProtocolAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitSessionProtocolAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingPlanAttributes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingReportAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingReportAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PositionInstructionsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PositionInstructionsAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProgressJournalAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProgressJournalAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProtocolStatementsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProtocolStatementsAttributes.java" />
@@ -34,12 +91,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceIncoming.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceIncoming.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/diploma.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/diploma.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/EntityDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/MapperDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocument.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,47 +120,29 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WorkingPlanAttributes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java">
+      <file leaf-file-name="ControllerUpload.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-621">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="416">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
-                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <marker date="1495902948327" expanded="false" signature="3025:3039" ph="&lt;~&gt;" />
+                <marker date="1495902948327" expanded="false" signature="3122:3151" ph="&lt;~&gt;" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="68" lean-forward="true" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -100,19 +150,22 @@
       <file leaf-file-name="ControllerArchive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2550">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="347">
+              <caret line="110" column="65" lean-forward="true" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp">
+      <file leaf-file-name="fileUpload.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="109" column="60" lean-forward="false" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="295">
+              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#6499#14704#0#JSP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,28 +173,8 @@
       <file leaf-file-name="documentToArchive.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="188" column="62" lean-forward="true" selection-start-line="188" selection-start-column="62" selection-end-line="188" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="archive.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/archive.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2142">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdvertAttributes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="-476">
+              <caret line="128" column="71" lean-forward="false" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -161,9 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>href</find>
-      <find>postg</find>
-      <find>postgre</find>
       <find>driver</find>
       <find>bCryptPasswordEncoder</find>
       <find>bCrypt</find>
@@ -175,20 +205,25 @@
       <find>ControllerLogin</find>
       <find>error</find>
       <find>faild</find>
-      <find>la3v.logic.</find>
       <find>INFO la3v.logic.</find>
       <find>$2a</find>
       <find>&lt;version&gt;4.3.7</find>
       <find>INFO</find>
       <find>INFO la</find>
       <find>info la</find>
-      <find>info la3v</find>
       <find>info la3</find>
       <find>init_compose</find>
       <find>calendar</find>
       <find>anto</find>
       <find>unselect</find>
       <find>init_calendar</find>
+      <find>Registration Form</find>
+      <find>la3v.logic.</find>
+      <find>info la3v.logic</find>
+      <find>info la3v.</find>
+      <find>commons-fileupload</find>
+      <find>info la3v</find>
+      <find>info la3v.log</find>
     </findStrings>
     <replaceStrings>
       <replace>src</replace>
@@ -206,30 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/advertAttributes.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/articleAttributes.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/commonSheduleAttributes.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/ConferenceThesisAttributes.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/CourseWork.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/advert.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/article.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/commonShedule.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceIncoming.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceThesis.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/courseWork.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/educationalEdition.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/lecturerForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/lecturerPlan.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/monograph.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/patent.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitSessionProtocol.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitWorkingPlan.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitWorkingReport.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/positionInstructions.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/progressJournal.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/protocolStatements.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/researchWork.jsp" />
@@ -242,21 +253,45 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/traineeship.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/tutorial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/workingPlan.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/fullcalendar.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/json/calendar-events" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/json/events" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/help.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentAuthor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocumentAuthor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocumentType.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/files/validators/FileValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/err/page_error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/dispatcher-servlet.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/87377566-6f3b-42c6-bb36-117e9cd1e9be/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp" />
       </list>
     </option>
   </component>
@@ -612,7 +647,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -725,7 +759,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
+              <option name="myItemId" value="err" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attributes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -810,14 +912,6 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -834,62 +928,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -946,6 +988,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="repositories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1012,6 +1058,10 @@
               <option name="myItemId" value="mappers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="document" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1042,8 +1092,72 @@
               <option name="myItemId" value="mappers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="la3v-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1074,6 +1188,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="document" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1141,71 +1259,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="attributes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Side_Project/gentelella-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Side_Project/GraduateWork-master" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="la3v.logic.repositories.classes" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="la3v.logic.security.model" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TS\la3v-project\src\main\webapp\resources\libs\fullcalendar" />
       <recent name="D:\TS\la3v-project\src\main\webapp\resources\js" />
       <recent name="C:\Users\Marmonth\Desktop\la3v-project-develop\src\main\webapp\WEB-INF\views\attributes" />
       <recent name="D:\TS\la3v-project\src\main\resources" />
       <recent name="C:\Users\Marmonth\Desktop\la3v-project\src\main\webapp\WEB-INF\views\doc" />
-      <recent name="C:\Users\Marmonth\Desktop\la3v-project\src\main\webapp\WEB-INF\views\archive" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="la3v.logic.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TS\la3v-project\src\main\java\la3v\logic" />
+      <recent name="D:\TS\la3v-project\src\main\webapp\resources\libs" />
       <recent name="D:\TS\la3v-project\src\main\webapp\WEB-INF\views" />
       <recent name="D:\TS\la3v-project\src\main\webapp\WEB-INF\views\doc" />
       <recent name="D:\TS\la3v-project\src\main\webapp\resources" />
-      <recent name="C:\Users\Marmonth\Desktop\la3v-project\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1791,6 +1885,14 @@
       <workItem from="1495280524934" duration="3596000" />
       <workItem from="1495294465259" duration="3178000" />
       <workItem from="1495301194805" duration="5388000" />
+      <workItem from="1495376393306" duration="786000" />
+      <workItem from="1495384172373" duration="4092000" />
+      <workItem from="1495445029620" duration="6766000" />
+      <workItem from="1495639166676" duration="1721000" />
+      <workItem from="1495657828000" duration="11616000" />
+      <workItem from="1495726296832" duration="16236000" />
+      <workItem from="1495787706033" duration="11652000" />
+      <workItem from="1495875684602" duration="17266000" />
     </task>
     <servers />
   </component>
@@ -1800,7 +1902,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258252000" />
+    <option name="totallyTimeSpent" value="328387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1817,28 +1919,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73602855" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30558857" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32699168" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983353" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6551724" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28074434" sideWeight="0.79763913" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3001618" sideWeight="0.79763913" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27993527" sideWeight="0.2037037" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1895,15 +1998,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1912,147 +2007,282 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProtocolStatementsAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/TutorialAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/EducationalEditionAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PatentAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ResearchWorkAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="89" lean-forward="false" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/researchWork.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="209" column="82" lean-forward="false" selection-start-line="209" selection-start-column="82" selection-end-line="209" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/protocolStatements.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="187" column="31" lean-forward="true" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/researchWorkReport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="145" column="80" lean-forward="false" selection-start-line="145" selection-start-column="80" selection-end-line="145" selection-end-column="80" />
+        <state relative-caret-position="578">
+          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ResearchWorkReportAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="193" column="68" lean-forward="false" selection-start-line="193" selection-start-column="68" selection-end-line="193" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ScheduleAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/scientificSeminarProtocol.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ScientificSeminarProtocolAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="476">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/SpecialtiesPlanAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitSessionProtocolAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/specialtiesPlan.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProtocolStatementsAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="179" column="42" lean-forward="false" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+        <state relative-caret-position="510">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/studentsList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PositionInstructionsAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="181" column="91" lean-forward="false" selection-start-line="181" selection-start-column="91" selection-end-line="181" selection-end-column="91" />
+        <state relative-caret-position="493">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerFormAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/StudentsListAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="391">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/traineeship.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ScheduleAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+        <state relative-caret-position="544">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/TraineeshipAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="51" />
+        <state relative-caret-position="510">
+          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/TutorialAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ArticleAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="357">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/workingPlan.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerPlanAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="185" column="71" lean-forward="false" selection-start-line="185" selection-start-column="71" selection-end-line="185" selection-end-column="71" />
+        <state relative-caret-position="442">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/tutorial.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AttributesRusEng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state relative-caret-position="549">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1200#1201#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <marker date="1495730979167" expanded="true" signature="977:1039" ph="SELECT * FRO... Document" />
+            <marker date="1495730979167" expanded="true" signature="1106:1165" ph="SELECT * FRO... Document" />
+            <marker date="1495730979167" expanded="true" signature="1222:1586" ph="SELECT proto... Protocol" />
+            <marker date="1495730979167" expanded="true" signature="1664:2108" ph="SELECT proto... ProtocolOfDelete" />
+            <marker date="1495730979167" expanded="true" signature="2187:2587" ph="select u.uid... oc_users" />
+            <marker date="1495730979167" expanded="true" signature="2669:3054" ph="select u.uid... oc_users" />
+            <marker date="1495730979167" expanded="true" signature="3127:3442" ph="INSERT INTO \&quot;archive\&quot;.\&quot;Document\&quot;... " />
+            <marker date="1495730979167" expanded="true" signature="3502:3558" ph="SELECT * FRO... document" />
+            <marker date="1495730979167" expanded="true" signature="3618:3672" ph="DELETE FROM " />
+            <marker date="1495730979167" expanded="true" signature="3731:3785" ph="DELETE FROM " />
+            <marker date="1495730979167" expanded="true" signature="3849:3907" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3849#3850#0" expanded="true" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#3973#3974#0" expanded="true" />
+            <element signature="e#4000#4001#0" expanded="true" />
+            <marker date="1495813153304" expanded="true" signature="782:1132" ph="select u.uid... oc_users" />
+            <marker date="1495813153304" expanded="true" signature="1202:1294" ph="select\tdoc.... oc_users" />
+            <marker date="1495813153304" expanded="true" signature="1202:2916" ph="select\tdoc.... oc_users" />
+            <marker date="1495813153304" expanded="true" signature="3017:3352" ph="select u.uid... oc_users" />
+            <marker date="1495813153304" expanded="true" signature="3710:3762" ph="select type_... type" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/attributes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="127" column="39" lean-forward="true" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/diploma.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="104" column="41" lean-forward="false" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
+        <state relative-caret-position="-2625">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/files/parser/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/err/page_error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2062,23 +2292,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="170">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="379">
+          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="54" />
           <folding>
             <element signature="e#2295#2296#0" expanded="false" />
             <element signature="e#2324#2325#0" expanded="false" />
@@ -2086,244 +2309,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/libs/fullcalendar/fullcalendar.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/files/validators/FileValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="10303" column="6" lean-forward="false" selection-start-line="10303" selection-start-column="6" selection-end-line="10303" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="6" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="79" selection-end-column="6" />
+        <state relative-caret-position="442">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/footer.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="-100">
+          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/application-context.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/87377566-6f3b-42c6-bb36-117e9cd1e9be/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/json/events" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#4237#7663#0#JSP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/json/events.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="2751" column="33" lean-forward="false" selection-start-line="2751" selection-start-column="33" selection-end-line="2751" selection-end-column="33" />
-          <folding>
-            <element signature="e#78936#79840#0" expanded="false" />
-            <marker date="1495227941819" expanded="true" signature="33812:33844" ph="..." />
-            <marker date="1495227941819" expanded="true" signature="35368:35375" ph="×" />
-            <marker date="1495227941819" expanded="true" signature="57798:57810" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <marker date="1494681450000" expanded="true" signature="3411:5912" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3438:5897" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3479:4179" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3524:3592" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3639:4156" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3738:4129" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3792:4098" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="3951:4063" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4260:5878" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4324:5855" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4370:5828" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4420:5650" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4585:4688" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4746:5380" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="4860:4957" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="5036:5338" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="5085:5164" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="5213:5292" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="5421:5516" ph="..." />
-            <marker date="1494681450000" expanded="true" signature="5702:5797" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="416">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/help.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PatentAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="323">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/article.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1454">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <marker date="1495014931733" expanded="true" signature="959:1021" ph="SELECT * FRO... Document" />
-            <marker date="1495014931733" expanded="true" signature="1079:1138" ph="SELECT * FRO... Document" />
-            <marker date="1495014931733" expanded="true" signature="1292:1656" ph="SELECT proto... Protocol" />
-            <marker date="1495014931733" expanded="true" signature="1846:2290" ph="SELECT proto... ProtocolOfDelete" />
-            <marker date="1495014931733" expanded="true" signature="2369:2769" ph="select u.uid... oc_users" />
-            <marker date="1495014931733" expanded="true" signature="2851:3236" ph="select u.uid... oc_users" />
-            <marker date="1495014931733" expanded="true" signature="3309:3624" ph="INSERT INTO \&quot;archive\&quot;.\&quot;Document\&quot;... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="188" column="62" lean-forward="true" selection-start-line="188" selection-start-column="62" selection-end-line="188" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/archive.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
+        <state relative-caret-position="-1785">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="85" lean-forward="true" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/new.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/files/entities/FileBucket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="109" column="60" lean-forward="false" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="128" column="71" lean-forward="false" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2550">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="110" column="65" lean-forward="true" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="416">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <marker date="1495902948327" expanded="false" signature="3025:3039" ph="&lt;~&gt;" />
+            <marker date="1495902948327" expanded="false" signature="3122:3151" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="20" column="68" lean-forward="true" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="295">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#6499#14704#0#JSP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

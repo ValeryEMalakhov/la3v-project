@@ -27,6 +27,9 @@ public class PatentAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Название: " + this.name);
         output.add("Автор: " + this.author);
         output.add("Год: " + this.year);

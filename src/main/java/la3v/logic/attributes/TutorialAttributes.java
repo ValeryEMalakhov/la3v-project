@@ -26,6 +26,9 @@ public class TutorialAttributes implements IAttributes {
     @Override
     public List<String> toListString() {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Авторы: " + this.authors);
         output.add("Тема: " + this.topic);
         return output;

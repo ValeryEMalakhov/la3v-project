@@ -27,6 +27,9 @@ public class LecturerFormAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("ФИО преподавателя: " + this.lecturerName);
         output.add("Дата формирования анкеты: " + this.dateForming);
         return output;

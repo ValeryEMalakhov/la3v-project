@@ -27,6 +27,9 @@ public class PilpitSessionProtocolAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Дата: " + this.data);
         output.add("Номер: " + this.protocolNumber);
         return output;

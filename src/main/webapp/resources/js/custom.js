@@ -2738,13 +2738,24 @@ function init_calendar() {
         started,
         categoryClass;
 
-    $.getJSON('json/getEvent', function (data) {
+    // $.getJSON('json/getEvent', function (data) {
     var calendar = $('#calendar').fullCalendar({
+        // header: {
+        //     left: 'prev,next today',
+        //     center: 'title',
+        //     right: 'month,agendaWeek,agendaDay,listMonth'
+        // },
+
+        schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+
+        now: date,
+
         header: {
-            left: 'prev,next today',
+            left: 'today prev,next',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay,listMonth'
+            right: 'timelineDay,timelineThreeDays,agendaWeek,month'
         },
+
         editable: true,
         selectable: true,
         selectHelper: true,
@@ -2810,7 +2821,47 @@ function init_calendar() {
             });
         },
 
-        events:[data]
+        defaultView: 'timelineDay',
+        views: {
+            timelineThreeDays: {
+                type: 'timeline',
+                duration: { days: 3 }
+            }
+        },
+
+        resourceAreaWidth: '20%',
+
+/*        resourceColumns: [
+            {
+                group: true,
+                labelText: 'Имя преподователя',
+                field: 'title'
+            }
+        ],*/
+
+        resourceLabelText: 'Преподаватели',
+
+        resources: [
+            { id: 'a', title: 'Анон А.А.', occupancy: 20 },
+            { id: 'b', title: 'Драбинка В.В.', occupancy: 20, eventColor: 'green' },
+            { id: 'c', title: 'Вижу Н.Е.', occupancy: 20, eventColor: 'orange',
+                children: [
+                    { id: 'c1', title: 'Room D1', occupancy: 10 },
+                    { id: 'c2', title: 'Room D2', occupancy: 10 }
+                ] },
+            { id: 'd', title: 'Малахов В.Е.', occupancy: 20, eventColor: 'red' },
+            { id: 'e', title: 'Эмельянов Г.С.', occupancy: 20 }
+        ],
+        events: [
+            { id: '1', resourceId: 'a', start: '2017-05-21T02:00:00', end: '2017-05-21T07:00:00', title: 'event 1' },
+            { id: '2', resourceId: 'b', start: '2017-05-21T05:00:00', end: '2017-05-21T22:00:00', title: 'event 2' },
+            { id: '3', resourceId: 'b', start: '2017-05-20', end: '2017-05-28', title: 'event 3' },
+            { id: '4', resourceId: 'c', start: '2017-05-21T03:00:00', end: '2017-05-23T08:00:00', title: 'event 4' },
+            { id: '5', resourceId: 'd', start: '2017-05-21T00:30:00', end: '2017-05-21T02:30:00', title: 'event 5' }
+        ]
+
+
+        // events:[data]
 
 /*        events: function (start, end, timezone, callback) {
             $.ajax({
@@ -2866,7 +2917,7 @@ function init_calendar() {
              url: 'http://google.com/'
              }]*/
     });
-    });
+    // });
 };
 
 /* DATA TABLES */

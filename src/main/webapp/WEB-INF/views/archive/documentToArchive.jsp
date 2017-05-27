@@ -105,7 +105,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>${documentToArchive.name}</h2>
+                                <h2>${documentToArchive.docTitle}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -133,7 +133,7 @@
                                         <label class="control-label col-xs-3" for="topic">Название документа:</label>
                                         <div class="col-xs-9">
                                             <input name="name" type="text" class="form-control" id="topic"
-                                                   readonly value=${documentToArchive.name}>
+                                                   readonly value=${documentToArchive.docTitle}>
                                         </div>
                                     </div>
 
@@ -149,21 +149,22 @@
                                         <label class="control-label col-xs-3" for="path">Путь к файлу:</label>
                                         <div class="col-xs-9">
                                             <input name="path" type="text" class="form-control" id="path"
-                                                   readonly value=${documentToArchive.path}>
+                                                   readonly value=<%--${documentToArchive.path}>--%> "Путь">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="comments">Комментарии:</label>
                                         <div class="col-xs-9">
-                                            <input name="comments" type="text" class="form-control" id="comments">
+                                            <input name="comments" type="text" class="form-control" id="comments"
+                                            value=${documentToArchive.docDescription}>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="archivePath">Путь в архиве:</label>
                                         <div class="col-xs-9">
-                                            <input name="archivePath" type="text" class="form-control" id="archivePath" value=${documentToArchive.path}>
+                                            <input name="archivePath" type="text" class="form-control" id="archivePath" value=<%--${documentToArchive.path}>--%> "Путь">
                                         </div>
                                     </div>
 
@@ -180,7 +181,7 @@
                                         <label class="control-label col-xs-3" for="dateOfCreation">Дата создания:</label>
                                         <div class="col-xs-9">
                                             <input name="dateOfCreation" type="text" class="form-control"
-                                                   id="dateOfCreation" readonly value="2016-09-11">
+                                                   id="dateOfCreation" readonly value=${documentToArchive.docDateCreation}>
                                         </div>
                                     </div>
 

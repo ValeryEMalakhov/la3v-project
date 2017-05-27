@@ -1,6 +1,6 @@
 package la3v.logic.repositories.interfaces;
 
-import la3v.logic.entities.EntityDocument;
+import la3v.logic.entities.document.EntityDocument;
 import la3v.logic.entities.archive.*;
 
 import java.util.List;
@@ -21,4 +21,12 @@ public interface IRepositoryArchive extends IRepository<la3v.logic.entities.arch
     List<EntityDocument> getAllDocumentList();
 
     void insertDocument(la3v.logic.entities.archive.EntityDocument entityDocument);
+
+    void deleteFromDocument(Integer id);
+
+    void deleteFromProcess(Integer id);
+
+    void deleteFromCoauthor(Integer id);
+
+    EntityDocument findDocumentById(Integer id);
 }

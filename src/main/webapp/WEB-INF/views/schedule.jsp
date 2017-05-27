@@ -36,6 +36,8 @@
     <link href="<c:url value="/resources/libs/fullcalendar/fullcalendar.min.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/libs/fullcalendar/fullcalendar.print.css"/>" rel="stylesheet" media="print">
 
+    <link href="<c:url value="/resources/libs/fullcalendar/scheduler.min.css"/>" rel="stylesheet">
+
     <!-- Custom Theme Style -->
     <link href="<c:url value="/resources/css/custom.min.css"/>" rel="stylesheet">
 </head>
@@ -231,6 +233,8 @@
 <!-- FullCalendar -->
 <script src="<c:url value="/resources/libs/fullcalendar/lib/moment.min.js"/>"></script>
 <script src="<c:url value="/resources/libs/fullcalendar/fullcalendar.js"/>"></script>
+
+<script src="<c:url value="/resources/libs/fullcalendar/scheduler.js"/>"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="<c:url value="/resources/js/custom.js"/>"></script>

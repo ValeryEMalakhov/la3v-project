@@ -1,10 +1,11 @@
 package la3v.logic.controllers;
 
 import la3v.logic.attributes.*;
-import la3v.logic.entities.EntityDocument;
+import la3v.logic.entities.document.EntityDocument;
 import la3v.logic.entities.archive.*;
 import la3v.logic.repositories.interfaces.IRepositoryArchive;
 import com.google.gson.*;
+import la3v.logic.repositories.interfaces.IRepositoryDocument;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ public class ControllerArchive {
     private ApplicationContext context;
     private la3v.logic.entities.archive.EntityDocument archivedDocument;
     private Map<String,IAttributes> attributeMap = new AttributesMap().getAttributeMap();
+    private Map<String,String> attributeRusEng = new AttributesRusEng().getAttributesRusEng();
 
     // Инициализация логера
     private static final Logger log = LoggerFactory.getLogger(ControllerArchive.class);
@@ -81,10 +83,11 @@ public class ControllerArchive {
         la3v.logic.entities.archive.EntityDocument entityDocumentAttribute = repositoryArchive.findById(id);
 
         JsonObject jsonObj = entityDocumentAttribute.getAttributes();
-
+        String buffDocType = jsonObj.get("docType").getAsString().toLowerCase();
+        //log.info(String.format("attributeMap.containsKey(buffDocType): %b"), attributeMap.containsKey(buffDocType));
         IAttributes attributes;
-        if (attributeMap.containsKey(jsonObj.get("docType").getAsString())) {
-            attributes = attributeMap.get(jsonObj.get("docType").getAsString()).getFromJson(jsonObj);
+        if (attributeMap.containsKey(buffDocType)) {
+            attributes = attributeMap.get(buffDocType).getFromJson(jsonObj);
             model.addAttribute("entityDocumentAttribute", attributes.toListString());
             model.addAttribute("entityDocumentType", attributes.getDocType());
         }
@@ -93,11 +96,11 @@ public class ControllerArchive {
     }
 
     @RequestMapping(value = "/archivation/{id}", method = RequestMethod.GET)
-    public String showArchivation(Model model, @PathVariable("id") String pathHash){
+    public String showArchivation(Model model, @PathVariable("id") String docId){
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
-        EntityDocument documentToArchive = repositoryArchive.findByHash(pathHash);
+        EntityDocument documentToArchive = repositoryArchive.findDocumentById(Integer.parseInt(docId));
         model.addAttribute("documentToArchive", documentToArchive);
-        model.addAttribute("addressPart", pathHash);
+        model.addAttribute("addressPart", docId);
 
         log.info(String.format("IN /archivation/{id} GET"));
 
@@ -105,12 +108,23 @@ public class ControllerArchive {
     }
 
     @RequestMapping(value = "/archivation/{id}", method = RequestMethod.POST)
-    public String toArchive(@ModelAttribute("documentToArchive") la3v.logic.entities.archive.EntityDocument documentToArchive, BindingResult bindingResult, Model model) {
+    public String toArchive(@ModelAttribute("documentToArchive") la3v.logic.entities.archive.EntityDocument documentToArchive,
+                            BindingResult bindingResult, Model model,
+                            @PathVariable("id") String docId) {
+
         archivedDocument = documentToArchive;
 
         log.info(String.format("IN /archivation/{id} POST"));
         log.info(String.format("getPath %s", documentToArchive.getPath()));
-        String docType = "progressJournal";
+
+        IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
+        EntityDocument document = repositoryArchive.findDocumentById(Integer.parseInt(docId));
+
+        log.info(String.format("docId %s", docId));
+        log.info(String.format("getDocTitle %s", document.getDocTitle()));
+        log.info(String.format("getAttributes %s", document.getAttributes().get("docType").getAsString()));
+
+        String docType = attributeRusEng.get(document.getAttributes().get("docType").getAsString().toLowerCase());
 
         return "redirect:{id}/attributes/" + docType;
     }
@@ -145,169 +159,170 @@ public class ControllerArchive {
 //    }
 
     @RequestMapping(value = "/archivation/{id}/attributes/advert", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") AdvertAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") AdvertAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/article", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ArticleAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ArticleAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/commonShedule", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") CommonScheduleAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") CommonScheduleAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/conferenceIncoming", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ConferenceIncomingAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ConferenceIncomingAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/conferenceThesis", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ConferenceThesisAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ConferenceThesisAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/courseWork", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") CourseWorkAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") CourseWorkAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/diploma", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") DiplomaAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") DiplomaAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/educationalEdition", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") EducationalEditionAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") EducationalEditionAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/lecturerForm", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") LecturerFormAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") LecturerFormAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/lecturerPlan", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") LecturerPlanAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") LecturerPlanAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/monograph", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") MonographAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") MonographAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/patent", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") PatentAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") PatentAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/pilpitSessionProtocol", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") PilpitSessionProtocolAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") PilpitSessionProtocolAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/pilpitWorkingPlan", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") PilpitWorkingPlanAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") PilpitWorkingPlanAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/pilpitWorkingReport", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") PilpitWorkingReportAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") PilpitWorkingReportAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/positionInstructions", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") PositionInstructionsAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") PositionInstructionsAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/progressJournal", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ProgressJournalAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ProgressJournalAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/protocolStatements", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ProtocolStatementsAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ProtocolStatementsAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/researchWork", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ResearchWorkAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ResearchWorkAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/researchWorkReport", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ResearchWorkReportAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ResearchWorkReportAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/schedule", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ScheduleAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ScheduleAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/scientificSeminarProtocol", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") ScientificSeminarProtocolAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") ScientificSeminarProtocolAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/specialtiesPlan", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") SpecialtiesPlanAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") SpecialtiesPlanAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/studentsList", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") StudentsListAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") StudentsListAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/traineeship", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") TraineeshipAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") TraineeshipAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/tutorial", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") TutorialAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") TutorialAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
     @RequestMapping(value = "/archivation/{id}/attributes/workingPlan", method = RequestMethod.POST)
-    public String showListAttributes(@ModelAttribute("attributes") WorkingPlanAttributes attributes){
-        archiveDocument(attributes);
+    public String showListAttributes(@ModelAttribute("attributes") WorkingPlanAttributes attributes, @PathVariable("id") String documentId){
+        archiveDocument(attributes, documentId);
         return "redirect:/archive/all";
     }
 
-    private void archiveDocument(IAttributes attributes)
+    private void archiveDocument(IAttributes attributes, String documentId)
     {
+        log.info(String.format("documentId: %s", documentId.substring(1,documentId.length() - 1)));
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
         JsonObject obj = parser.parse(gson.toJson(attributes)).getAsJsonObject();
@@ -315,7 +330,12 @@ public class ControllerArchive {
         archivedDocument.setAttributes(obj);
 
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
+
+//        EntityDocument entityDocument = repositoryArchive.findDocumentById(Integer.parseInt(documentId));
         repositoryArchive.insertDocument(archivedDocument);
+        /*repositoryArchive.deleteFromCoauthor(entityDocument.getDocId());
+        repositoryArchive.deleteFromProcess(entityDocument.getDocId());*/
+        repositoryArchive.deleteFromDocument(Integer.parseInt(documentId.substring(1,documentId.length() - 1)));
     }
 
 /*

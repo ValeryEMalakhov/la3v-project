@@ -27,6 +27,9 @@ public class TraineeshipAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Преподаватель: " + this.lecturerName);
         output.add("Начало прохождения: " + this.dateStart);
         output.add("Конец прохождения: " + this.dateEnd);

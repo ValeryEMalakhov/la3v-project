@@ -21,8 +21,7 @@
             <li><a><i class="fa fa-edit"></i> Документы <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<spring:url value="/document/all"/>"> Документы </a></li>
-                    <li><a href="<spring:url value="/document/new"/>"> Загрузить документ </a></li>
-                    <li><a href="<spring:url value="/document/analytics"/>"> Аналитика </a></li>
+                    <li><a href="<spring:url value="/new/fileUpload"/>"> Загрузить документ </a></li>
                     <li><a target="_blank" href="http://127.0.0.1:80/owncloud"> Облачное хранилище </a></li>
                     <li><a href="<spring:url value="/document/pattern"/>"> Генератор шаблонов </a></li>
                 </ul>

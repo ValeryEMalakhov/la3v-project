@@ -40,10 +40,10 @@ public class ControllerSchedule {
     String getVacation(HttpServletResponse response) {
         Map<String, Object> map = new HashMap<String, Object>();
 
-/*        map.put("id", 1);
+        map.put("id", 1);
         map.put("title", "event 1");
         map.put("start", "2017-5-19");
-        map.put("end", "2017-5-22");*/
+        map.put("end", "2017-5-22");
 
         map.put("id", 2);
         map.put("title", "event 2");

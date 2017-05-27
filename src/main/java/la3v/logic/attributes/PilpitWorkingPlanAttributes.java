@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by Marmonth on 07.05.2017.
+ * План работы кафедры
  */
 public class PilpitWorkingPlanAttributes implements IAttributes {
 
@@ -26,6 +27,9 @@ public class PilpitWorkingPlanAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Календарный год: " + this.year);
         return output;
     }

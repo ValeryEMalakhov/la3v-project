@@ -19,6 +19,9 @@ public class StudentsListAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Учебный год: " + this.studyYear);
         output.add("Специальность: " + this.specialty);
         output.add("Курс: " + this.course);

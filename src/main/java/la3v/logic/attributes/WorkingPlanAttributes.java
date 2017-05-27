@@ -27,6 +27,9 @@ public class WorkingPlanAttributes implements IAttributes {
     public List<String> toListString()
     {
         List<String> output = new ArrayList<>();
+        output.add("Процесс: " + this.process);
+        output.add("Тип документа: " + this.docType);
+        output.add("__________________________________");
         output.add("Учебный год: " + this.studyYear);
         output.add("Название специальности: " + this.specialtyName);
         output.add("Уровень: " + this.level);
