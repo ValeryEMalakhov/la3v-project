@@ -59,17 +59,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -126,10 +126,10 @@
                                         <th>Тип документа</th>
                                         <th>Тип процесса</th>
                                         <th>Дата</th>
-                                        <th>Атрибуты</th>
+                                        <%--<th>Атрибуты</th>--%>
                                         <th>Описание</th>
                                         <%--<th>Путь к файлу</th>--%>
-                                        <th>Редактирование</th>
+                                        <%--<th>Редактирование</th>--%>
                                         <th>Архивация</th>
                                     </tr>
                                     </thead>
@@ -137,19 +137,19 @@
                                     <c:forEach items="${entityDocumentList}" var="doc">
                                         <tr>
                                                 <%--<td><c:out value="${doc.docid}"/></td>--%>
-                                            <td><c:out value="${doc.docTitle}"/></td>
+                                            <td><a href=<spring:url value="view/${doc.docId}"/>/><c:out value="${doc.docTitle}"/></td>
                                             <td><c:out value="${doc.authorName}"/></td>
                                             <td><c:out value="${doc.docType}"/></td>
                                             <td><c:out value="${doc.docProcess}"/></td>
                                             <td><c:out value="${doc.docDate}"/></td>
-                                            <td><c:out value="${doc.attributes}"/></td>
+                                            <%--<td><c:out value="${doc.attributes}"/></td>--%>
                                             <td><c:out value="${doc.docDescription}"/></td>
 
                                             <%-- кнопки --%>
-                                            <td>
-                                                <a href=<spring:url value="/doc/edit/${doc.docId}"/>/>
-                                                <button type="reset">Редактировать</button>
-                                            </td>
+                                            <%--<td>--%>
+                                                <%--<a href=<spring:url value="/doc/edit/${doc.docId}"/>/>--%>
+                                                <%--<button type="reset">Редактировать</button>--%>
+                                            <%--</td>--%>
                                             <td>
                                                 <a href=<spring:url value="/archive/archivation/${doc.docId}"/>/>
                                                 <button type="reset">Архивировать</button>
@@ -167,7 +167,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>

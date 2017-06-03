@@ -1,8 +1,6 @@
 package la3v.logic.controllers;
 
 import com.google.gson.Gson;
-import la3v.logic.entities.archive.EntityUser;
-import la3v.logic.repositories.interfaces.IRepositoryUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;

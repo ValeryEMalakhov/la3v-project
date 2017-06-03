@@ -65,17 +65,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -136,7 +136,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>

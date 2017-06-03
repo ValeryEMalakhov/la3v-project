@@ -65,17 +65,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../views/blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../views/blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../views/blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -104,7 +104,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Окно 1</h2>
+                                <h2>Новость 1</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -124,7 +124,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                Add content to the page ...
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../views/blocks/footer.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>

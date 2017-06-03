@@ -16,15 +16,14 @@ public class MapperProtocolOfDelete implements RowMapper<EntityProtocolOfDelete>
 
         entityProtocol.setId(rs.getInt("protocolDelId"));
         entityProtocol.setName(rs.getString("protocolDelName"));
-        entityProtocol.setDate(rs.getDate("protocolDelDate"));
-        entityProtocol.setTime(rs.getTime("protocolDelTime"));
+        entityProtocol.setDate(rs.getString("protocolDelDate"));
+        entityProtocol.setTime(rs.getString("protocolDelTime"));
         entityProtocol.setComments(rs.getString("protocolDelComments"));
-        entityProtocol.setUserId(rs.getInt("protocolDelUserId"));
+        entityProtocol.setUser(rs.getString("protocolDelUser"));
         entityProtocol.setDocumentName(rs.getString("protocolDelDocName"));
         entityProtocol.setDocumentAuthor(rs.getString("protocolDelDocAuthor"));
         entityProtocol.setDocumentArchivePath(rs.getString("protocolDelDocArchivePath"));
-        entityProtocol.setDocumentDateOfCreation(rs.getDate("protocolDelDocDateOfCreation"));
-        entityProtocol.setDocumentDateOfArchiving(rs.getDate("protocolDelDocDateOfArchiving"));
+        entityProtocol.setDocumentDateOfArchiving(rs.getString("protocolDelDocDateOfArchiving"));
         entityProtocol.setArchivingTerm(rs.getDouble("protocolDelDocArchivingTerm"));
         entityProtocol.setDocumentComments(rs.getString("protocolDelDocComments"));
 

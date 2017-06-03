@@ -8,22 +8,32 @@ import java.util.Date;
  */
 public class EntityProtocol {
 
-    private Integer id, userId, documentId;
-    private String name, action, comments;
-    private Date date;
-    private Time time;
+    private Integer id, documentId;
+    private String name, user, action, comments, date, time;
 
     public EntityProtocol() {
     }
 
-    public EntityProtocol(Integer id, Integer userId, String name, String action, String comments, Date date, Time time) {
+    public EntityProtocol(Integer id, String user, String name, String action, String comments, String date, String time, int documentId) {
         this.id = id;
-        this.userId = userId;
+        this.user = user;
         this.name = name;
         this.action = action;
         this.comments = comments;
         this.date = date;
         this.time = time;
+        this.documentId = documentId;
+    }
+
+    public EntityProtocol(String user, String name, String action, String comments, String date, String time, int documentId) {
+        this.id = id;
+        this.user = user;
+        this.name = name;
+        this.action = action;
+        this.comments = comments;
+        this.date = date;
+        this.time = time;
+        this.documentId = documentId;
     }
 
     public Integer getDocumentId() {
@@ -42,12 +52,12 @@ public class EntityProtocol {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public String getUser() {
+        return user;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getName() {
@@ -74,19 +84,19 @@ public class EntityProtocol {
         this.comments = comments;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

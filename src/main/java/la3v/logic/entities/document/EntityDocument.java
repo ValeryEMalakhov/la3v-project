@@ -33,6 +33,22 @@ public class EntityDocument {
         this.filePath = filePath;
     }
 
+    public EntityDocument(Integer fileStorage, Integer docDate, JsonObject attributes,
+                          String fileUser, String docTitle, String fileName, String docType,
+                          String authorName, String docProcess, String docDescription, String filePath) {
+        this.fileStorage = fileStorage;
+        this.docDate = docDate;
+        this.attributes = attributes;
+        this.fileUser = fileUser;
+        this.docTitle = docTitle;
+        this.fileName = fileName;
+        this.docType = docType;
+        this.authorName = authorName;
+        this.docProcess = docProcess;
+        this.docDescription = docDescription;
+        this.filePath = filePath;
+    }
+
     public Integer getDocId() {
         return docId;
     }

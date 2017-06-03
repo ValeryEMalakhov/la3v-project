@@ -8,11 +8,9 @@ import java.util.Date;
 public class EntityProtocolOutput {
 
     private Integer id;
-    private String name, action, comments, userLastName, documentName;
-    private Date date;
-    private Time time;
+    private String name, action, comments, userLastName, documentName, date, time;
 
-    public EntityProtocolOutput(Integer id, String name, String action, String comments, String userLastName, String documentName, Date date, Time time) {
+    public EntityProtocolOutput(Integer id, String name, String action, String comments, String userLastName, String documentName, String date, String time) {
         this.id = id;
         this.name = name;
         this.action = action;
@@ -75,19 +73,19 @@ public class EntityProtocolOutput {
         this.documentName = documentName;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

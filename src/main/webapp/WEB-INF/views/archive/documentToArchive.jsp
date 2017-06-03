@@ -66,17 +66,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -126,6 +126,7 @@
                             </div>
                             <div class="x_content">
                                 <spring:url value="/archive/archivation/${addressPart}" var="formUrl"/>
+                                <br/>
                                 <form:form method="post" modelAttribute="documentToArchive"
                                            action="/archive/archivation/${addressPart}" class="form-horizontal">
 
@@ -133,7 +134,7 @@
                                         <label class="control-label col-xs-3" for="topic">Название документа:</label>
                                         <div class="col-xs-9">
                                             <input name="name" type="text" class="form-control" id="topic"
-                                                   readonly value=${documentToArchive.docTitle}>
+                                                   readonly value="${documentToArchive.docTitle}">
                                         </div>
                                     </div>
 
@@ -141,7 +142,7 @@
                                         <label class="control-label col-xs-3" for="author">Автор:</label>
                                         <div class="col-xs-9">
                                             <input name="author" type="text" class="form-control" id="author"
-                                                   value="Ivanov I.I.">
+                                                   readonly value="${documentToArchive.authorName}">
                                         </div>
                                     </div>
 
@@ -149,7 +150,7 @@
                                         <label class="control-label col-xs-3" for="path">Путь к файлу:</label>
                                         <div class="col-xs-9">
                                             <input name="path" type="text" class="form-control" id="path"
-                                                   readonly value=<%--${documentToArchive.path}>--%> "Путь">
+                                                   readonly value="${documentToArchive.filePath}">
                                         </div>
                                     </div>
 
@@ -157,39 +158,34 @@
                                         <label class="control-label col-xs-3" for="comments">Комментарии:</label>
                                         <div class="col-xs-9">
                                             <input name="comments" type="text" class="form-control" id="comments"
-                                            value=${documentToArchive.docDescription}>
+                                                   value="${documentToArchive.docDescription}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="archivePath">Путь в архиве:</label>
                                         <div class="col-xs-9">
-                                            <input name="archivePath" type="text" class="form-control" id="archivePath" value=<%--${documentToArchive.path}>--%> "Путь">
+                                            <input name="archivePath" type="text" class="form-control" id="archivePath"
+                                                   readonly value="${documentToArchive.filePath}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="archivingTerm">Срок
+                                            архивации: <span class="required">*</span></label>
+                                        <div class="col-xs-9">
+                                            <input name="archivingTerm" type="number" min="0.5" max="10.0" step="0.5"
+                                                   value="0.5" pattern="\d" class="form-control"
+                                                   id="archivingTerm" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-3" for="dateOfArchiving">Дата
                                             архивации:</label>
                                         <div class="col-xs-9">
-                                            <input name="archivingTerm" type="text" class="form-control"
-                                                   id="archivingTerm">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="dateOfCreation">Дата создания:</label>
-                                        <div class="col-xs-9">
-                                            <input name="dateOfCreation" type="text" class="form-control"
-                                                   id="dateOfCreation" readonly value=${documentToArchive.docDateCreation}>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="dateOfArchiving">Дата архивации:</label>
-                                        <div class="col-xs-9">
                                             <input name="dateOfArchiving" type="text" class="form-control"
-                                                   id="dateOfArchiving" readonly value="2017-05-13">
+                                                   id="dateOfArchiving" readonly value="${date}">
                                         </div>
                                     </div>
 
@@ -198,6 +194,9 @@
                                             <input type="submit" class="btn btn-primary" value="Далее"/>
                                         </div>
                                     </div>
+                                    <br/>
+                                    <br/>
+                                    Поля, отмеченные *, должны быть заполнены
                                 </form:form>
                             </div>
                         </div>
@@ -208,7 +207,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>

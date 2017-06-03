@@ -16,9 +16,9 @@ public class MapperProtocol implements RowMapper<EntityProtocol> {
 
         entityProtocol.setId(rs.getInt("protocolId"));
         entityProtocol.setName(rs.getString("protocolName"));
-        entityProtocol.setDate(rs.getDate("protocolDate"));
-        entityProtocol.setTime(rs.getTime("protocolTime"));
-        entityProtocol.setUserId(rs.getInt("protocolUserId"));
+        entityProtocol.setDate(rs.getDate("protocolDate").toString());
+        entityProtocol.setTime(rs.getTime("protocolTime").toString());
+        entityProtocol.setUser(rs.getString("protocolUser"));
         entityProtocol.setAction(rs.getString("protocolAction"));
         entityProtocol.setComments(rs.getString("protocolComments"));
         entityProtocol.setDocumentId(rs.getInt("protocolDocumentId"));

@@ -66,17 +66,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../../views/blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../../views/blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../../views/blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -106,130 +106,162 @@
                                 <div class="clearfix"></div>
                             </div>
 
-
                             <div class="x_content">
                                 <spring:url value="/new/fileUpload" var="formUrl"/>
-
+                                <br/>
                                 <form:form action="./fileUpload?${_csrf.parameterName}=${_csrf.token}"
                                            method="POST" modelAttribute="fileBucket"
-                                           enctype="multipart/form-data" class="form-horizontal">
+                                           enctype="multipart/form-data" class="form-horizontal form-label-left">
 
-                                    <div class="row">
-                                        <div class="form-group col-md-12">
-                                            <label class="col-md-3 control-lable" for="file">Upload a file</label>
-                                            <div class="col-md-7">
-                                                <form:input type="file" path="file" id="file" class="form-control input-sm"/>
-                                                <div class="has-error">
-                                                    <form:errors path="file" class="help-inline"/>
-                                                </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="file">Выберите
+                                            файл <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <form:input type="file" path="file" id="file"
+                                                        class="form-control input-sm"/>
+                                            <div class="has-error">
+                                                <form:errors path="file" class="help-inline"/>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="form-actions floatRight">
-                                            <input type="submit" value="Upload" class="btn btn-primary btn-sm">
-                                        </div>
-                                    </div>
-
-                                    <%--<input type="hidden"  name="${_csrf.parameterName}"   value="${_csrf.token}"/>--%>
-                                </form:form>
-                            </div>
-
-                            <%--<div class="x_content">
-                                <br/>
-                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="doc_name">Выберите файл <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="doc_name" name="doc_name" required="required"
-                                                   class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="doc_title">Название
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="docTitle">Название
                                             документа: <span class="required">*</span>
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="doc_title" name="doc_title" required="required"
-                                                   class="form-control col-md-7 col-xs-12">
+                                            <input type="text" path="docTitle" id="docTitle" name="docTitle"
+                                                   required="required"
+                                                   class="form-control col-md-7 col-xs-12"
+                                                   placeholder="Основное название/суть документа">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="author_name">Автор
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="docAuthorsString">Автор/авторы
                                             документа: <span class="required">*</span>
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="author_name" name="author_name" required="required"
-                                                   class="form-control col-md-7 col-xs-12">
+                                            <input type="text" path="docAuthorsString" id="docAuthorsString"
+                                                   name="docAuthorsString" required="required"
+                                                   class="form-control col-md-7 col-xs-12"
+                                                   placeholder="Фамилия И.О.[; Фамилия И.О.]">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12"
-                                               for="doc_date_creation">Дата создания докумета: </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="doc_date_creation" name="doc_date_creation"
-                                                   class="form-control" data-inputmask="'mask': '99/99/9999'">
-                                            <span class="fa fa-user form-control-feedback right"
-                                                  aria-hidden="true"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="doc_type_id">Тип
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="docType">Тип
                                             документа: <span class="required">*</span> </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <select id="doc_type_id" name="doc_type_id"
-                                                    class="select2_group form-control">
-                                                <option></option>
+                                            <select class="select2_group form-control" path="docType" id="docType"
+                                                    name="docType">
+
+                                                <c:forEach items="${entityDocumentTypeList}" var="typeList">
+
+                                                    <c:choose>
+                                                        <c:when test="${typeList.type_id == 1}">
+                                                            <optgroup label="Процесс не определен">
+                                                                <option value="${typeList.type_id}" selected="selected">${typeList.type_name}</option>
+                                                            </optgroup>
+                                                        </c:when>
+                                                        <c:when test="${typeList.type_id == 2}">
+                                                            <optgroup label="Учебный процесс">
+                                                            <option value="${typeList.type_id}">${typeList.type_name}</option>
+                                                        </c:when>
+                                                        <c:when test="${typeList.type_id == 13}">
+                                                            </optgroup>
+                                                            <optgroup label="Научный процесс">
+                                                            <option value="${typeList.type_id}">${typeList.type_name}</option>
+                                                        </c:when>
+                                                        <c:when test="${typeList.type_id == 26}">
+                                                            </optgroup>
+                                                            <optgroup label="Организационный процесс">
+                                                            <option value="${typeList.type_id}">${typeList.type_name}</option>
+                                                        </c:when>
+                                                        <c:when test="${typeList.type_id == 37}">
+                                                            <option value="${typeList.type_id}">${typeList.type_name}</option>
+                                                            </optgroup>
+                                                        </c:when>
+                                                        <c:otherwise>
+                                                            <option value="${typeList.type_id}">${typeList.type_name}</option>
+                                                        </c:otherwise>
+                                                    </c:choose>
+
+                                                </c:forEach>
+
+
+                                                <%--<optgroup label="Процесс не определен">
+                                                    <option value="1">Не определено</option>
+                                                </optgroup>
                                                 <optgroup label="Учебный процесс">
-                                                    <option value="E1">Диплом</option>
-                                                    <option value="E2">Курсовая работа</option>
-                                                    <option value="E3">Учебный план специальности</option>
-                                                    <option value="E4">Рабочий учебный план</option>
-                                                    <option value="E5">Список фамилий студентов</option>
-                                                    <option value="E6">Журнал текущей успеваемости</option>
+                                                    <option value="2">Диплом</option>
+                                                    <option value="3">Курсовая работа</option>
+                                                    <option value="4">Учебный план специальности</option>
+                                                    <option value="5">Рабочий учебный план</option>
+                                                    <option value="6">Рабочая программа дисциплины</option>
+                                                    <option value="7">Конспект лекций</option>
+                                                    <option value="8">Методические указания к лабораторным работам
+                                                    </option>
+                                                    <option value="9">Методические указания к курсовому проекту
+                                                    </option>
+                                                    <option value="10">Методические указания для студентов заочного
+                                                        обучения
+                                                    </option>
+                                                    <option value="11">Список фамилий студентов</option>
+                                                    <option value="12">Журнал текущей успеваемости</option>
                                                 </optgroup>
                                                 <optgroup label="Научный процесс">
-                                                    <option value="S1">Тезисы конференций</option>
-                                                    <option value="S2">Статья</option>
-                                                    <option value="S3">Монография</option>
-                                                    <option value="S4">Учебное пособие</option>
-                                                    <option value="S5">Учебное издание</option>
-                                                    <option value="S6">Патенты</option>
-                                                    <option value="S7">Проводимые конференции</option>
-                                                    <option value="S8">НИР кафедры</option>
-                                                    <option value="S9">Заявка на НИР</option>
-                                                    <option value="S10">Отчёт о научной работе кафедры</option>
-                                                    <option value="S11">Протоколы научных семинаров кафедры</option>
+                                                    <option value="13">Тезисы конференций</option>
+                                                    <option value="14">Статья</option>
+                                                    <option value="15">Монография</option>
+                                                    <option value="16">Учебное пособие</option>
+                                                    <option value="17">Учебное издание</option>
+                                                    <option value="18">Патент</option>
+                                                    <option value="19">Проводимая конференция</option>
+                                                    <option value="20">НИР кафедры</option>
+                                                    <option value="21">Заявка на НИР</option>
+                                                    <option value="22">Отчёт о научной работе кафедры</option>
+                                                    <option value="23">Протокол научного семинара кафедры</option>
+                                                    <option value="24">Программа конференции</option>
+                                                    <option value="25">Сборник тезисов</option>
                                                 </optgroup>
                                                 <optgroup label="Организационный процесс">
-                                                    <option value="O1">Протокол заседания кафедры</option>
-                                                    <option value="O2">Выписка из протокола</option>
-                                                    <option value="O3">Должностная инструкция</option>
-                                                    <option value="O4">Анкеты преподавателей</option>
-                                                    <option value="O5">Штатное расписание</option>
-                                                    <option value="O6">План работы кафедры</option>
-                                                    <option value="O7">Отчёт работы кафедры</option>
-                                                    <option value="O8">Расписание</option>
-                                                    <option value="O9">Журнал о выполнении аудиторной нагрузки</option>
-                                                    <option value="O10">Индивидуальный план преподавателя</option>
-                                                    <option value="O11">Стажировка</option>
-                                                    <option value="O12">Объявления Dakota</option>
-                                                </optgroup>
+                                                    <option value="26">Протокол заседания кафедры</option>
+                                                    <option value="27">Выписка из протокола</option>
+                                                    <option value="28">Должностная инструкция</option>
+                                                    <option value="29">Анкета преподавателеля</option>
+                                                    <option value="30">Штатное расписание</option>
+                                                    <option value="31">План работы кафедры</option>
+                                                    <option value="32">Отчёт работы кафедры</option>
+                                                    <option value="33">Расписание</option>
+                                                    <option value="34">Журнал о выполнении аудиторной нагрузки
+                                                    </option>
+                                                    <option value="35">Индивидуальный план преподавателя</option>
+                                                    <option value="36">Стажировка</option>
+                                                    <option value="37">Объявление</option>
+                                                </optgroup>--%>
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="doc_description">Заметка к документу:</label>
-                                        <textarea id="doc_description" class="form-control col-md-7 col-xs-12"
-                                                  name="doc_description"></textarea>
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12"
+                                               for="docDate">Год связанный с документом: </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="number" path="docDate" id="docDate" name="docDate"
+                                                   min="1900" max="2150" class="form-control"
+                                                   data-bind="value:replyNumber"
+                                                   placeholder="2017">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="docDescription">Заметка
+                                            к документу:</label>
+                                        <textarea class="form-control col-md-7 col-xs-12" path="docDescription"
+                                                  id="docDescription"
+                                                  name="docDescription"></textarea>
                                     </div>
 
                                     <div class="ln_solid"></div>
@@ -241,8 +273,8 @@
                                         </div>
                                     </div>
 
-                                </form>
-                            </div>--%>
+                                </form:form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -253,7 +285,7 @@
     <!-- /page content -->
 
     <!-- footer content -->
-    <jsp:include page="../../views/blocks/footer.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
     <!-- /footer content -->
 </div>
 </div>

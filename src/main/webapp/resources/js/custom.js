@@ -5446,6 +5446,11 @@ function init_echarts() {
 
 }
 
+// /* BACK */
+//
+// function goBack() {
+//     window.history.back();
+// };
 
 $(document).ready(function () {
 
@@ -5483,6 +5488,8 @@ $(document).ready(function () {
     init_CustomNotification();
     init_autosize();
     init_autocomplete();
+
+    // goBack();
 
 });
 	

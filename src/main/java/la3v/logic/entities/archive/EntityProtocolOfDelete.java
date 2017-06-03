@@ -8,18 +8,18 @@ import java.util.Date;
  */
 public class EntityProtocolOfDelete {
 
-    private Integer id, userId;
-    private String name, comments, documentName, documentAuthor, documentArchivePath, documentComments;
-    private Date date, documentDateOfCreation, documentDateOfArchiving;
-    private Time time;
+    private Integer id;
+    private String name, comments, documentName, documentAuthor, documentArchivePath, documentComments,
+            user, date, documentDateOfArchiving, time;
     private double archivingTerm;
 
     public EntityProtocolOfDelete() {
     }
 
-    public EntityProtocolOfDelete(Integer id, Integer userId, String name, String comments, String documentName, String documentAuthor, String documentArchivePath, String documentComments, Date date, Date documentDateOfCreation, Date dateOfArchiving, Time time, double archivingTerm) {
+    public EntityProtocolOfDelete(Integer id, String user, String name, String comments, String documentName, String documentAuthor, String documentArchivePath,
+                                  String documentComments, String date, String dateOfArchiving, String time, double archivingTerm) {
         this.id = id;
-        this.userId = userId;
+        this.user = user;
         this.name = name;
         this.comments = comments;
         this.documentName = documentName;
@@ -27,7 +27,21 @@ public class EntityProtocolOfDelete {
         this.documentArchivePath = documentArchivePath;
         this.documentComments = documentComments;
         this.date = date;
-        this.documentDateOfCreation = documentDateOfCreation;
+        this.documentDateOfArchiving = dateOfArchiving;
+        this.time = time;
+        this.archivingTerm = archivingTerm;
+    }
+
+    public EntityProtocolOfDelete(String user, String name, String comments, String documentName, String documentAuthor, String documentArchivePath,
+                                  String documentComments, String date, String dateOfArchiving, String time, double archivingTerm) {
+        this.user = user;
+        this.name = name;
+        this.comments = comments;
+        this.documentName = documentName;
+        this.documentAuthor = documentAuthor;
+        this.documentArchivePath = documentArchivePath;
+        this.documentComments = documentComments;
+        this.date = date;
         this.documentDateOfArchiving = dateOfArchiving;
         this.time = time;
         this.archivingTerm = archivingTerm;
@@ -41,19 +55,11 @@ public class EntityProtocolOfDelete {
         this.documentComments = documentComments;
     }
 
-    public Date getDocumentDateOfCreation() {
-        return documentDateOfCreation;
-    }
-
-    public void setDocumentDateOfCreation(Date documentDateOfCreation) {
-        this.documentDateOfCreation = documentDateOfCreation;
-    }
-
-    public Date getDocumentDateOfArchiving() {
+    public String getDocumentDateOfArchiving() {
         return documentDateOfArchiving;
     }
 
-    public void setDocumentDateOfArchiving(Date documentDateOfArchiving) { this.documentDateOfArchiving = documentDateOfArchiving; }
+    public void setDocumentDateOfArchiving(String documentDateOfArchiving) { this.documentDateOfArchiving = documentDateOfArchiving; }
 
     public Integer getId() {
         return id;
@@ -63,12 +69,12 @@ public class EntityProtocolOfDelete {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public String getUser() {
+        return user;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser(String userId) {
+        this.user = userId;
     }
 
     public String getName() {
@@ -111,19 +117,19 @@ public class EntityProtocolOfDelete {
         this.documentArchivePath = documentArchivePath;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 

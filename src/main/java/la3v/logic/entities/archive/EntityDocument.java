@@ -11,12 +11,12 @@ public class EntityDocument {
     private String name, author, path, comments, archivePath;
     private JsonObject attributes;
     private double archivingTerm;
-    private String dateOfCreation, dateOfArchiving;
+    private String dateOfArchiving;
 
     public EntityDocument() {
     }
 
-    public EntityDocument(Integer id, String name, String author,  String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfCreation, String dateOfArchiving) {
+    public EntityDocument(Integer id, String name, String author,  String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfArchiving) {
         this.id = id;
         this.name = name;
         this.author = author;
@@ -25,11 +25,10 @@ public class EntityDocument {
         this.archivePath = archivePath;
         this.attributes = attributes;
         this.archivingTerm = archivingTerm;
-        this.dateOfCreation = dateOfCreation;
         this.dateOfArchiving = dateOfArchiving;
     }
 
-    public EntityDocument(String name, String author, String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfCreation, String dateOfArchiving) {
+    public EntityDocument(String name, String author, String path, String comments, String archivePath, JsonObject attributes, double archivingTerm, String dateOfArchiving) {
         this.name = name;
         this.author = author;
         this.path = path;
@@ -37,7 +36,6 @@ public class EntityDocument {
         this.archivePath = archivePath;
         this.attributes = attributes;
         this.archivingTerm = archivingTerm;
-        this.dateOfCreation = dateOfCreation;
         this.dateOfArchiving = dateOfArchiving;
     }
 
@@ -103,14 +101,6 @@ public class EntityDocument {
 
     public void setArchivingTerm(double archivingTerm) {
         this.archivingTerm = archivingTerm;
-    }
-
-    public String getDateOfCreation() {
-        return dateOfCreation;
-    }
-
-    public void setDateOfCreation(String dateOfCreation) {
-        this.dateOfCreation = dateOfCreation;
     }
 
     public String getDateOfArchiving() {

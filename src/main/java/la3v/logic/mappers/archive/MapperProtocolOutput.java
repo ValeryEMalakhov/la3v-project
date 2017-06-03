@@ -17,9 +17,9 @@ public class MapperProtocolOutput implements RowMapper<EntityProtocolOutput> {
 
         entityProtocolOutput.setId(rs.getInt("protocolId"));
         entityProtocolOutput.setName(rs.getString("protocolName"));
-        entityProtocolOutput.setDate(rs.getDate("protocolDate"));
-        entityProtocolOutput.setTime(rs.getTime("protocolTime"));
-        entityProtocolOutput.setUserLastName(rs.getString("userLastName"));
+        entityProtocolOutput.setDate(rs.getString("protocolDate"));
+        entityProtocolOutput.setTime(rs.getString("protocolTime"));
+        entityProtocolOutput.setUserLastName(rs.getString("protocolUser"));
         entityProtocolOutput.setAction(rs.getString("protocolAction"));
         entityProtocolOutput.setComments(rs.getString("protocolComments"));
         entityProtocolOutput.setDocumentName(rs.getString("documentName"));

@@ -19,7 +19,6 @@ public class MapperDocument implements RowMapper<EntityDocument> {
         entityDocument.setName(rs.getString("documentName"));
         entityDocument.setAuthor(rs.getString("documentAuthor"));
         entityDocument.setPath(rs.getString("documentPath"));
-        entityDocument.setDateOfCreation(rs.getString("documentDateOfCreation"));
         entityDocument.setDateOfArchiving(rs.getString("documentDateOfArchiving"));
         entityDocument.setComments(rs.getString("documentComments"));
         entityDocument.setArchivePath(rs.getString("documentArchivePath"));

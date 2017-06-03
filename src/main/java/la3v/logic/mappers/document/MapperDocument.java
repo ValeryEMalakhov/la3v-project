@@ -22,6 +22,7 @@ public class MapperDocument implements RowMapper<EntityDocument> {
         entityDocument.setDocTitle(rs.getString("doc_title"));
         entityDocument.setFileName(rs.getString("name"));
         entityDocument.setDocType(rs.getString("type_name"));
+//        entityDocument.setDocTypeId(rs.getInt("doc_type_id"));
         entityDocument.setAuthorName(rs.getString("author_name"));
         entityDocument.setDocProcess(rs.getString("proc_name"));
 
@@ -31,7 +32,6 @@ public class MapperDocument implements RowMapper<EntityDocument> {
         entityDocument.setDocDate(rs.getInt("doc_date"));
         entityDocument.setDocDescription(rs.getString("doc_description"));
         entityDocument.setFilePath(rs.getString("path"));
-
 
         entityDocument.setAttributes(obj);
 
