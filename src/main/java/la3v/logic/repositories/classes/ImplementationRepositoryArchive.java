@@ -56,6 +56,11 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
             "\tprotocolDelDocDateOfArchiving, protocolDelDocArchivingTerm, protocolDelDocComments)\n" +
             " VALUES (?, ?::DATE, ?::TIME, ?, ?, ?, ?, ?, ?::DATE, ?, ?);";
 
+    private static final String FIND_ALL_EXTENDED = "SELECT * FROM \"archive\".\"Document\"\n" +
+            "WHERE documentattributes ->> 'docType' = ?;";
+
+
+
 
     // Инициализация логера
     private static final Logger log = LoggerFactory.getLogger(ImplementationRepositoryArchive.class);
@@ -172,5 +177,10 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
                 entityProtocolOfDelete.getArchivingTerm(),
                 entityProtocolOfDelete.getDocumentComments()
         });
+    }
+
+    @Override
+    public List<EntityDocument> getExtended(String docType)    {
+        return this.template.query(FIND_ALL_EXTENDED, new Object[]{docType}, new MapperDocument());
     }
 }

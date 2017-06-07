@@ -19,6 +19,7 @@ public class AdvertAttributes implements IAttributes {
     public AdvertAttributes() {
     }
 
+    @Override
     public AdvertAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), AdvertAttributes.class);
     }

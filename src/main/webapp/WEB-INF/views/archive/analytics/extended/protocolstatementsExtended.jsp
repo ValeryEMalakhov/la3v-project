@@ -1,7 +1,7 @@
 <%--
   User: Vladyslav V. Drabynka
-  Date: 04.05.2017
-  Time: 19:14
+  Date: 05.06.2017
+  Time: 16:22
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
@@ -71,17 +71,17 @@
                 <br/>
 
                 <!-- sidebar menu -->
-                <jsp:include page="../../blocks/sidebar.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar.jsp"></jsp:include>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
-                <jsp:include page="../../blocks/sidebar_footer.jsp"></jsp:include>
+                <jsp:include page="/WEB-INF/views/blocks/sidebar_footer.jsp"></jsp:include>
                 <!-- /menu footer buttons -->
             </div>
         </div>
 
         <!-- header content -->
-        <jsp:include page="../../blocks/header.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/header.jsp"></jsp:include>
         <!-- /header content -->
 
         <!-- page content -->
@@ -89,7 +89,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Расширенный поиск</h3>
+                        <h3>Выписки из протоколов</h3>
                     </div>
 
                     <div class="title_right">
@@ -109,12 +109,47 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
-                            <h2>Выберите необходимый метод поиска</h2>
-                            <div class="x_title">
-                            </div>
+
                             <div class="x_content">
-                                <p><a href=<spring:url value="doctype"/>/>Выборка документов по типу</p>
-                                <p><a href=<spring:url value="process"/>/>Выборка документов по процессу</p>
+
+                                <table id="datatable-responsive"
+                                       class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                       width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th>Название</th>
+                                        <th>Автор</th>
+                                        <th>Путь</th>
+                                        <th>Дата архивации</th>
+                                        <th>Комментарии</th>
+                                        <th>Путь в архиве</th>
+                                        <th>Срок хранения</th>
+                                        <th>Номер протокола</th>
+                                        <th>Назначение выписки</th>
+                                        <th>Дата</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <c:forEach items="${mapDocument}" var="map">
+                                        <tr>
+                                            <td><a target="_blank" href=<spring:url value="all/${map.key.id}"/>/>
+                                                <c:out value="${map.key.name}"/>
+                                            </td>
+                                            <td><c:out value="${map.key.author}"/></td>
+                                            <td><c:out value="${map.key.path}"/></td>
+                                            <td><c:out value="${map.key.dateOfArchiving}"/></td>
+                                            <td><c:out value="${map.key.comments}"/></td>
+                                            <td><c:out value="${map.key.archivePath}"/></td>
+                                            <td><c:out value="${map.key.archivingTerm}"/></td>
+                                            <td><c:out value="${map.value.protocolNumber}"/></td>
+                                            <td><c:out value="${map.value.statementsPurpose}"/></td>
+                                            <td><c:out value="${map.value.data}"/></td>
+                                        </tr>
+                                    </c:forEach>
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
                     </div>
@@ -124,7 +159,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <jsp:include page="../../blocks/footer.jsp"></jsp:include>
+        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
         <!-- /footer content -->
     </div>
 </div>
@@ -163,3 +198,4 @@
 <script src="<c:url value="/resources/js/custom.min.js"/>"></script>
 </body>
 </html>
+

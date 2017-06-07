@@ -126,7 +126,6 @@
                             </div>
                             <div class="x_content">
                                 <spring:url value="/archive/archivation/${addressPart}" var="formUrl"/>
-                                <br/>
                                 <form:form method="post" modelAttribute="documentToArchive"
                                            action="/archive/archivation/${addressPart}" class="form-horizontal">
 
@@ -158,7 +157,7 @@
                                         <label class="control-label col-xs-3" for="comments">Комментарии:</label>
                                         <div class="col-xs-9">
                                             <input name="comments" type="text" class="form-control" id="comments"
-                                                   value="${documentToArchive.docDescription}">
+                                            value="${documentToArchive.docDescription}">
                                         </div>
                                     </div>
 
@@ -174,15 +173,13 @@
                                         <label class="control-label col-xs-3" for="archivingTerm">Срок
                                             архивации: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="archivingTerm" type="number" min="0.5" max="10.0" step="0.5"
-                                                   value="0.5" pattern="\d" class="form-control"
+                                            <input name="archivingTerm" type="number" min="0.5" max="10.0" step="0.5" value="0.5" pattern="\d" class="form-control"
                                                    id="archivingTerm" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-xs-3" for="dateOfArchiving">Дата
-                                            архивации:</label>
+                                        <label class="control-label col-xs-3" for="dateOfArchiving">Дата архивации:</label>
                                         <div class="col-xs-9">
                                             <input name="dateOfArchiving" type="text" class="form-control"
                                                    id="dateOfArchiving" readonly value="${date}">
@@ -192,6 +189,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-offset-3 col-xs-9">
                                             <input type="submit" class="btn btn-primary" value="Далее"/>
+                                            <button class="btn btn-default" action="action" onclick="history.go(-1);">Назад</button>
                                         </div>
                                     </div>
                                     <br/>

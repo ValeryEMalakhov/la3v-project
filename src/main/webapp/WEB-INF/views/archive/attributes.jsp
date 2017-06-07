@@ -125,8 +125,10 @@
                             </div>
                             <div class="x_content">
                                 <c:forEach items="${entityDocumentAttribute}" var="attr">
-                                    ${attr}<br />
+                                    ${attr}<br/>
                                 </c:forEach>
+                                <br/>
+                                <button class="btn btn-default" action="action" onclick="history.go(-1);">Назад</button>
                             </div>
                         </div>
                     </div>

@@ -113,7 +113,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-offset-3 col-xs-9">
                                             <input type="submit" class="btn btn-primary" value="Да"/>
-                                            <a role="button" class="btn btn-danger" href=<spring:url value="/archive/all"/>>Нет</a>
+                                            <button class="btn btn-default" action="action" onclick="history.go(-1);">Назад</button>
                                         </div>
                                     </div>
                                 </form:form>

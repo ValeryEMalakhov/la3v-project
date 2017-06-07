@@ -110,16 +110,16 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
-                            <h2>Выберите необходимый метод аналитики</h2>
+                            <%--<h2>Поиск по типу документа</h2>--%>
+                            <h2>Выберите тип документа</h2>
                             <div class="x_title">
                             </div>
                             <div class="x_content">
                                 <spring:url value="/archive/analytics/doctype" var="formUrl"/>
-                                <form:form method="post" action="/archive/analytics/doctype" class="form-horizontal">
-                                    <%--modelAttribute="documentToArchive"--%>
-                                    <h2>Выберите тип документа: </h2>
-                                    <select class="select2_group form-control" path="docType" id="docType"
-                                            name="docType">
+                                <form:form method="post" action="/archive/analytics/doctype" class="form-horizontal"
+                                    modelAttribute="optionString">
+                                    <select class="select2_group form-control" id="optionString"
+                                            name="optionString">
                                         <optgroup label="Процесс не определен">
                                             <option value="undefined">Не определено</option>
                                         </optgroup>
@@ -175,7 +175,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-offset-3 col-xs-9">
                                             <input type="submit" class="btn btn-primary" value="Найти"/>
-                                            <a role="button" class="btn btn-danger" href=<spring:url value="/archive/all"/>>Нет</a>
+                                            <button class="btn btn-default" action="action" onclick="history.go(-1);">Назад</button>
                                         </div>
                                     </div>
                                 </form:form>
