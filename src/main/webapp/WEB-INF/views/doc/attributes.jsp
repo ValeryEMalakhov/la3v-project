@@ -50,19 +50,6 @@
 
                 <div class="clearfix"></div>
 
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
-
                 <br/>
 
                 <!-- sidebar menu -->
@@ -86,17 +73,6 @@
                     <div class="title_left">
                         <h3>Атрибуты</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -110,16 +86,6 @@
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Внешний вид 1</a>
-                                            </li>
-                                            <li><a href="#">Внешний вид 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
                                 </ul>
@@ -129,8 +95,8 @@
 
                                 <spring:url value="/document/view/${entityDocument.docId}" var="formUrl"/>
                                 <form:form method="POST" modelAttribute="entityDocument"
-                                        action="/document/view/${entityDocument.docId}?${_csrf.parameterName}=${_csrf.token}"
-                                        enctype="multipart/form-data" class="form-horizontal form-label-left">
+                                           action="/document/view/${entityDocument.docId}?${_csrf.parameterName}=${_csrf.token}"
+                                           enctype="multipart/form-data" class="form-horizontal form-label-left">
 
                                     <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="topic">Название
@@ -178,11 +144,19 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="filePath">Путь
+                                            к файлу:</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input name="filePath" type="text" class="form-control" id="filePath"
+                                                   readonly value="${entityDocument.filePath}">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12"
                                                for="docDescription">Заметка к документу:</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <blockquote class="form-control col-md-7 col-xs-12"
-                                                        id="docDescription"
+                                            <blockquote id="docDescription"
                                                         name="docDescription">
                                                 <p>${entityDocument.docDescription}</p>
                                             </blockquote>
@@ -212,7 +186,9 @@
                                     <div class="ln_solid"></div>
                                     <div class="form-group">
                                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                            <button class="btn btn-default" action="action" onclick="history.go(-1);">Назад</button>
+                                            <button class="btn btn-default" action="action" onclick="history.go(-1);">
+                                                Назад
+                                            </button>
                                             <button type="submit" class="btn btn-warning">Редактировать</button>
                                         </div>
                                     </div>

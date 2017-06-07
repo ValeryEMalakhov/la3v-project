@@ -2,311 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9dae8b1-61de-4cc0-a043-d597af2f5ec7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/AttributesRusEng.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ArticleAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/AttributesMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/CommonScheduleAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ConferenceIncomingAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ConferenceThesisAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/CourseWorkAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DiplomaAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineCourseWorkInstructionsAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineExtramuralInstructionsAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineLabWorkInstructionsAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineLectionConspectusAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineWorkingProgramAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/EducationalEditionAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/IAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/LecturerFormAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/LecturerPlanAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/MonographAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PatentAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PilpitSessionProtocolAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PositionInstructionsAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ProgressJournalAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ProtocolStatementsAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ResearchWorkAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ScheduleAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ScientificSeminarProtocolAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/SpecialtiesPlanAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/StudentsListAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/TraineeshipAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/TutorialAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/WorkingPlanAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/entities/EntityNewFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/mappers/MapperNewFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/packages/SystemCommandExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/packages/ThreadedStreamHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocumentProc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/attributes.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editBase.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/article.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/commonshedule.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/conferenceincoming.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/conferencethesis.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/coursework.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/diploma.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/educationaledition.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/lecturerform.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/lecturerplan.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/monograph.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/patent.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/pilpitsessionprotocol.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/positioninstructions.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/progressjournal.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/protocolstatements.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/researchwork.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/schedule.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/scientificseminarprotocol.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/specialtiesplan.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/studentslist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/traineeship.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/tutorial.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/workingplan.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/_src_/database/owncloud/schema/public.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/87377566-6f3b-42c6-bb36-117e9cd1e9be/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerFileUpload.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocolOfDeleteOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocolOfDeleteOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/analytics.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/advert.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/article.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/commonShedule.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceIncoming.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/conferenceThesis.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/courseWork.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/diploma.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/educationalEdition.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/lecturerForm.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/lecturerPlan.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/monograph.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/patent.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitSessionProtocol.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitWorkingPlan.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/pilpitWorkingReport.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/positionInstructions.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/progressJournal.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/protocolStatements.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/researchWork.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/researchWorkReport.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/schedule.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/scientificSeminarProtocol.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/specialtiesPlan.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/studentsList.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/traineeship.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/tutorial.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attributes/workingPlan.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/simpleEdit.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/la3v_project_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/la3v_project_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/la3v_project_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/la3v_project_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thedeanda_lorem_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thedeanda_lorem_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_arnx_wmf2svg_0_9_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_arnx_wmf2svg_0_9_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_engio_mbassador_1_2_4_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_engio_mbassador_1_2_4_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_docx4j_docx4j_3_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_docx4j_docx4j_3_3_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_plutext_jaxb_svg11_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_plutext_jaxb_svg11_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1212.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1212.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_3_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_3_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_2_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_2_0_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_ldap_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_ldap_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_2_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_jquery_2_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_jquery_2_2_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/la3v-project.iml" afterPath="$PROJECT_DIR$/la3v-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerProfile.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocol.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocolOfDelete.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocolOfDelete.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocolOutput.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/archive/EntityProtocolOutput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentProc.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocumentProc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/files/entities/FileBucket.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/files/entities/FileBucket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocol.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocolOfDelete.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocolOfDelete.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocolOutput.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/archive/MapperProtocolOutput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/mappers/document/MapperDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryArchive.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryArchive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/addNew.sh" afterPath="$PROJECT_DIR$/src/main/resources/addNew.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/archive.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/archive.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/attributes.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/attributes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/documentToArchive.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/dprotocols.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/dprotocols.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/protocols.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archive/protocols.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/analytics.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/analytics.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/attributes.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/attributes.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/pattern.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AdvertAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/AdvertAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ArticleAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ArticleAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AttributesMap.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/AttributesMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/AttributesRusEng.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/AttributesRusEng.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CommonScheduleAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/CommonScheduleAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceIncomingAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ConferenceIncomingAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceProgramAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ConferenceProgramAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceThesisAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ConferenceThesisAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ConferenceThesisCollectionAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ConferenceThesisCollectionAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/CourseWorkAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/CourseWorkAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DiplomaAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DiplomaAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DisciplineCourseWorkInstructionsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineCourseWorkInstructionsAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DisciplineExtramuralInstructionsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineExtramuralInstructionsAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DisciplineLabWorkInstructionsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineLabWorkInstructionsAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DisciplineLectionConspectusAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineLectionConspectusAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/DisciplineWorkingProgramAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineWorkingProgramAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/EducationalEditionAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/EducationalEditionAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/IAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/IAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerFormAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/LecturerFormAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/LecturerPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/LecturerPlanAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/MonographAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/MonographAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PatentAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/PatentAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitSessionProtocolAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/PilpitSessionProtocolAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/PilpitWorkingPlanAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PilpitWorkingReportAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/PilpitWorkingReportAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/PositionInstructionsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/PositionInstructionsAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProgressJournalAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ProgressJournalAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ProtocolStatementsAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ProtocolStatementsAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ResearchWorkAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ResearchWorkAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ResearchWorkReportAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ResearchWorkReportAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ResearchWorkRequestAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ResearchWorkRequestAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ScheduleAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ScheduleAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/ScientificSeminarProtocolAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/ScientificSeminarProtocolAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/SpecialtiesPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/SpecialtiesPlanAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/StudentsListAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/StudentsListAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/TraineeshipAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/TraineeshipAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/TutorialAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/TutorialAttributes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/WorkingPlanAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/WorkingPlanAttributes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/la3v/logic/security/model/UserTest.java" afterPath="$PROJECT_DIR$/src/test/java/la3v/logic/security/model/UserTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -320,59 +32,22 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="CodeIris Favorites">
+      <favorite_root url="la3v.logic.repositories.classes.ImplementationRepositoryDocument" module="la3v-project" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+    </favorites_list>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ControllerDocument.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="244" column="21" lean-forward="true" selection-start-line="244" selection-start-column="21" selection-end-line="244" selection-end-column="21" />
+            <state relative-caret-position="203">
+              <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#showDocumentList#0;class#ControllerDocument#0" expanded="false" />
-                <element signature="method#showViewDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-                <element signature="method#nextViewDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-                <element signature="method#showEditDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-                <element signature="e#5505#5558#0" expanded="false" />
-                <element signature="e#6834#6876#0" expanded="false" />
-                <element signature="e#7561#7595#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImplementationRepositoryDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="342" column="117" lean-forward="false" selection-start-line="342" selection-start-column="117" selection-end-line="342" selection-end-column="117" />
-              <folding>
-                <marker date="1496502974829" expanded="true" signature="1404:3287" ph="select\tdoc.... oc_users" />
-                <marker date="1496502974829" expanded="true" signature="3387:4994" ph="select\tdoc.... oc_users" />
-                <marker date="1496502974829" expanded="true" signature="4246:4962" ph="select max(d... oc_users" />
-                <marker date="1496502974829" expanded="true" signature="5385:5518" ph="UPDATE docum... " />
-                <marker date="1496502974829" expanded="true" signature="5602:5775" ph="UPDATE docum... " />
-                <marker date="1496502974829" expanded="true" signature="5889:5959" ph="select proc_... proc" />
-                <marker date="1496502974829" expanded="true" signature="5889:5976" ph="select proc_... proc" />
-                <marker date="1496502974829" expanded="true" signature="6053:6141" ph="select proc_... proc" />
-                <marker date="1496502974829" expanded="true" signature="6220:6310" ph="select proc_... proc" />
-                <marker date="1496502974829" expanded="true" signature="6380:6499" ph="UPDATE docum... " />
-                <marker date="1496502974829" expanded="true" signature="6617:6669" ph="select type_... type" />
-                <marker date="1496502974829" expanded="true" signature="6617:6686" ph="select type_... type" />
-                <marker date="1496502974829" expanded="true" signature="6765:6835" ph="select type_... type" />
-                <marker date="1496502974829" expanded="true" signature="6915:6987" ph="select type_... type" />
-                <marker date="1496502974829" expanded="true" signature="7107:7165" ph="select autho... author" />
-                <marker date="1496502974829" expanded="true" signature="7107:7184" ph="select autho... author" />
-                <marker date="1496502974829" expanded="true" signature="7264:7342" ph="select autho... author" />
-                <marker date="1496502974829" expanded="true" signature="7424:7504" ph="select autho... author" />
-                <marker date="1496502974829" expanded="true" signature="7598:7792" ph="update\tdocu... " />
-                <marker date="1496502974829" expanded="true" signature="7892:8006" ph="insert into document.author... " />
-                <marker date="1496502974829" expanded="true" signature="8083:8206" ph="insert into document.doc_proc... " />
-                <marker date="1496502974829" expanded="true" signature="8285:8412" ph="insert into document.doc_author... " />
-                <marker date="1496502974829" expanded="true" signature="8485:10204" ph="select\tdoc.... oc_users" />
-                <marker date="1496502974829" expanded="true" signature="10330:10384" ph="DELETE FROM " />
-                <marker date="1496502974829" expanded="true" signature="10443:10497" ph="DELETE FROM " />
-                <marker date="1496502974829" expanded="true" signature="10559:10615" ph="DELETE FROM " />
+                <element signature="e#5746#5799#0" expanded="false" />
+                <element signature="e#7075#7117#0" expanded="false" />
+                <element signature="e#7802#7836#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -419,20 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DiplomaAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineCourseWorkInstructionsAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineExtramuralInstructionsAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineLabWorkInstructionsAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineLectionConspectusAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/DisciplineWorkingProgramAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/EducationalEditionAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/LecturerFormAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/LecturerPlanAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/MonographAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PatentAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PilpitSessionProtocolAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/PositionInstructionsAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ProgressJournalAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ProtocolStatementsAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ResearchWorkAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ScheduleAttributes.java" />
@@ -443,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/TutorialAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/WorkingPlanAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/AttributesMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/commonshedule.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/educationaledition.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/lecturerplan.jsp" />
@@ -469,7 +129,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/diploma.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/article.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/analytics.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/la3v/logic/security/model/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/attributes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java" />
       </list>
     </option>
   </component>
@@ -512,7 +187,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -652,53 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="editViews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -798,79 +426,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="attributes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="document" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="la3v-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="attributes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../docs/Explanatory_note/img" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1321,8 +887,8 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Tomcat 8.5.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.11" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/" />
+    <configuration default="false" name="Tomcat 8.5.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="OPEN_IN_BROWSER_URL" value="http://http://91.208.138.238:80/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1415,20 +981,38 @@
       <workItem from="1496229606836" duration="14182000" />
       <workItem from="1496316724126" duration="18268000" />
       <workItem from="1496409724630" duration="28614000" />
-      <workItem from="1496477129260" duration="15521000" />
+      <workItem from="1496477129260" duration="16776000" />
+      <workItem from="1496582990947" duration="963000" />
+      <workItem from="1496593872507" duration="3992000" />
+      <workItem from="1496601339228" duration="4435000" />
+      <workItem from="1496600613939" duration="579000" />
+      <workItem from="1496603791151" duration="4041000" />
+      <workItem from="1496693110689" duration="1008000" />
+      <workItem from="1496694381288" duration="868000" />
+      <workItem from="1496695374265" duration="4155000" />
+      <workItem from="1496775761026" duration="9456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101645000" />
+    <option name="totallyTimeSpent" value="132397000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="-7" width="1296" height="1000" extended-state="6" />
+    <frame x="-1288" y="-7" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1439,26 +1023,27 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.313912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2936893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22734627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372093" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33650416" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6388889" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1517,270 +1102,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ProtocolStatementsAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ResearchWorkAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="90" lean-forward="false" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ResearchWorkReportAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ResearchWorkRequestAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ScientificSeminarProtocolAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ScheduleAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/SpecialtiesPlanAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/StudentsListAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="false" />
-            <element signature="e#1690#1691#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/UndefinedAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/WorkingPlanAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/TutorialAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/TraineeshipAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/AttributesRusEng.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/AttributesMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ArticleAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editBase.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="241" column="44" lean-forward="false" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/CommonScheduleAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ConferenceIncomingAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/document/ConferenceThesisAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/educationaledition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="93" column="42" lean-forward="false" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/lecturerplan.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/monograph.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/patent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/pilpitsessionprotocol.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/positioninstructions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/progressjournal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/protocolstatements.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/researchwork.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/specialtiesplan.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/scientificseminarprotocol.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editViews/studentslist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="93" column="42" lean-forward="false" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1788,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="80" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1796,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="162" column="108" lean-forward="false" selection-start-line="162" selection-start-column="108" selection-end-line="162" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1804,7 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1812,7 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1531">
           <caret line="197" column="108" lean-forward="false" selection-start-line="197" selection-start-column="108" selection-end-line="197" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1820,7 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="94" column="65" lean-forward="false" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1828,7 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="107" column="56" lean-forward="false" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1836,7 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="153" column="72" lean-forward="false" selection-start-line="153" selection-start-column="72" selection-end-line="153" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1844,7 +1162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1852,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="161" column="42" lean-forward="false" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1860,7 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="107" column="56" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1868,15 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="37" column="105" lean-forward="false" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1884,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-235">
           <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,42 +1197,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/AdvertAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/attributes/archive/DisciplineExtramuralInstructionsAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/addNew.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="192" column="58" lean-forward="false" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="342" column="117" lean-forward="false" selection-start-line="342" selection-start-column="117" selection-end-line="342" selection-end-column="117" />
-          <folding>
-            <marker date="1496502974829" expanded="true" signature="1404:3287" ph="select\tdoc.... oc_users" />
-            <marker date="1496502974829" expanded="true" signature="3387:4994" ph="select\tdoc.... oc_users" />
-            <marker date="1496502974829" expanded="true" signature="4246:4962" ph="select max(d... oc_users" />
-            <marker date="1496502974829" expanded="true" signature="5385:5518" ph="UPDATE docum... " />
-            <marker date="1496502974829" expanded="true" signature="5602:5775" ph="UPDATE docum... " />
-            <marker date="1496502974829" expanded="true" signature="5889:5959" ph="select proc_... proc" />
-            <marker date="1496502974829" expanded="true" signature="5889:5976" ph="select proc_... proc" />
-            <marker date="1496502974829" expanded="true" signature="6053:6141" ph="select proc_... proc" />
-            <marker date="1496502974829" expanded="true" signature="6220:6310" ph="select proc_... proc" />
-            <marker date="1496502974829" expanded="true" signature="6380:6499" ph="UPDATE docum... " />
-            <marker date="1496502974829" expanded="true" signature="6617:6669" ph="select type_... type" />
-            <marker date="1496502974829" expanded="true" signature="6617:6686" ph="select type_... type" />
-            <marker date="1496502974829" expanded="true" signature="6765:6835" ph="select type_... type" />
-            <marker date="1496502974829" expanded="true" signature="6915:6987" ph="select type_... type" />
-            <marker date="1496502974829" expanded="true" signature="7107:7165" ph="select autho... author" />
-            <marker date="1496502974829" expanded="true" signature="7107:7184" ph="select autho... author" />
-            <marker date="1496502974829" expanded="true" signature="7264:7342" ph="select autho... author" />
-            <marker date="1496502974829" expanded="true" signature="7424:7504" ph="select autho... author" />
-            <marker date="1496502974829" expanded="true" signature="7598:7792" ph="update\tdocu... " />
-            <marker date="1496502974829" expanded="true" signature="7892:8006" ph="insert into document.author... " />
-            <marker date="1496502974829" expanded="true" signature="8083:8206" ph="insert into document.doc_proc... " />
-            <marker date="1496502974829" expanded="true" signature="8285:8412" ph="insert into document.doc_author... " />
-            <marker date="1496502974829" expanded="true" signature="8485:10204" ph="select\tdoc.... oc_users" />
-            <marker date="1496502974829" expanded="true" signature="10330:10384" ph="DELETE FROM " />
-            <marker date="1496502974829" expanded="true" signature="10443:10497" ph="DELETE FROM " />
-            <marker date="1496502974829" expanded="true" signature="10559:10615" ph="DELETE FROM " />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/editBase.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4097">
+          <caret line="241" column="44" lean-forward="false" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/analytics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/entities/document/EntityDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="105" lean-forward="false" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="20" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1935,51 +1298,357 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="95" column="72" lean-forward="true" selection-start-line="95" selection-start-column="72" selection-end-line="96" selection-end-column="74" />
-          <folding>
-            <marker date="1496090792374" expanded="true" signature="684:746" ph="SELECT * FRO... Document" />
-            <marker date="1496090792374" expanded="true" signature="813:872" ph="SELECT * FRO... Document" />
-            <marker date="1496090792374" expanded="true" signature="929:1206" ph="SELECT proto... Protocol" />
-            <marker date="1496090792374" expanded="true" signature="1284:1330" ph="SELECT * FRO... ProtocolOfDelete" />
-            <marker date="1496090792374" expanded="true" signature="1403:1685" ph="INSERT INTO \&quot;archive\&quot;.\&quot;Document\&quot;... " />
-            <marker date="1496090792374" expanded="true" signature="1742:1964" ph="INSERT INTO \&quot;archive\&quot;.\&quot;Protocol\&quot;... " />
-            <marker date="1496090792374" expanded="true" signature="2034:2439" ph="SELECT * FRO... Document" />
-            <marker date="1496090792374" expanded="true" signature="2503:2560" ph="DELETE FROM " />
-            <marker date="1496090792374" expanded="true" signature="2623:2688" ph="DELETE FROM " />
-            <marker date="1496090792374" expanded="true" signature="2753:3142" ph="INSERT INTO \&quot;archive\&quot;.\&quot;ProtocolOfDelete\&quot;... " />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerArchive.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/interfaces/IRepositoryDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="213" column="33" lean-forward="true" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#showDocumentList#0;class#ControllerArchive#0" expanded="false" />
-            <element signature="method#showProtocols#0;class#ControllerArchive#0" expanded="false" />
-            <element signature="method#showDeleteProtocols#0;class#ControllerArchive#0" expanded="false" />
-            <element signature="method#showAnalyticsDocType#0;class#ControllerArchive#0" expanded="false" />
-            <element signature="method#showDeleteConfirm#0;class#ControllerArchive#0" expanded="false" />
-            <element signature="method#showDelete#0;class#ControllerArchive#0" expanded="false" />
-            <marker date="1496413917802" expanded="true" signature="10637:11002" ph="..." />
-          </folding>
+        <state relative-caret-position="141">
+          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.2.RELEASE/spring-security-web-4.2.2.RELEASE-sources.jar!/org/springframework/security/web/servletapi/SecurityContextHolderAwareRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="150" column="20" lean-forward="false" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/la3v.logic.controllers.ControllerDocument">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>la3v.logic.controllers.ControllerDocument</OriginalElement>
+          <nodes>
+            <node x="" y="">la3v.logic.controllers.ControllerLogin</node>
+            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
+            <node x="" y="">la3v.logic.controllers.ControllerUpload</node>
+            <node x="" y="">la3v.logic.controllers.ControllerDocument</node>
+            <node x="" y="">org.springframework.stereotype.Controller</node>
+            <node x="" y="">la3v.logic.controllers.ControllerProfile</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="116.0" y="55.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/la3v.logic.repositories.classes.ImplementationRepositoryDocument">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>la3v.logic.repositories.classes.ImplementationRepositoryDocument</OriginalElement>
+          <nodes>
+            <node x="" y="">la3v.logic.repositories.interfaces.IRepositoryDocument</node>
+            <node x="" y="">la3v.logic.repositories.interfaces.IRepository</node>
+            <node x="" y="">la3v.logic.repositories.classes.ImplementationRepositoryDocument</node>
+            <node x="" y="">org.springframework.stereotype.Repository</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="175.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/repositories/classes/ImplementationRepositoryDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="254" column="10" lean-forward="false" selection-start-line="254" selection-start-column="10" selection-end-line="254" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Flash/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Flash</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="294.0" y="182.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>PRIVATE</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/D:/TS/la3v-project/src/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/src/main</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/main/java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="88.0" y="53.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/la3v/logic/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/la3v/logic/security/model/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/la3v.logic">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>la3v.logic</OriginalElement>
+          <nodes>
+            <node x="" y="">la3v.logic.attributes.document.ProgressJournalAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.AdvertAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.StudentsListAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.PilpitWorkingPlanAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ProgressJournalAttributes</node>
+            <node x="" y="">la3v.logic.files.validators.FileValidator</node>
+            <node x="" y="">la3v.logic.attributes.archive.ProtocolStatementsAttributes</node>
+            <node x="" y="">la3v.logic.entities.archive.EntityDocument</node>
+            <node x="" y="">la3v.logic.attributes.document.LecturerPlanAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.MonographAttributes</node>
+            <node x="" y="">la3v.logic.repositories.interfaces.IRepositoryDocument</node>
+            <node x="" y="">la3v.logic.controllers.ControllerDocument</node>
+            <node x="" y="">la3v.logic.security.model.Group</node>
+            <node x="" y="">la3v.logic.attributes.archive.PatentAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.AttributesRusEng</node>
+            <node x="" y="">la3v.logic.attributes.archive.DiplomaAttributes</node>
+            <node x="" y="">la3v.logic.repositories.interfaces.IRepository</node>
+            <node x="" y="">la3v.logic.attributes.document.PositionInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ConferenceThesisAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.LecturerFormAttributes</node>
+            <node x="" y="">la3v.logic.controllers.ControllerArchive</node>
+            <node x="" y="">la3v.logic.attributes.archive.ScientificSeminarProtocolAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.TraineeshipAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.IAttributes</node>
+            <node x="" y="">la3v.logic.controllers.ControllerProfile</node>
+            <node x="" y="">la3v.logic.attributes.document.StudentsListAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ArticleAttributes</node>
+            <node x="" y="">la3v.logic.security.dao.UserDao</node>
+            <node x="" y="">la3v.logic.entities.archive.EntityProtocol</node>
+            <node x="" y="">la3v.logic.attributes.document.ScientificSeminarProtocolAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.TutorialAttributes</node>
+            <node x="" y="">la3v.logic.entities.document.EntityDocument</node>
+            <node x="" y="">la3v.logic.attributes.archive.SpecialtiesPlanAttributes</node>
+            <node x="" y="">la3v.logic.repositories.interfaces.IRepositoryArchive</node>
+            <node x="" y="">la3v.logic.security.model.User</node>
+            <node x="" y="">la3v.logic.attributes.document.WorkingPlanAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.DisciplineWorkingProgramAttributes</node>
+            <node x="" y="">la3v.logic.entities.document.EntityDocumentAuthor</node>
+            <node x="" y="">la3v.logic.attributes.document.CommonScheduleAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.DisciplineCourseWorkInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ConferenceProgramAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.PatentAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.ArticleAttributes</node>
+            <node x="" y="">la3v.logic.repositories.classes.ImplementationRepositoryDocument</node>
+            <node x="" y="">la3v.logic.attributes.archive.AttributesMap</node>
+            <node x="" y="">la3v.logic.attributes.archive.UndefinedAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.PilpitSessionProtocolAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.TraineeshipAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.PositionInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.files.mappers.MapperNewFile</node>
+            <node x="" y="">la3v.logic.attributes.archive.LecturerFormAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.DisciplineLabWorkInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.DisciplineLabWorkInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.MonographAttributes</node>
+            <node x="" y="">la3v.logic.mappers.archive.MapperProtocolOfDelete</node>
+            <node x="" y="">la3v.logic.attributes.document.DisciplineLectionConspectusAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ClassroomLoadJournalAttributes</node>
+            <node x="" y="">la3v.logic.security.service.UserService</node>
+            <node x="" y="">la3v.logic.attributes.document.CourseWorkAttributes</node>
+            <node x="" y="">la3v.logic.files.packages.SystemCommandExecutor</node>
+            <node x="" y="">la3v.logic.mappers.document.MapperDocumentAuthor</node>
+            <node x="" y="">la3v.logic.security.dao.GroupDao</node>
+            <node x="" y="">la3v.logic.mappers.document.MapperDocumentType</node>
+            <node x="" y="">la3v.logic.attributes.document.ProtocolStatementsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.TutorialAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ConferenceIncomingAttributes</node>
+            <node x="" y="">la3v.logic.files.entities.EntityNewFile</node>
+            <node x="" y="">la3v.logic.controllers.ControllerLogin</node>
+            <node x="" y="">la3v.logic.mappers.archive.MapperDocument</node>
+            <node x="" y="">la3v.logic.controllers.ControllerSchedule</node>
+            <node x="" y="">la3v.logic.files.entities.FileBucket</node>
+            <node x="" y="">la3v.logic.security.service.SecurityService</node>
+            <node x="" y="">la3v.logic.attributes.archive.CommonScheduleAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ResearchWorkAttributes</node>
+            <node x="" y="">la3v.logic.mappers.document.MapperDocumentProc</node>
+            <node x="" y="">la3v.logic.security.service.UserServiceImpl</node>
+            <node x="" y="">la3v.logic.attributes.archive.AttributesRusEng</node>
+            <node x="" y="">la3v.logic.attributes.archive.DisciplineExtramuralInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ResearchWorkRequestAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.EducationalEditionAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ConferenceThesisCollectionAttributes</node>
+            <node x="" y="">la3v.logic.entities.archive.EntityProtocolOfDelete</node>
+            <node x="" y="">la3v.logic.controllers.ControllerUpload</node>
+            <node x="" y="">la3v.logic.mappers.archive.MapperProtocol</node>
+            <node x="" y="">la3v.logic.mappers.archive.MapperProtocolOutput</node>
+            <node x="" y="">la3v.logic.attributes.document.DisciplineWorkingProgramAttributes</node>
+            <node x="" y="">la3v.logic.repositories.classes.ImplementationRepositoryArchive</node>
+            <node x="" y="">la3v.logic.entities.document.EntityDocumentType</node>
+            <node x="" y="">la3v.logic.attributes.archive.LecturerPlanAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.DisciplineCourseWorkInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.mappers.document.MapperDocument</node>
+            <node x="" y="">la3v.logic.attributes.document.DiplomaAttributes</node>
+            <node x="" y="">la3v.logic.entities.archive.EntityProtocolOutput</node>
+            <node x="" y="">la3v.logic.attributes.document.PilpitSessionProtocolAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.WorkingPlanAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ScheduleAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.DisciplineExtramuralInstructionsAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.AttributesMap</node>
+            <node x="" y="">la3v.logic.attributes.archive.DisciplineLectionConspectusAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.IAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.ResearchWorkAttributes</node>
+            <node x="" y="">la3v.logic.security.service.SecurityServiceImpl</node>
+            <node x="" y="">la3v.logic.attributes.document.EducationalEditionAttributes</node>
+            <node x="" y="">la3v.logic.security.validator.UserValidator</node>
+            <node x="" y="">la3v.logic.attributes.archive.PilpitWorkingReportAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.SpecialtiesPlanAttributes</node>
+            <node x="" y="">la3v.logic.entities.document.EntityDocumentProc</node>
+            <node x="" y="">la3v.logic.security.service.UserDetailsServiceImpl</node>
+            <node x="" y="">la3v.logic.attributes.document.ConferenceThesisAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.ConferenceIncomingAttributes</node>
+            <node x="" y="">la3v.logic.attributes.document.ScheduleAttributes</node>
+            <node x="" y="">la3v.logic.attributes.archive.ResearchWorkReportAttributes</node>
+            <node x="" y="">la3v.logic.files.packages.ThreadedStreamHandler</node>
+            <node x="" y="">la3v.logic.attributes.archive.CourseWorkAttributes</node>
+            <node x="" y="">la3v.logic.security.model.UserTest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.09157247102589784" x="6979.0" y="488.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/fileUpload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1632">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/appconfig-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="1313" column="25" lean-forward="true" selection-start-line="1313" selection-start-column="25" selection-end-line="1313" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/attributes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1396">
+          <caret line="160" column="51" lean-forward="false" selection-start-line="160" selection-start-column="51" selection-end-line="160" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doc/document.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blocks/sidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="145" column="49" lean-forward="false" selection-start-line="145" selection-start-column="49" selection-end-line="145" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/la3v/logic/controllers/ControllerDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="244" column="21" lean-forward="true" selection-start-line="244" selection-start-column="21" selection-end-line="244" selection-end-column="21" />
+        <state relative-caret-position="203">
+          <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#showDocumentList#0;class#ControllerDocument#0" expanded="false" />
-            <element signature="method#showViewDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-            <element signature="method#nextViewDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-            <element signature="method#showEditDocumentForm#0;class#ControllerDocument#0" expanded="false" />
-            <element signature="e#5505#5558#0" expanded="false" />
-            <element signature="e#6834#6876#0" expanded="false" />
-            <element signature="e#7561#7595#0" expanded="false" />
+            <element signature="e#5746#5799#0" expanded="false" />
+            <element signature="e#7075#7117#0" expanded="false" />
+            <element signature="e#7802#7836#0" expanded="false" />
           </folding>
         </state>
       </provider>

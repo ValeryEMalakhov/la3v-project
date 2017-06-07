@@ -98,6 +98,11 @@ public class ControllerUpload {
             EntityDocumentProc entityDocumentProc = repositoryDocument.getDocumentProcById(1);
             EntityDocumentType entityDocumentType = repositoryDocument.getDocumentTypeById(Integer.parseInt(fileBucket.getDocType()));
 
+            File directory = new File(rootPath + "/tmpFiles/" + principal.getName());
+            if (! directory.exists()){
+                directory.mkdir();
+            }
+
             File serverFile = new File(rootPath + "/tmpFiles/" +
                     principal.getName() + "/" + file.getOriginalFilename());
             FileOutputStream fos = new FileOutputStream(serverFile);
@@ -138,7 +143,7 @@ public class ControllerUpload {
             log.info(String.format("=-=-=-=-=-=-=-="));
             log.info(String.format("Get current absolute filePath: %s", serverFile.getAbsolutePath()));
             log.info(String.format("Get new absolute filePath: %s", "/var/www/owncloud/data/" +
-                    principal.getName() + "/files/Documents/" + entityDocumentProc.getProcDefaultWay() + "/"));
+                    principal.getName() + "/files/" + entityDocumentProc.getProcDefaultWay() + "/"));
 
             //  bash /opt/tomcat/addNew.sh mod "Отчёт по научной работе МОКС 2016.doc" "Educational_process"
             /*
@@ -149,7 +154,7 @@ public class ControllerUpload {
                 echo 424@564ftfss | sudo -S -u www-data php /var/www/owncloud/console.php files:scan $1
             */
 
-/*            Process process = Runtime.getRuntime().exec("echo 3059 | sudo -S bash /opt/tomcat/addNew.sh " + principal.getName() + " \"" + file.getOriginalFilename() + "\" \"" + entityDocumentProc.getProcDefaultWay() + "\"");
+/*            Process process = Runtime.getRuntime().exec("echo 424@564ftfss | sudo -S bash /opt/tomcat/addNew.sh " + principal.getName() + " \"" + file.getOriginalFilename() + "\" \"" + entityDocumentProc.getProcDefaultWay() + "\"");
             try {
                 process.waitFor();
             } catch (InterruptedException e) {
@@ -227,9 +232,8 @@ public class ControllerUpload {
                 }
             }
 
-            return "redirect:document/view/" + fileBucket.getDocId();
+            return "redirect:/document/view/" + fileBucket.getDocId();
             //return "doc/fileUpload";
         }
-
     }
 }

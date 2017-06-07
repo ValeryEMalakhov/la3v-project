@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>la3v.logic</OriginalElement>
+  <nodes>
+    <node x="713.5" y="190.0">la3v.logic.files.entities.EntityNewFile</node>
+    <node x="464.1916666666667" y="435.0">la3v.logic.security.dao.UserDao</node>
+    <node x="54.44166666666666" y="595.0">la3v.logic.controllers.ControllerLogin</node>
+    <node x="537.5" y="190.0">la3v.logic.entities.document.EntityDocumentType</node>
+    <node x="314.0" y="750.0">la3v.logic.files.entities.FileBucket</node>
+    <node x="0.0" y="750.0">la3v.logic.files.validators.FileValidator</node>
+    <node x="880.5" y="190.0">la3v.logic.entities.document.EntityDocument</node>
+    <node x="845.0" y="270.0">la3v.logic.mappers.document.MapperDocument</node>
+    <node x="1064.5" y="100.0">la3v.logic.attributes.document.DiplomaAttributes</node>
+    <node x="175.19166666666666" y="515.0">la3v.logic.security.service.SecurityService</node>
+    <node x="635.5203125" y="514.4171875000001">la3v.logic.security.model.User</node>
+    <node x="0.0" y="270.0">la3v.logic.repositories.interfaces.IRepositoryDocument</node>
+    <node x="719.5" y="100.0">la3v.logic.attributes.document.WorkingPlanAttributes</node>
+    <node x="1080.25" y="270.0">la3v.logic.controllers.ControllerDocument</node>
+    <node x="1165.5" y="190.0">la3v.logic.attributes.document.AttributesMap</node>
+    <node x="349.5" y="190.0">la3v.logic.entities.document.EntityDocumentAuthor</node>
+    <node x="169.0" y="270.0">la3v.logic.mappers.document.MapperDocumentProc</node>
+    <node x="630.5203125" y="434.41718750000007">la3v.logic.security.model.Group</node>
+    <node x="308.19166666666666" y="515.0">la3v.logic.security.service.UserServiceImpl</node>
+    <node x="1251.084761904762" y="0.0">la3v.logic.attributes.document.IAttributes</node>
+    <node x="191.44166666666666" y="595.0">la3v.logic.security.service.SecurityServiceImpl</node>
+    <node x="1020.5" y="190.0">la3v.logic.attributes.document.AttributesRusEng</node>
+    <node x="28.0" y="190.0">la3v.logic.repositories.interfaces.IRepository</node>
+    <node x="0.0" y="515.0">la3v.logic.security.validator.UserValidator</node>
+    <node x="403.5" y="360.0">la3v.logic.repositories.classes.ImplementationRepositoryDocument</node>
+    <node x="1215.5" y="100.0">la3v.logic.attributes.document.PositionInstructionsAttributes</node>
+    <node x="174.5" y="190.0">la3v.logic.entities.document.EntityDocumentProc</node>
+    <node x="446.19166666666666" y="515.0">la3v.logic.security.service.UserDetailsServiceImpl</node>
+    <node x="1426.5" y="100.0">la3v.logic.attributes.document.ConferenceIncomingAttributes</node>
+    <node x="708.0" y="270.0">la3v.logic.files.mappers.MapperNewFile</node>
+    <node x="65.94166666666666" y="435.0">la3v.logic.security.service.UserService</node>
+    <node x="125.5" y="670.0">la3v.logic.files.packages.ThreadedStreamHandler</node>
+    <node x="144.0" y="830.0">la3v.logic.controllers.ControllerUpload</node>
+    <node x="119.0" y="750.0">la3v.logic.files.packages.SystemCommandExecutor</node>
+    <node x="893.5" y="100.0">la3v.logic.attributes.document.CourseWorkAttributes</node>
+    <node x="344.0" y="270.0">la3v.logic.mappers.document.MapperDocumentAuthor</node>
+    <node x="323.19166666666666" y="435.0">la3v.logic.security.dao.GroupDao</node>
+    <node x="532.0" y="270.0">la3v.logic.mappers.document.MapperDocumentType</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="la3v.logic.files.mappers.MapperNewFile" target="la3v.logic.files.entities.EntityNewFile">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerDocument" target="la3v.logic.attributes.document.AttributesRusEng">
+      <point x="-17.875" y="-15.0" />
+      <point x="1133.875" y="240.0" />
+      <point x="1083.0" y="240.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.mappers.document.MapperDocument">
+      <point x="96.25" y="-15.0" />
+      <point x="615.25" y="340.0" />
+      <point x="910.5" y="340.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerDocument" target="la3v.logic.attributes.document.IAttributes">
+      <point x="53.625" y="-15.0" />
+      <point x="1205.375" y="250.0" />
+      <point x="1646.0" y="250.0" />
+      <point x="1646.0" y="50.0" />
+      <point x="1333.727619047619" y="50.0" />
+      <point x="38.14285714285711" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.PositionInstructionsAttributes">
+      <point x="9.166666666666742" y="-15.0" />
+      <point x="1229.6666666666667" y="150.0" />
+      <point x="1311.0" y="150.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerLogin" target="la3v.logic.security.validator.UserValidator">
+      <point x="-39.0" y="-15.0" />
+      <point x="73.94166666666666" y="570.0" />
+      <point x="52.0" y="570.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.IAttributes">
+      <point x="45.83333333333326" y="-15.0" />
+      <point x="1266.3333333333333" y="170.0" />
+      <point x="1635.0" y="170.0" />
+      <point x="1635.0" y="60.0" />
+      <point x="1321.0133333333333" y="60.0" />
+      <point x="25.42857142857133" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.mappers.document.MapperDocumentType">
+      <point x="19.25" y="-15.0" />
+      <point x="538.25" y="320.0" />
+      <point x="610.0" y="320.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.validator.UserValidator" target="la3v.logic.security.service.UserService">
+      <point x="0.0" y="-15.0" />
+      <point x="52.0" y="490.0" />
+      <point x="81.60833333333335" y="490.0" />
+      <point x="-31.33333333333333" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.ConferenceIncomingAttributes">
+      <point x="27.5" y="-15.0" />
+      <point x="1248.0" y="160.0" />
+      <point x="1525.5" y="160.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.CourseWorkAttributes">
+      <point x="-27.5" y="-15.0" />
+      <point x="1193.0" y="160.0" />
+      <point x="969.0" y="160.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.WorkingPlanAttributes">
+      <point x="-45.83333333333326" y="-15.0" />
+      <point x="1174.6666666666667" y="170.0" />
+      <point x="796.5" y="170.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerUpload" target="la3v.logic.files.entities.FileBucket">
+      <point x="41.66666666666666" y="-15.0" />
+      <point x="248.16666666666666" y="805.0" />
+      <point x="358.0" y="805.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerUpload" target="la3v.logic.files.validators.FileValidator">
+      <point x="-41.66666666666666" y="-15.0" />
+      <point x="164.83333333333334" y="805.0" />
+      <point x="49.5" y="805.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerDocument" target="la3v.logic.entities.document.EntityDocument">
+      <point x="-53.625" y="-15.0" />
+      <point x="1098.125" y="250.0" />
+      <point x="970.5" y="250.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.mappers.document.MapperDocumentAuthor">
+      <point x="-19.25" y="-15.0" />
+      <point x="499.75" y="320.0" />
+      <point x="428.0" y="320.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.mappers.document.MapperDocumentProc" target="la3v.logic.entities.document.EntityDocumentProc">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.service.SecurityServiceImpl" target="la3v.logic.security.service.SecurityService">
+      <point x="0.0" y="-15.0" />
+      <point x="28.25" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.files.mappers.MapperNewFile">
+      <point x="57.75" y="-15.0" />
+      <point x="576.75" y="330.0" />
+      <point x="766.5" y="330.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.PositionInstructionsAttributes" target="la3v.logic.attributes.document.IAttributes">
+      <point x="0.0" y="-15.0" />
+      <point x="1311.0" y="80.0" />
+      <point x="1295.584761904762" y="80.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.repositories.interfaces.IRepositoryDocument">
+      <point x="-96.25" y="-15.0" />
+      <point x="422.75" y="340.0" />
+      <point x="74.5" y="340.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.service.UserServiceImpl" target="la3v.logic.security.dao.GroupDao">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.WorkingPlanAttributes" target="la3v.logic.attributes.document.IAttributes">
+      <point x="0.0" y="-15.0" />
+      <point x="796.5" y="60.0" />
+      <point x="1257.4419047619049" y="60.0" />
+      <point x="-38.14285714285711" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.ConferenceIncomingAttributes" target="la3v.logic.attributes.document.IAttributes">
+      <point x="0.0" y="-15.0" />
+      <point x="1525.5" y="70.0" />
+      <point x="1308.2990476190478" y="70.0" />
+      <point x="12.71428571428578" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerDocument" target="la3v.logic.attributes.document.AttributesMap">
+      <point x="17.875" y="-15.0" />
+      <point x="1169.625" y="240.0" />
+      <point x="1220.5" y="240.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.files.packages.SystemCommandExecutor" target="la3v.logic.files.packages.ThreadedStreamHandler">
+      <point x="-43.75" y="-15.0" />
+      <point x="162.75" y="725.0" />
+      <point x="166.0" y="725.0" />
+      <point x="-40.5" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.DiplomaAttributes" target="la3v.logic.attributes.document.IAttributes">
+      <point x="0.0" y="-15.0" />
+      <point x="1130.0" y="80.0" />
+      <point x="1282.8704761904762" y="80.0" />
+      <point x="-12.71428571428578" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.mappers.document.MapperDocumentAuthor" target="la3v.logic.entities.document.EntityDocumentAuthor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.service.UserServiceImpl" target="la3v.logic.security.dao.UserDao">
+      <point x="39.333333333333314" y="-15.0" />
+      <point x="406.525" y="490.0" />
+      <point x="483.6916666666667" y="490.0" />
+      <point x="-19.5" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.service.UserServiceImpl" target="la3v.logic.security.service.UserService">
+      <point x="-39.333333333333314" y="-15.0" />
+      <point x="327.85833333333335" y="490.0" />
+      <point x="144.27499999999998" y="490.0" />
+      <point x="31.333333333333314" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerUpload" target="la3v.logic.files.packages.SystemCommandExecutor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.model.User" target="la3v.logic.security.model.Group">
+      <point x="-14.25" y="-15.0" />
+      <point x="649.7703125" y="489.41718750000007" />
+      <point x="647.2703125" y="489.41718750000007" />
+      <point x="-16.75" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.classes.ImplementationRepositoryDocument" target="la3v.logic.mappers.document.MapperDocumentProc">
+      <point x="-57.75" y="-15.0" />
+      <point x="461.25" y="330.0" />
+      <point x="246.5" y="330.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.CourseWorkAttributes" target="la3v.logic.attributes.document.IAttributes">
+      <point x="0.0" y="-15.0" />
+      <point x="969.0" y="70.0" />
+      <point x="1270.1561904761907" y="70.0" />
+      <point x="-25.42857142857133" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.service.UserDetailsServiceImpl" target="la3v.logic.security.dao.UserDao">
+      <point x="0.0" y="-15.0" />
+      <point x="19.499999999999943" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerLogin" target="la3v.logic.security.service.UserService">
+      <point x="0.0" y="-15.0" />
+      <point x="112.94166666666666" y="570.0" />
+      <point x="114.49999999999997" y="570.0" />
+      <point x="114.49999999999997" y="490.0" />
+      <point x="112.94166666666666" y="490.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.controllers.ControllerLogin" target="la3v.logic.security.service.SecurityService">
+      <point x="39.0" y="-15.0" />
+      <point x="151.94166666666666" y="570.0" />
+      <point x="203.44166666666666" y="570.0" />
+      <point x="-28.25" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.mappers.document.MapperDocument" target="la3v.logic.entities.document.EntityDocument">
+      <point x="0.0" y="-15.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.mappers.document.MapperDocumentType" target="la3v.logic.entities.document.EntityDocumentType">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.attributes.document.AttributesMap" target="la3v.logic.attributes.document.DiplomaAttributes">
+      <point x="-9.166666666666742" y="-15.0" />
+      <point x="1211.3333333333333" y="150.0" />
+      <point x="1130.0" y="150.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="la3v.logic.security.model.Group" target="la3v.logic.security.model.User">
+      <point x="16.75" y="15.0" />
+      <point x="680.7703125" y="489.41718750000007" />
+      <point x="678.2703125" y="489.41718750000007" />
+      <point x="14.25" y="-15.0" />
+    </edge>
+    <edge source="la3v.logic.repositories.interfaces.IRepositoryDocument" target="la3v.logic.repositories.interfaces.IRepository">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7683073229291717" x="823.0" y="430.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

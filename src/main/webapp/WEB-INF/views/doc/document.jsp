@@ -79,17 +79,6 @@
                     <div class="title_left">
                         <h3>Документы</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -122,11 +111,11 @@
                                         <%--<th>uid</th>--%>
                                         <%--<th>storage</th>--%>
                                         <th>Название</th>
-                                        <th>Авторы/Соавторы</th>
-                                        <th>Тип документа</th>
-                                        <th>Тип процесса</th>
                                         <th>Дата</th>
-                                        <%--<th>Атрибуты</th>--%>
+                                        <th>Тип документа</th>
+                                        <th>Авторы/Соавторы</th>
+                                        <th>Тип процесса</th>
+                                        <th>Атрибуты</th>
                                         <th>Описание</th>
                                         <%--<th>Путь к файлу</th>--%>
                                         <%--<th>Редактирование</th>--%>
@@ -137,19 +126,14 @@
                                     <c:forEach items="${entityDocumentList}" var="doc">
                                         <tr>
                                                 <%--<td><c:out value="${doc.docid}"/></td>--%>
-                                            <td><a href=<spring:url value="view/${doc.docId}"/>/><c:out value="${doc.docTitle}"/></td>
-                                            <td><c:out value="${doc.authorName}"/></td>
-                                            <td><c:out value="${doc.docType}"/></td>
-                                            <td><c:out value="${doc.docProcess}"/></td>
+                                            <td><a href=<spring:url value="view/${doc.docId}"/>/><c:out
+                                                    value="${doc.docTitle}"/></td>
                                             <td><c:out value="${doc.docDate}"/></td>
-                                            <%--<td><c:out value="${doc.attributes}"/></td>--%>
+                                            <td><c:out value="${doc.docType}"/></td>
+                                            <td><c:out value="${doc.authorName}"/></td>
+                                            <td><c:out value="${doc.docProcess}"/></td>
+                                            <td><c:out value="${doc.attributes}"/></td>
                                             <td><c:out value="${doc.docDescription}"/></td>
-
-                                            <%-- кнопки --%>
-                                            <%--<td>--%>
-                                                <%--<a href=<spring:url value="/doc/edit/${doc.docId}"/>/>--%>
-                                                <%--<button type="reset">Редактировать</button>--%>
-                                            <%--</td>--%>
                                             <td>
                                                 <a href=<spring:url value="/archive/archivation/${doc.docId}"/>/>
                                                 <button type="reset">Архивировать</button>

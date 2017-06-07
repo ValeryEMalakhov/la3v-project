@@ -25,7 +25,6 @@ public class UserTest {
 
     @Test
     public void setPassword() throws Exception {
-
     }
 
     @Test

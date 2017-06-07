@@ -15,19 +15,19 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
 >
 
-    <!--<bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">-->
-    <!--<property name="url" value="jdbc:postgresql://localhost:5432/owncloud"/>-->
-    <!--<property name="username" value="owncloud"/>-->
-    <!--<property name="password" value="4242564"/>-->
-    <!--<property name="driverClassName" value="org.postgresql.Driver"/>-->
-    <!--</bean>-->
-
     <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="url" value="jdbc:postgresql://localhost:5432/owncloud"/>
-        <property name="username" value="oc_root"/>
+        <property name="username" value="owncloud"/>
         <property name="password" value="4242564"/>
         <property name="driverClassName" value="org.postgresql.Driver"/>
     </bean>
+
+    <!--<bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">-->
+        <!--<property name="url" value="jdbc:postgresql://localhost:5432/owncloud"/>-->
+        <!--<property name="username" value="oc_root"/>-->
+        <!--<property name="password" value="4242564"/>-->
+        <!--<property name="driverClassName" value="org.postgresql.Driver"/>-->
+    <!--</bean>-->
 
     <import resource="appconfig-security.xml"/>
 

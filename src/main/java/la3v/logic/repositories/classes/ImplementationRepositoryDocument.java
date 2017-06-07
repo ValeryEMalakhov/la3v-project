@@ -52,9 +52,41 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
                     "\tand (file.path like '%.doc'\n" +
                     "\tor file.path like '%.docx'\n" +
                     "\tor file.path like '%.pdf'\n" +
-                    "\tor file.path like '%.xls')\n" +
+                    "\tor file.path like '%.xls'\n" +
+                    "\tor file.path like '%.xlsx')\n" +
                     "\n" +
                     "\tand (u.uid = ? or (sh.share_with = ? and sh.file_source = file.fileid))\n" +
+                    "\tand doc.doc_id = file.fileid\n" +
+                    "\t\n" +
+                    "\tand doc.doc_type_id = type.type_id\n" +
+                    "\n" +
+                    "group by doc.doc_id, type.type_name, proc.proc_name, u.uid, file.storage, file.name, file.path\n" +
+                    "order by file.storage, doc.doc_id\n" +
+                    ";";
+
+    private static final String FIND_ALL_DOCUMENT_NOT_SHARE =
+            "select\tdoc.doc_id, u.uid, file.storage, doc.doc_title, file.name,\n" +
+                    "\ttype.type_name, string_agg(a.author_name, '; ') as author_name, proc.proc_name,\n" +
+                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, '/var/www/owncloud/data/'||u.uid||'/'||file.path as path\n" +
+                    "\n" +
+                    "from\t\"public\".\"oc_users\" as u, \"public\".\"oc_storages\" as st, \"public\".\"oc_filecache\" as file,\n" +
+                    "\t\"document\".\"type\" as type, \"document\".\"document\" as doc\n" +
+                    "\t\tleft join \"document\".\"doc_author\" as da on doc.doc_id = da.doc_id\n" +
+                    "\t\tleft join \"document\".\"author\" a on da.author_id = a.author_id\n" +
+                    "\n" +
+                    "\t\tleft join \"document\".\"doc_proc\" as dp on doc.doc_id = dp.doc_id\n" +
+                    "\t\tleft join \"document\".\"proc\" as proc on dp.proc_id = proc.proc_id\n" +
+                    "\t\t\n" +
+                    "where\tst.id = 'home::' || u.uid\n" +
+                    "\tand file.storage = st.numeric_id\n" +
+                    "\n" +
+                    "\tand (file.path like '%.doc'\n" +
+                    "\tor file.path like '%.docx'\n" +
+                    "\tor file.path like '%.pdf'\n" +
+                    "\tor file.path like '%.xls'\n" +
+                    "\tor file.path like '%.xlsx')\n" +
+                    "\n" +
+                    "\tand u.uid = ?\n" +
                     "\tand doc.doc_id = file.fileid\n" +
                     "\t\n" +
                     "\tand doc.doc_type_id = type.type_id\n" +
@@ -77,7 +109,8 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
                     "\tand (file.path like '%.doc'\n" +
                     "\tor file.path like '%.docx'\n" +
                     "\tor file.path like '%.pdf'\n" +
-                    "\tor file.path like '%.xls')\n" +
+                    "\tor file.path like '%.xls'\n" +
+                    "\tor file.path like '%.xlsx')\n" +
                     "\tand doc.doc_id = file.fileid\n" +
                     "\n" +
                     "\tand doc.doc_id =\n" +
@@ -91,7 +124,8 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
                     "\t\t\tand (file.path like '%.doc'\n" +
                     "\t\t\tor file.path like '%.docx'\n" +
                     "\t\t\tor file.path like '%.pdf'\n" +
-                    "\t\t\tor file.path like '%.xls')\n" +
+                    "\t\t\tor file.path like '%.xls'\n" +
+                    "\t\t\tor file.path like '%.xlsx')\n" +
                     "\t\t\tand doc.doc_id = file.fileid\n" +
                     "\t\t)\n" +
                     ";";
@@ -217,7 +251,9 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
 
     @Override
     public List<EntityDocument> getAllDocumentList(String fileUser) {
-        return this.template.query(FIND_ALL_DOCUMENT, new Object[]{fileUser, fileUser}, new MapperDocument());
+
+        //return this.template.query(FIND_ALL_DOCUMENT, new Object[]{fileUser, fileUser}, new MapperDocument());
+        return this.template.query(FIND_ALL_DOCUMENT_NOT_SHARE, new Object[]{fileUser}, new MapperDocument());
     }
 
     @Override
