@@ -135,7 +135,7 @@
                                         <label class="control-label col-xs-3" for="topic">Название документа:</label>
                                         <div class="col-xs-9">
                                             <input name="topic" type="text" class="form-control" id="topic"
-                                                   value=${entityDocumentBase.docTitle}>
+                                                   value="${entityDocumentBase.docTitle}">
                                         </div>
                                     </div>
 

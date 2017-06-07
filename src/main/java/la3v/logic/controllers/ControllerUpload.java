@@ -200,6 +200,9 @@ public class ControllerUpload {
             // Обновляем поля добавленного документа
             repositoryDocument.updateNewDocument(fileBucket);
 
+            // Добавляем связь для типа процесса
+            repositoryDocument.setUpdDocumentProc(fileBucket.getDocId(), entityDocumentProc.getProcId());
+
             //region Получаем список авторов из строки
             log.info(String.format("=-=-=-=-=-=-=-="));
             Pattern pattern = Pattern.compile(regexAuthor);

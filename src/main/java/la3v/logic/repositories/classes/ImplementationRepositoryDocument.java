@@ -406,6 +406,15 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
         }
     }
 
+    @Override
+    public void setUpdDocumentProc(Integer docId, Integer procId) {
+        try {
+            this.template.update(UPD_DOCUMENT_PROC, new Object[]{
+                    docId, procId});
+        } catch (Exception ignored) {
+        }
+    }
+
     //    Archive part
     @Override
     public void deleteFromDocument(Integer id) {

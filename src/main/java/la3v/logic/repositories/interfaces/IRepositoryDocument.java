@@ -50,6 +50,8 @@ public interface IRepositoryDocument extends IRepository<EntityDocument> {
 
     void setUpdDocumentProc(EntityDocument entityDocument);
 
+    void setUpdDocumentProc(Integer docId, Integer procId);
+
     void deleteFromDocument(Integer id);
 
     void deleteFromProcess(Integer id);

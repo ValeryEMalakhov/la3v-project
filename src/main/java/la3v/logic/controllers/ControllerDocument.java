@@ -251,138 +251,138 @@ public class ControllerDocument {
     @RequestMapping(value = "/edit/{id}/attributes/article", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ArticleAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/commonShedule", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") CommonScheduleAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/conferenceIncoming", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ConferenceIncomingAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/conferenceThesis", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ConferenceThesisAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/courseWork", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") CourseWorkAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/diploma", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") DiplomaAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/educationalEdition", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") EducationalEditionAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/lecturerForm", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") LecturerFormAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/lecturerPlan", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") LecturerPlanAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/monograph", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") MonographAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/patent", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") PatentAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/pilpitSessionProtocol", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") PilpitSessionProtocolAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/positionInstructions", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") PositionInstructionsAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/progressJournal", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ProgressJournalAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/protocolStatements", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ProtocolStatementsAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/researchWork", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ResearchWorkAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/schedule", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ScheduleAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/scientificSeminarProtocol", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") ScientificSeminarProtocolAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/specialtiesPlan", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") SpecialtiesPlanAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/studentsList", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") StudentsListAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/traineeship", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") TraineeshipAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/tutorial", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") TutorialAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 
     @RequestMapping(value = "/edit/{id}/attributes/workingPlan", method = RequestMethod.POST)
     public String showListAttributes(@ModelAttribute("attributes") WorkingPlanAttributes attributes, @PathVariable("id") String documentId, Principal principal) {
         editDocument(attributes, documentId, principal);
-        return "redirect:/document/view/" + documentId;
+        return "redirect:/document/all";
     }
 }
