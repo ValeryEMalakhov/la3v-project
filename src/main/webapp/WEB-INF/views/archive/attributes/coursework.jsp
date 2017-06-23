@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -149,7 +138,7 @@
                                         <label class="control-label col-xs-3" for="topic">Название документа:</label>
                                         <div class="col-xs-9">
                                             <input name="topic" type="text" class="form-control" id="topic"
-                                                   readonly value="${documentFromSystem.docTitle}">
+                                                   readonly value = "${documentFromSystemAttr.topic}">
                                         </div>
                                     </div>
 
@@ -166,7 +155,7 @@
                                             руководитель: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="supervisor" type="text" class="form-control" id="supervisor"
-                                                   placeholder="Ф.И.О. руководителя" required>
+                                                   placeholder="Ф.И.О. руководителя" value = "${documentFromSystemAttr.supervisor}" required>
                                         </div>
                                     </div>
 

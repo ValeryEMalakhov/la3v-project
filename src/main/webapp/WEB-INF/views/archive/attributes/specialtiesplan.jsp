@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -150,7 +139,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="approvalYear">Год утверждения: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="approvalYear" type="number" min="1990" max="2017" step="1" value="2017" pattern="199[0-9]|20[0-9][0-9]" class="form-control"
+                                            <input name="approvalYear" type="number" min="1990" max="2017" step="1"  value = "${documentFromSystemAttr.approvalYear}" pattern="199[0-9]|20[0-9][0-9]" class="form-control"
                                                    id="approvalYear" required>
                                         </div>
                                     </div>
@@ -159,7 +148,7 @@
                                         <label class="control-label col-xs-3" for="specialtyName">Название специальности: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="specialtyName" type="text" class="form-control" id="specialtyName"
-                                                   placeholder="Название специальности" required>
+                                                   placeholder="Название специальности" value = "${documentFromSystemAttr.specialtyName}" required>
                                         </div>
                                     </div>
 

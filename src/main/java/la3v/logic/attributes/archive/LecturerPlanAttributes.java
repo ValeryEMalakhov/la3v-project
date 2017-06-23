@@ -19,6 +19,7 @@ public class LecturerPlanAttributes implements IAttributes {
     public LecturerPlanAttributes() {
     }
 
+    @Override
     public LecturerPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), LecturerPlanAttributes.class);
     }

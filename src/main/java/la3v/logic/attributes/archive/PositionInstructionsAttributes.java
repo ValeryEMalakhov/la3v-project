@@ -19,6 +19,7 @@ public class PositionInstructionsAttributes implements IAttributes {
     public PositionInstructionsAttributes() {
     }
 
+    @Override
     public PositionInstructionsAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PositionInstructionsAttributes.class);
     }

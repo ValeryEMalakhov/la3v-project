@@ -21,6 +21,7 @@ public class UndefinedAttributes implements IAttributes {
         this.docType = "Не определено";
     }
 
+    @Override
     public UndefinedAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), UndefinedAttributes.class);
     }

@@ -18,6 +18,7 @@ public class ConferenceProgramAttributes implements IAttributes {
     public ConferenceProgramAttributes() {
     }
 
+    @Override
     public ConferenceProgramAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ConferenceProgramAttributes.class);
     }

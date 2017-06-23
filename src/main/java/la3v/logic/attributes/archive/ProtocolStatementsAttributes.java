@@ -19,6 +19,7 @@ public class ProtocolStatementsAttributes implements IAttributes {
     public ProtocolStatementsAttributes() {
     }
 
+    @Override
     public ProtocolStatementsAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ProtocolStatementsAttributes.class);
     }

@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Редактирование</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -109,25 +98,15 @@
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Внешний вид 1</a>
-                                            </li>
-                                            <li><a href="#">Внешний вид 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/сonferenceThesis" var="formUrl"/>
+                                <spring:url value="/document/edit/${addressPart}/attributes/сonferenceThesis" var="formUrl"/>
                                 <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/сonferenceThesis" class="form-horizontal">
+                                           action="/document/edit/{${addressPart}}/attributes/сonferenceThesis" class="form-horizontal">
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="supervisor">Научный

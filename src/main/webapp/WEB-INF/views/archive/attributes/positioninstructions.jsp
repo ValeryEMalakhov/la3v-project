@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -151,7 +140,7 @@
                                         <label class="control-label col-xs-3" for="position">Должность: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="position" type="text" class="form-control" id="position"
-                                                   placeholder="Должность" required>
+                                                   placeholder="Должность" value = "${documentFromSystemAttr.position}" required>
                                         </div>
                                     </div>
 
@@ -159,7 +148,7 @@
                                         <label class="control-label col-xs-3" for="author">Ф.И.О. автора:</label>
                                         <div class="col-xs-9">
                                             <input name="author" type="text" class="form-control" id="author"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value = "${documentFromSystemAttr.author}">
                                         </div>
                                     </div>
 

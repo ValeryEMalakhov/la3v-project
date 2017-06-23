@@ -19,6 +19,7 @@ public class PilpitWorkingPlanAttributes implements IAttributes {
     public PilpitWorkingPlanAttributes() {
     }
 
+    @Override
     public PilpitWorkingPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PilpitWorkingPlanAttributes.class);
     }

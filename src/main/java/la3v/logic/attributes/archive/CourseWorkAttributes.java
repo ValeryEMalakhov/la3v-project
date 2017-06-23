@@ -19,6 +19,7 @@ public class CourseWorkAttributes implements IAttributes {
     public CourseWorkAttributes() {
     }
 
+    @Override
     public CourseWorkAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), CourseWorkAttributes.class);
     }

@@ -19,6 +19,7 @@ public class CommonScheduleAttributes implements IAttributes {
     public CommonScheduleAttributes() {
     }
 
+    @Override
     public CommonScheduleAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), CommonScheduleAttributes.class);
     }

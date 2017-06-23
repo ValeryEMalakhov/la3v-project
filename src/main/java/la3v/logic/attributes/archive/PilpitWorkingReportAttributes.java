@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by Marmonth on 07.05.2017.
+ * Отчёты работы кафедры ?
  */
 public class PilpitWorkingReportAttributes implements IAttributes {
 
@@ -18,6 +19,7 @@ public class PilpitWorkingReportAttributes implements IAttributes {
     public PilpitWorkingReportAttributes() {
     }
 
+    @Override
     public PilpitWorkingReportAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PilpitWorkingReportAttributes.class);
     }

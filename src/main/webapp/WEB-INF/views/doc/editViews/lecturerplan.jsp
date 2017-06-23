@@ -50,19 +50,6 @@
 
                 <div class="clearfix"></div>
 
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
-
                 <br/>
 
                 <!-- sidebar menu -->
@@ -85,17 +72,6 @@
                 <div class="page-title">
                     <div class="title_left">
                         <h3>Редактирование</h3>
-                    </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

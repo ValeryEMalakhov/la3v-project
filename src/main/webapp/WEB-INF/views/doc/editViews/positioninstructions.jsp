@@ -50,19 +50,6 @@
 
                 <div class="clearfix"></div>
 
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
-
                 <br/>
 
                 <!-- sidebar menu -->
@@ -86,17 +73,6 @@
                     <div class="title_left">
                         <h3>Редактирование</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -105,19 +81,9 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>${archivedDocument.name}</h2>
+                                <h2>${entityDocumentBase.docTitle}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Внешний вид 1</a>
-                                            </li>
-                                            <li><a href="#">Внешний вид 2</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
@@ -125,30 +91,15 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/positionInstructions"
+                                <spring:url value="/document/edit/${addressPart}/attributes/positionInstructions"
                                             var="formUrl"/>
                                 <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/positionInstructions"
+                                           action="/document/edit/{${addressPart}}/attributes/positionInstructions"
                                            class="form-horizontal">
 
                                     <div class="form-group">
-                                        <label class="control-label col-xs-3" for="process">Процесс:</label>
-                                        <div class="col-xs-9">
-                                            <input name="process" type="text" class="form-control" id="process"
-                                                   readonly value="${documentFromSystem.docProcess}">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="docType">Тип документа:</label>
-                                        <div class="col-xs-9">
-                                            <input name="docType" type="text" class="form-control" id="docType"
-                                                   readonly value="${documentFromSystem.docType}">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="position">Должность: <span class="required">*</span></label>
+                                        <label class="control-label col-xs-3" for="position">Должность: <span
+                                                class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="position" type="text" class="form-control" id="position"
                                                    placeholder="Должность" required>
@@ -159,13 +110,14 @@
                                         <label class="control-label col-xs-3" for="author">Ф.И.О. автора:</label>
                                         <div class="col-xs-9">
                                             <input name="author" type="text" class="form-control" id="author"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value="${entityDocumentBase.authorName}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="col-xs-offset-3 col-xs-9">
-                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
+                                            <button class="btn btn-primary" type="reset">Сброс</button>
+                                            <input type="submit" class="btn btn-primary" value="Сохранить"/>
                                         </div>
                                     </div>
                                     <br/>

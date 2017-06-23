@@ -19,6 +19,7 @@ public class TraineeshipAttributes implements IAttributes {
     public TraineeshipAttributes() {
     }
 
+    @Override
     public TraineeshipAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), TraineeshipAttributes.class);
     }

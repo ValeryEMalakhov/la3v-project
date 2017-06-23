@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -159,7 +148,7 @@
                                         <label class="control-label col-xs-3" for="number">Номер: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="number" type="text" class="form-control" id="number"
-                                                  placeholder="Номер НИР" required>
+                                                  placeholder="Номер НИР" value = "${documentFromSystemAttr.number}" required>
                                         </div>
                                     </div>
 
@@ -167,7 +156,8 @@
                                         <label class="control-label col-xs-3" for="startDate">Дата начала: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="startDate" type="text" class="form-control" id="startDate"
-                                                   placeholder="ГГГГ-ММ-ДД" pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|2[0-2][0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])" required>
+                                                   placeholder="ГГГГ-ММ-ДД" pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|2[0-2][0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])"
+                                                   value = "${documentFromSystemAttr.startDate}" required>
                                         </div>
                                     </div>
 
@@ -176,7 +166,8 @@
                                         <div class="col-xs-9">
                                             <input name="endDate" type="text" class="form-control" id="endDate"
                                                    placeholder="ГГГГ-ММ-ДД"
-                                                   pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|2[0-2][0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])" required>
+                                                   pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|2[0-2][0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])"
+                                                   value = "${documentFromSystemAttr.endDate}" required>
                                         </div>
                                     </div>
 
@@ -184,7 +175,7 @@
                                         <label class="control-label col-xs-3" for="plan">План: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="plan" type="text" class="form-control" id="plan"
-                                                   placeholder="План НИР" required>
+                                                   placeholder="План НИР" value = "${documentFromSystemAttr.plan}" required>
                                         </div>
                                     </div>
 
@@ -192,7 +183,7 @@
                                         <label class="control-label col-xs-3" for="stagePlan">План этапов: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="stagePlan" type="text" class="form-control" id="stagePlan"
-                                                   placeholder="План этапа НИР" required>
+                                                   placeholder="План этапа НИР" value = "${documentFromSystemAttr.stagePlan}" required>
                                         </div>
                                     </div>
 
@@ -200,7 +191,7 @@
                                         <label class="control-label col-xs-3" for="report">Аннотированные отчёты: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="report" type="text" class="form-control" id="report"
-                                                   placeholder="Аннотированный отчёт НИР" required>
+                                                   placeholder="Аннотированный отчёт НИР" value = "${documentFromSystemAttr.report}" required>
                                         </div>
                                     </div>
 
@@ -208,7 +199,7 @@
                                         <label class="control-label col-xs-3" for="finalReport">Итоговый отчёт: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="finalReport" type="text" class="form-control" id="finalReport"
-                                                   placeholder="Итоговый отчёт НИР" required>
+                                                   placeholder="Итоговый отчёт НИР" value = "${documentFromSystemAttr.finalReport}" required>
                                         </div>
                                     </div>
 

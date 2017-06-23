@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -151,7 +140,7 @@
                                         <label class="control-label col-xs-3" for="lecturerName">Преподаватель:</label>
                                         <div class="col-xs-9">
                                             <input name="lecturerName" type="text" class="form-control" id="lecturerName"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value = "${documentFromSystemAttr.lecturerName}">
                                         </div>
                                     </div>
 
@@ -159,7 +148,7 @@
                                         <label class="control-label col-xs-3" for="dateStart">Дата начала прохождения: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="dateStart" type="text" class="form-control" id="dateStart"
-                                                   placeholder="ГГГГ-ММ-ДД"
+                                                   placeholder="ГГГГ-ММ-ДД" value = "${documentFromSystemAttr.dateStart}"
                                                    pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|20[0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])" required>
                                         </div>
                                     </div>
@@ -168,7 +157,7 @@
                                         <label class="control-label col-xs-3" for="dateEnd">Дата конца прохождения: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="dateEnd" type="text" class="form-control" id="dateEnd"
-                                                   placeholder="ГГГГ-ММ-ДД"
+                                                   placeholder="ГГГГ-ММ-ДД" value = "${documentFromSystemAttr.dateEnd}"
                                                    pattern="199[0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])|20[0-9][0-9]-(0[0-9]|1[0-2])-([0-2][0-9]|3[0-1])" required>
                                         </div>
                                     </div>

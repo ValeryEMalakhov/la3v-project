@@ -19,6 +19,7 @@ public class PilpitSessionProtocolAttributes implements IAttributes {
     public PilpitSessionProtocolAttributes() {
     }
 
+    @Override
     public PilpitSessionProtocolAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), PilpitSessionProtocolAttributes.class);
     }

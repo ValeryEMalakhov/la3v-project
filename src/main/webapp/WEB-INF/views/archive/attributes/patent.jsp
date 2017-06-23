@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -151,7 +140,7 @@
                                         <label class="control-label col-xs-3" for="name">Название патента:</label>
                                         <div class="col-xs-9">
                                             <input name="name" type="text" class="form-control" id="name"
-                                                   readonly value="${documentFromSystem.docType}">
+                                                   readonly value="${documentFromSystemAttr.name}">
                                         </div>
                                     </div>
 
@@ -159,14 +148,14 @@
                                         <label class="control-label col-xs-3" for="author">Автор:</label>
                                         <div class="col-xs-9">
                                             <input name="author" type="text" class="form-control" id="author"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value="${documentFromSystemAttr.author}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="year">Год: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="year" type="number" min="1950" max="2017" step="1" value="2017" pattern="[0-9]{4}" class="form-control"
+                                            <input name="year" type="number" min="1950" max="2017" step="1" value=value="${documentFromSystemAttr.year}" pattern="[0-9]{4}" class="form-control"
                                                    id="year" required>
                                         </div>
                                     </div>
@@ -175,7 +164,7 @@
                                         <label class="control-label col-xs-3" for="number">Номер: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="number" type="text" class="form-control" id="number"
-                                                   placeholder="Номер патента">
+                                                   placeholder="Номер патента" value="${documentFromSystemAttr.number}">
                                         </div>
                                     </div>
 

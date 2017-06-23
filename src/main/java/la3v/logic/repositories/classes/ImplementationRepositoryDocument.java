@@ -36,7 +36,7 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
     private static final String FIND_ALL_DOCUMENT =
             "select\tdoc.doc_id, u.uid, file.storage, doc.doc_title, file.name,\n" +
                     "\ttype.type_name, string_agg(a.author_name, '; ') as author_name, proc.proc_name,\n" +
-                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, '/var/www/owncloud/data/'||u.uid||'/'||file.path as path\n" +
+                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, file.path\n" +
                     "\n" +
                     "from\t\"public\".oc_users as u, \"public\".oc_storages as st, \"public\".oc_filecache as file, \"public\".oc_share as sh,\n" +
                     "\t\"document\".\"type\" as type, \"document\".\"document\" as doc\n" +
@@ -67,7 +67,7 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
     private static final String FIND_ALL_DOCUMENT_NOT_SHARE =
             "select\tdoc.doc_id, u.uid, file.storage, doc.doc_title, file.name,\n" +
                     "\ttype.type_name, string_agg(a.author_name, '; ') as author_name, proc.proc_name,\n" +
-                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, '/var/www/owncloud/data/'||u.uid||'/'||file.path as path\n" +
+                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, file.path\n" +
                     "\n" +
                     "from\t\"public\".\"oc_users\" as u, \"public\".\"oc_storages\" as st, \"public\".\"oc_filecache\" as file,\n" +
                     "\t\"document\".\"type\" as type, \"document\".\"document\" as doc\n" +
@@ -210,7 +210,7 @@ public class ImplementationRepositoryDocument implements IRepositoryDocument {
     private static final String FIND_ALL_DOCUMENT_ID =
             "select\tdoc.doc_id, u.uid, file.storage, doc.doc_title, file.name,\n" +
                     "\ttype.type_name, string_agg(a.author_name, ',') as author_name, proc.proc_name,\n" +
-                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, '/var/www/owncloud/data/'||u.uid||'/'||file.path as path\n" +
+                    "\tdoc.doc_attributes, doc.doc_date, doc.doc_description, file.path\n" +
                     "\n" +
                     "from\t\"public\".oc_users as u, \"public\".oc_storages as st, \"public\".oc_filecache as file,\n" +
                     "\t\"document\".\"type\" as type, \"document\".\"document\" as doc\n" +

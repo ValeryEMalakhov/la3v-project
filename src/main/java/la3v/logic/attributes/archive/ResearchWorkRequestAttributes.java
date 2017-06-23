@@ -18,6 +18,7 @@ public class ResearchWorkRequestAttributes implements IAttributes{
     public ResearchWorkRequestAttributes() {
     }
 
+    @Override
     public ResearchWorkRequestAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ResearchWorkRequestAttributes.class);
     }

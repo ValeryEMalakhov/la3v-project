@@ -19,6 +19,7 @@ public class DisciplineLabWorkInstructionsAttributes implements IAttributes {
     public DisciplineLabWorkInstructionsAttributes() {
     }
 
+    @Override
     public DisciplineLabWorkInstructionsAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), DisciplineLabWorkInstructionsAttributes.class);
     }

@@ -57,19 +57,6 @@
 
                 <div class="clearfix"></div>
 
-                <!-- menu profile quick info -->
-                <%--                <div class="profile clearfix">
-                                    <div class="profile_pic">
-                                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-                                    </div>
-                                    <div class="profile_info">
-                                        <span>Welcome,</span>
-                                        <h2>Admin</h2>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>--%>
-                <!-- /menu profile quick info -->
-
                 <br/>
 
                 <!-- sidebar menu -->
@@ -93,17 +80,6 @@
                     <div class="title_left">
                         <h3>Редактирование</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -112,19 +88,9 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>${archivedDocument.name}</h2>
+                                <h2>${entityDocumentBase.docTitle}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Внешний вид 1</a>
-                                            </li>
-                                            <li><a href="#">Внешний вид 2</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
@@ -132,75 +98,65 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/educationalEdition" var="formUrl"/>
+                                <spring:url value="/document/edit/${addressPart}/attributes/educationalEdition"
+                                            var="formUrl"/>
                                 <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/educationalEdition" class="form-horizontal">
+                                           action="/document/edit/{${addressPart}}/attributes/educationalEdition"
+                                           class="form-horizontal">
 
                                 <div class="form-group">
-                                    <label class="control-label col-xs-3" for="process">Процесс:</label>
+                                    <label class="control-label col-xs-3" for="type">Тип: <span
+                                            class="required">*</span></label>
                                     <div class="col-xs-9">
-                                        <input name="process" type="text" class="form-control" id="process"
-                                               readonly value="${documentFromSystem.docProcess}">
+                                        <input name="type" type="text" class="form-control" id="type"
+                                               placeholder="Тип" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-xs-3" for="docType">Тип документа:</label>
+                                    <label class="control-label col-xs-3" for="editionName">Издательство: <span
+                                            class="required">*</span></label>
                                     <div class="col-xs-9">
-                                        <input name="docType" type="text" class="form-control" id="docType"
-                                               readonly value="${documentFromSystem.docType}">
+                                        <input name="editionName" type="text" class="form-control" id="editionName"
+                                               placeholder="Издательство" required>
                                     </div>
                                 </div>
 
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="type">Тип: <span class="required">*</span></label>
-                                        <div class="col-xs-9">
-                                            <input name="type" type="text" class="form-control" id="type"
-                                                   placeholder="Тип" required>
-                                        </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3" for="editionType">Вид издания: <span
+                                            class="required">*</span></label>
+                                    <div class="col-xs-9">
+                                        <select class="select2_group form-control" id="editionType"
+                                                name="editionType" required>
+                                            <option value="Электронное">Электронное</option>
+                                            <option value="Печатное">Печатное</option>
+                                        </select>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="editionName">Издательство: <span class="required">*</span></label>
-                                        <div class="col-xs-9">
-                                            <input name="editionName" type="text" class="form-control" id="editionName"
-                                                   placeholder="Издательство" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="editionType">Вид издания: <span class="required">*</span></label>
-                                        <div class="col-xs-9">
-                                            <select class="select2_group form-control" id="editionType"
-                                                    name="editionType" required>
-                                                <option value="Электронное">Электронное</option>
-                                                <option value="Печатное">Печатное</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-xs-offset-3 col-xs-9">
-                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                    <br/>
-                                    Поля, отмеченные *, должны быть заполнены
-                                </form:form>
+                                </div>
                             </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <button class="btn btn-primary" type="reset">Сброс</button>
+                                    <input type="submit" class="btn btn-primary" value="Сохранить"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            Поля, отмеченные *, должны быть заполнены
+                            </form:form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
-        <!-- /footer content -->
     </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <jsp:include page="/WEB-INF/views/blocks/footer.jsp"></jsp:include>
+    <!-- /footer content -->
+</div>
 </div>
 
 <!-- jquery, librarys, framework, toolkit, etc. -->

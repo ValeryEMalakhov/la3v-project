@@ -27,5 +27,11 @@ public interface IRepositoryArchive extends IRepository<EntityDocument> {
 
     void insertProtocolOfDelete(EntityProtocolOfDelete entityProtocolOfDelete);
 
-    List<EntityDocument> getExtended(String docType);
+    List<EntityDocument> getExtendedDocType(String docType);
+
+    List<EntityDocument> getExtendedProcess(String procType);
+
+    Integer getMaxProtocolId();
+
+    Integer getMaxDeleteProtocolId();
 }

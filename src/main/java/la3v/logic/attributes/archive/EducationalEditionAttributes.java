@@ -19,6 +19,7 @@ public class EducationalEditionAttributes implements IAttributes {
     public EducationalEditionAttributes() {
     }
 
+    @Override
     public EducationalEditionAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), EducationalEditionAttributes.class);
     }

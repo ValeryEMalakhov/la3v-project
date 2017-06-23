@@ -19,6 +19,7 @@ public class ProgressJournalAttributes implements IAttributes {
     public ProgressJournalAttributes() {
     }
 
+    @Override
     public ProgressJournalAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ProgressJournalAttributes.class);
     }

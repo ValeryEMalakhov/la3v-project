@@ -19,6 +19,7 @@ public class TutorialAttributes implements IAttributes {
     public TutorialAttributes() {
     }
 
+    @Override
     public TutorialAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), TutorialAttributes.class);
     }

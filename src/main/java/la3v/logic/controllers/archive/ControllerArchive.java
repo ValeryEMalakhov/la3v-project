@@ -12,6 +12,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
 import java.text.SimpleDateFormat;
@@ -39,7 +40,7 @@ public class ControllerArchive {
     }
 
     @RequestMapping("/all")
-    public String showDocumentList(Model model) {
+    public String showDocumentList(Model model) throws Exception {
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
         List<la3v.logic.entities.archive.EntityDocument> entityArchivedDocumentList = repositoryArchive.getAllArchivedDocumentList();
         model.addAttribute("entityArchivedDocumentList", entityArchivedDocumentList);
@@ -48,7 +49,7 @@ public class ControllerArchive {
     }
 
     @RequestMapping("/protocols")
-    public String showProtocols(Model model){
+    public String showProtocols(Model model) throws Exception {
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
         List<EntityProtocolOutput> entityProtocolList = repositoryArchive.getAllProtocolList();
         model.addAttribute("entityProtocolOutputList", entityProtocolList);
@@ -57,7 +58,7 @@ public class ControllerArchive {
     }
 
     @RequestMapping("/dprotocols")
-    public String showDeleteProtocols(Model model){
+    public String showDeleteProtocols(Model model) throws Exception {
         IRepositoryArchive repositoryArchive = context.getBean(IRepositoryArchive.class);
         List<EntityProtocolOfDelete> entityDeleteProtocolList = repositoryArchive.getAllProtocolOfDeleteList();
         model.addAttribute("entityDeleteProtocolList", entityDeleteProtocolList);
@@ -92,9 +93,11 @@ public class ControllerArchive {
         repositoryArchive.deleteDocumentProtocol(id);
         repositoryArchive.deleteArchivedDocument(id);
 
+        Integer maxProtocolId = repositoryArchive.getMaxDeleteProtocolId() + 1;
+
         EntityProtocolOfDelete deleteProtocol = new EntityProtocolOfDelete(
                 principal.getName(),
-                "Протокол удаления N",
+                "Протокол удаления " + maxProtocolId,
                 "Удаление документа " + document.getName() + " пользователем " + principal.getName() + " в " + dateFormat.format(new Date()) + " " + timeFormat.format(new Date()),
                 document.getName(),
                 document.getAuthor(),
@@ -126,5 +129,13 @@ public class ControllerArchive {
         model.addAttribute("entityDocumentType", attributes.getDocType());
 
         return "archive/attributes";
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ModelAndView handleAllException(Exception ex) {
+        ModelAndView model = new ModelAndView("err/pageControllerError");
+
+        model.addObject("errMsg", ex.getMessage());
+        return model;
     }
 }

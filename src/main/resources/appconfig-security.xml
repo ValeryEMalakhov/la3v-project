@@ -14,6 +14,14 @@
         <intercept-url pattern="/document/*" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
 
 
+        <intercept-url pattern="/archive/all" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
+        <intercept-url pattern="/archive/analytics/*" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
+        <intercept-url pattern="/archive/all/delete/*" access="hasAnyRole()"/>
+        <intercept-url pattern="/archive/archivation/*" access="hasAnyRole('ROLE_admin', 'ROLE_methodologist')"/>
+        <intercept-url pattern="/archive/protocols" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
+        <intercept-url pattern="/archive/dprotocols" access="hasAnyRole('ROLE_lecturer', 'ROLE_admin', 'ROLE_methodologist')"/>
+
+
         <form-login login-page="/login" default-target-url="/main" authentication-failure-url="/login?error"
                     username-parameter="username" password-parameter="password"/>
 

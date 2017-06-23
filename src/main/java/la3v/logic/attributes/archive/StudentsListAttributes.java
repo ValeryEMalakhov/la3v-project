@@ -29,6 +29,7 @@ public class StudentsListAttributes implements IAttributes {
         return output;
     }
 
+    @Override
     public StudentsListAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), StudentsListAttributes.class);
     }

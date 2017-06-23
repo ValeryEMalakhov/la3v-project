@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by Marmonth on 13.05.2017.
+ * Created by Valery E. Malakhov on 02.04.2017.
  */
 public class MapperDocument implements RowMapper<EntityDocument> {
 

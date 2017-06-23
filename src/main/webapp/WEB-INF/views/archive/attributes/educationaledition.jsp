@@ -93,17 +93,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -156,7 +145,7 @@
                                         <label class="control-label col-xs-3" for="type">Тип: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="type" type="text" class="form-control" id="type"
-                                                   placeholder="Тип" required>
+                                                   placeholder="Тип" value = "${documentFromSystemAttr.type}" required>
                                         </div>
                                     </div>
 
@@ -164,7 +153,7 @@
                                         <label class="control-label col-xs-3" for="editionName">Издательство: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="editionName" type="text" class="form-control" id="editionName"
-                                                   placeholder="Издательство" required>
+                                                   placeholder="Издательство" value = "${documentFromSystemAttr.editionName}" required>
                                         </div>
                                     </div>
 

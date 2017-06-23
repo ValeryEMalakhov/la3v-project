@@ -19,6 +19,7 @@ public class ScheduleAttributes implements IAttributes {
     public ScheduleAttributes() {
     }
 
+    @Override
     public ScheduleAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ScheduleAttributes.class);
     }

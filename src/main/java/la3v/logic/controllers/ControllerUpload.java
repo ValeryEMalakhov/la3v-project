@@ -98,8 +98,11 @@ public class ControllerUpload {
             EntityDocumentProc entityDocumentProc = repositoryDocument.getDocumentProcById(1);
             EntityDocumentType entityDocumentType = repositoryDocument.getDocumentTypeById(Integer.parseInt(fileBucket.getDocType()));
 
+            // получаем старый Id
+            EntityNewFile entityOldFile = repositoryDocument.getNewDocId(principal.getName());
+
             File directory = new File(rootPath + "/tmpFiles/" + principal.getName());
-            if (! directory.exists()){
+            if (!directory.exists()) {
                 directory.mkdir();
             }
 
@@ -121,9 +124,9 @@ public class ControllerUpload {
                 entityDocumentProc = repositoryDocument.getDocumentProcById(1);
             } else if (entityDocumentType.getType_id() >= 2 & entityDocumentType.getType_id() <= 12) {
                 entityDocumentProc = repositoryDocument.getDocumentProcById(2);
-            } else if (entityDocumentType.getType_id() >= 13 & entityDocumentType.getType_id() <= 23) {
+            } else if (entityDocumentType.getType_id() >= 13 & entityDocumentType.getType_id() <= 25) {
                 entityDocumentProc = repositoryDocument.getDocumentProcById(3);
-            } else if (entityDocumentType.getType_id() >= 24 & entityDocumentType.getType_id() <= 35) {
+            } else if (entityDocumentType.getType_id() >= 26 & entityDocumentType.getType_id() <= 37) {
                 entityDocumentProc = repositoryDocument.getDocumentProcById(4);
             }
 
@@ -160,6 +163,14 @@ public class ControllerUpload {
             } catch (InterruptedException e) {
             }*/
 
+        /*
+        4Vlad
+            echo 424@564ftfss | sudo -S mv "$3" "/var/www/owncloud/data/archive/files/archive/$2/$1"
+            echo 424@564ftfss | sudo -S chown -R www-data:www-data "/var/www/owncloud/data/archive/files/archive/$2/$1"
+            echo 424@564ftfss | sudo -S -u www-data php /var/www/owncloud/console.php files:scan $2
+            echo 424@564ftfss | sudo -S -u www-data php /var/www/owncloud/console.php files:scan archive
+         */
+
             //String cmd = ("echo 3059 | sudo -S /bin/bash /opt/tomcat/addNew.sh " + principal.getName() + " \"" + file.getOriginalFilename() + "\" \"" + entityDocumentProc.getProcDefaultWay() + "\"");
             String cmd = ("/bin/bash /opt/tomcat/addNew.sh " + principal.getName() + " \"" + file.getOriginalFilename() + "\" \"" + entityDocumentProc.getProcDefaultWay() + "\"");
 
@@ -195,47 +206,54 @@ public class ControllerUpload {
 
             // получаем новый Id
             EntityNewFile entityNewFile = repositoryDocument.getNewDocId(principal.getName());
-            fileBucket.setDocId(entityNewFile.getDocId());
+            //TODO проверить, что бы файл не перезаписывало случайно при кописровании
+            if (entityNewFile.getDocId() != entityOldFile.getDocId()) {
 
-            // Обновляем поля добавленного документа
-            repositoryDocument.updateNewDocument(fileBucket);
+                fileBucket.setDocId(entityNewFile.getDocId());
 
-            // Добавляем связь для типа процесса
-            repositoryDocument.setUpdDocumentProc(fileBucket.getDocId(), entityDocumentProc.getProcId());
+                // Обновляем поля добавленного документа
+                repositoryDocument.updateNewDocument(fileBucket);
 
-            //region Получаем список авторов из строки
-            log.info(String.format("=-=-=-=-=-=-=-="));
-            Pattern pattern = Pattern.compile(regexAuthor);
-            Matcher matcher = pattern.matcher(fileBucket.getDocAuthorsString());
-            log.info(String.format("=-=-=-=-=-=-=-="));
-            while (matcher.find()) {
-                log.info(String.format("Start matcher.find"));
-                for (int i = 1; i <= matcher.groupCount(); i++) {
-                    authors.add(matcher.group(i));
-                    log.info(String.format("Get %d docAuthor: %s", i, matcher.group(i)));
+                // Добавляем связь для типа процесса
+                repositoryDocument.setUpdDocumentProc(fileBucket.getDocId(), entityDocumentProc.getProcId());
+
+                //region Получаем список авторов из строки
+                log.info(String.format("=-=-=-=-=-=-=-="));
+                Pattern pattern = Pattern.compile(regexAuthor);
+                Matcher matcher = pattern.matcher(fileBucket.getDocAuthorsString());
+                log.info(String.format("=-=-=-=-=-=-=-="));
+                while (matcher.find()) {
+                    log.info(String.format("Start matcher.find"));
+                    for (int i = 1; i <= matcher.groupCount(); i++) {
+                        authors.add(matcher.group(i));
+                        log.info(String.format("Get %d docAuthor: %s", i, matcher.group(i)));
+                    }
                 }
-            }
-            log.info(String.format("End matcher.find"));
-            log.info(String.format("=-=-=-=-=-=-=-="));
-            //endregion
+                log.info(String.format("End matcher.find"));
+                log.info(String.format("=-=-=-=-=-=-=-="));
+                //endregion
 
-            for (String str : authors) {
-                log.info(String.format("Search docAuthor: %s", str));
-                entityDocumentAuthor = repositoryDocument.getDocumentAuthorByName(str);
-                if (entityDocumentAuthor != null) {
-                    log.info(String.format("Get docAuthor: %d , from table", entityDocumentAuthor.getAuthor_id()));
-                    repositoryDocument.insertNewDocumentDocAuthor(fileBucket.getDocId(), entityDocumentAuthor.getAuthor_id());
-                } else {
-                    log.info(String.format("docAuthor: %s - not found", str));
-                    repositoryDocument.insertNewDocumentAuthor(str);
-                    log.info(String.format("docAuthor: %s - added in table", str));
+                for (String str : authors) {
+                    log.info(String.format("Search docAuthor: %s", str));
                     entityDocumentAuthor = repositoryDocument.getDocumentAuthorByName(str);
-                    repositoryDocument.insertNewDocumentDocAuthor(fileBucket.getDocId(), entityDocumentAuthor.getAuthor_id());
-                    log.info(String.format("Get docAuthor: %d , from table", entityDocumentAuthor.getAuthor_id()));
+                    if (entityDocumentAuthor != null) {
+                        log.info(String.format("Get docAuthor: %d , from table", entityDocumentAuthor.getAuthor_id()));
+                        repositoryDocument.insertNewDocumentDocAuthor(fileBucket.getDocId(), entityDocumentAuthor.getAuthor_id());
+                    } else {
+                        log.info(String.format("docAuthor: %s - not found", str));
+                        repositoryDocument.insertNewDocumentAuthor(str);
+                        log.info(String.format("docAuthor: %s - added in table", str));
+                        entityDocumentAuthor = repositoryDocument.getDocumentAuthorByName(str);
+                        repositoryDocument.insertNewDocumentDocAuthor(fileBucket.getDocId(), entityDocumentAuthor.getAuthor_id());
+                        log.info(String.format("Get docAuthor: %d , from table", entityDocumentAuthor.getAuthor_id()));
+                    }
                 }
-            }
 
-            return "redirect:/document/view/" + fileBucket.getDocId();
+                return "redirect:/document/view/" + fileBucket.getDocId();
+            }
+            else {
+                return "doc/fileUpload";
+            }
             //return "doc/fileUpload";
         }
     }

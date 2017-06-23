@@ -36,7 +36,7 @@
                 <version>3.0-r1655215</version>
                 <configuration>
                     <port>80</port>
-                    <!--<port>80</port>-->
+                    <!--<port>8080</port>-->
                 </configuration>
             </plugin>
         </plugins>

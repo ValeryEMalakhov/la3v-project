@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -125,10 +114,10 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/undefined"
+                                <spring:url value="/archive/archivation/${addressPart}/attributes/classroomLoadJournal"
                                             var="formUrl"/>
                                 <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/undefined"
+                                           action="/archive/archivation/{${addressPart}}/attributes/classroomLoadJournal"
                                            class="form-horizontal">
 
                                     <div class="form-group">

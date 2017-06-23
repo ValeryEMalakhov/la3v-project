@@ -93,17 +93,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -178,14 +167,14 @@
                                         <label class="control-label col-xs-3" for="specialty">Специальность: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="specialty" type="text" class="form-control" id="specialty"
-                                                   placeholder="Название специальности" required>
+                                                   placeholder="Название специальности" value = "${documentFromSystemAttr.specialty}" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="course">Курс: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="course" type="number" min="1" max="6" step="1" value="1" pattern="[1-6]" class="form-control"
+                                            <input name="course" type="number" min="1" max="6" step="1" value = "${documentFromSystemAttr.course}" pattern="[1-6]" class="form-control"
                                                    id="course" required>
                                         </div>
                                     </div>
@@ -193,7 +182,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="group">Группа: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="group" type="number" min="1" max="9" step="1" value="1" pattern="[1-9]" class="form-control"
+                                            <input name="group" type="number" min="1" max="9" step="1" value = "${documentFromSystemAttr.group}" pattern="[1-9]" class="form-control"
                                                    id="group" required>
                                         </div>
                                     </div>

@@ -19,6 +19,7 @@ public class DisciplineLectionConspectusAttributes implements IAttributes {
     public DisciplineLectionConspectusAttributes() {
     }
 
+    @Override
     public DisciplineLectionConspectusAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), DisciplineLectionConspectusAttributes.class);
     }

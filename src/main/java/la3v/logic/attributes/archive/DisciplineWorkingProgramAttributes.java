@@ -19,6 +19,7 @@ public class DisciplineWorkingProgramAttributes implements IAttributes {
     public DisciplineWorkingProgramAttributes() {
     }
 
+    @Override
     public DisciplineWorkingProgramAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), DisciplineWorkingProgramAttributes.class);
     }

@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -151,7 +140,7 @@
                                         <label class="control-label col-xs-3" for="discipline">Дисциплина: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="discipline" type="text" class="form-control" id="discipline"
-                                                   placeholder="Название дисциплины" required>
+                                                   placeholder="Название дисциплины" value = "${documentFromSystemAttr.discipline}" required>
                                         </div>
                                     </div>
 
@@ -159,7 +148,7 @@
                                         <label class="control-label col-xs-3" for="specialty">Специальность: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="specialty" type="text" class="form-control" id="specialty"
-                                                   placeholder="Название специальности" required>
+                                                   placeholder="Название специальности" value = "${documentFromSystemAttr.specialty}" required>
                                         </div>
                                     </div>
 
@@ -167,14 +156,14 @@
                                         <label class="control-label col-xs-3" for="lecturer">Преподаватель:</label>
                                         <div class="col-xs-9">
                                             <input name="lecturer" type="text" class="form-control" id="lecturer"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value = "${documentFromSystemAttr.lecturer}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="group">Группа: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="group" type="number" min="1" max="99" step="1" value="1" pattern="\d" class="form-control"
+                                            <input name="group" type="number" min="1" max="99" step="1" value = "${documentFromSystemAttr.group}" pattern="\d" class="form-control"
                                                    id="group" required>
                                         </div>
                                     </div>
@@ -182,7 +171,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="semester">Семестр: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="semester" type="number" min="1" max="8" step="1" value="1" pattern="[1-8]" class="form-control"
+                                            <input name="semester" type="number" min="1" max="8" step="1" value = "${documentFromSystemAttr.semester}" pattern="[1-8]" class="form-control"
                                                    id="semester" required>
                                         </div>
                                     </div>

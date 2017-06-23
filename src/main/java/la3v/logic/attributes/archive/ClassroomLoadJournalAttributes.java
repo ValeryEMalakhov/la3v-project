@@ -18,6 +18,7 @@ public class ClassroomLoadJournalAttributes implements IAttributes {
     public ClassroomLoadJournalAttributes() {
     }
 
+    @Override
     public ClassroomLoadJournalAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ClassroomLoadJournalAttributes.class);
     }

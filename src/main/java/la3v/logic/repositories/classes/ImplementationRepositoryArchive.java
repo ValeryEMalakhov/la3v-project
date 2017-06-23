@@ -56,11 +56,15 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
             "\tprotocolDelDocDateOfArchiving, protocolDelDocArchivingTerm, protocolDelDocComments)\n" +
             " VALUES (?, ?::DATE, ?::TIME, ?, ?, ?, ?, ?, ?::DATE, ?, ?);";
 
-    private static final String FIND_ALL_EXTENDED = "SELECT * FROM \"archive\".\"Document\"\n" +
+    private static final String FIND_ALL_EXTENDED_DOCTYPE = "SELECT * FROM \"archive\".\"Document\"\n" +
             "WHERE documentattributes ->> 'docType' = ?;";
 
+    private static final String FIND_ALL_EXTENDED_PROCESS = "SELECT * FROM \"archive\".\"Document\"\n" +
+            "WHERE documentattributes ->> 'process' = ?;";
 
+    private static final String FIND_MAX_PROTOCOL_ID = "SELECT MAX(protocolid) FROM \"archive\".\"Protocol\"";
 
+    private static final String FIND_MAX_DELETE_PROTOCOL_ID = "SELECT MAX(protocoldelid) FROM \"archive\".\"ProtocolOfDelete\"";
 
     // Инициализация логера
     private static final Logger log = LoggerFactory.getLogger(ImplementationRepositoryArchive.class);
@@ -180,7 +184,24 @@ public class ImplementationRepositoryArchive implements IRepositoryArchive {
     }
 
     @Override
-    public List<EntityDocument> getExtended(String docType)    {
-        return this.template.query(FIND_ALL_EXTENDED, new Object[]{docType}, new MapperDocument());
+    public List<EntityDocument> getExtendedDocType(String docType)    {
+        return this.template.query(FIND_ALL_EXTENDED_DOCTYPE, new Object[]{docType}, new MapperDocument());
+    }
+
+    @Override
+    public List<EntityDocument> getExtendedProcess(String procType)    {
+        return this.template.query(FIND_ALL_EXTENDED_PROCESS, new Object[]{procType}, new MapperDocument());
+    }
+
+    @Override
+    public Integer getMaxProtocolId()    {
+        return this.template.queryForObject(FIND_MAX_PROTOCOL_ID, new Object[]{}, Integer.class);
+    }
+
+
+    @Override
+    public Integer getMaxDeleteProtocolId()    {
+        return this.template.queryForObject(FIND_MAX_DELETE_PROTOCOL_ID, new Object[]{}, Integer.class);
     }
 }
+

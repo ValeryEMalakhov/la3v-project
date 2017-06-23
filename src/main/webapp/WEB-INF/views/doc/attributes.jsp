@@ -144,10 +144,11 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="filePath">Путь
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fileShortPath">Путь
                                             к файлу:</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input name="filePath" type="text" class="form-control" id="filePath"
+                                            <input name="fileShortPath" type="text" class="form-control"
+                                                   id="fileShortPath"
                                                    readonly value="${entityDocument.filePath}">
                                         </div>
                                     </div>
@@ -185,11 +186,20 @@
 
                                     <div class="ln_solid"></div>
                                     <div class="form-group">
-                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                        <div class="col-md-12 col-sm-6 col-xs-12 col-md-offset-3">
+                                            <button type="submit" class="btn btn-warning">Редактировать атрибуты
+                                            </button>
+
+                                            <a target="_blank"
+                                               href="http://91.208.138.238:81/owncloud/index.php/apps/onlyoffice/${entityDocument.docId}"
+                                               class="btn btn-primary">Редактировать содержимое</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12 col-sm-6 col-xs-12 col-md-offset-3">
                                             <button class="btn btn-default" action="action" onclick="history.go(-1);">
                                                 Назад
                                             </button>
-                                            <button type="submit" class="btn btn-warning">Редактировать</button>
                                         </div>
                                     </div>
 

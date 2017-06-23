@@ -19,6 +19,7 @@ public class WorkingPlanAttributes implements IAttributes {
     public WorkingPlanAttributes() {
     }
 
+    @Override
     public WorkingPlanAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), WorkingPlanAttributes.class);
     }

@@ -19,6 +19,7 @@ public class ArticleAttributes implements IAttributes{
     public ArticleAttributes() {
     }
 
+    @Override
     public ArticleAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), ArticleAttributes.class);
     }

@@ -19,6 +19,7 @@ public class DisciplineExtramuralInstructionsAttributes implements IAttributes {
     public DisciplineExtramuralInstructionsAttributes() {
     }
 
+    @Override
     public DisciplineExtramuralInstructionsAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), DisciplineExtramuralInstructionsAttributes.class);
     }

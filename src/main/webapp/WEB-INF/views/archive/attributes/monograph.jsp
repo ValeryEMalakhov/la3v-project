@@ -1,10 +1,4 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Marmonth
-
-  To change this template use File | Settings | File Templates.
---%>
-<%--
   User: Vladyslav V. Drabynka
   Date: 17.05.2017
   Time: 14:10
@@ -92,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -157,7 +140,7 @@
                                         <label class="control-label col-xs-3" for="monographName">Название монографии:</label>
                                         <div class="col-xs-9">
                                             <input name="monographName" type="text" class="form-control" id="monographName"
-                                                   readonly value="${documentFromSystem.docTitle}">
+                                                   readonly value = "${documentFromSystemAttr.monographName}">
                                         </div>
                                     </div>
 
@@ -165,14 +148,14 @@
                                         <label class="control-label col-xs-3" for="authors">Авторы:</label>
                                         <div class="col-xs-9">
                                             <input name="authors" type="text" class="form-control" id="authors"
-                                                   readonly value="${documentFromSystem.authorName}">
+                                                   readonly value = "${documentFromSystemAttr.authors}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="year">Год: <span class="required">*</span></label>
                                         <div class="col-xs-9">
-                                            <input name="year" type="number" min="1950" max="2017" step="1" value="2017" pattern="[0-9]{4}" class="form-control"
+                                            <input name="year" type="number" min="1950" max="2017" step="1" value="${documentFromSystemAttr.year}" pattern="[0-9]{4}" class="form-control"
                                                    id="year" required>
                                         </div>
                                     </div>
@@ -181,7 +164,7 @@
                                         <label class="control-label col-xs-3" for="editionName">Наименование издания: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="editionName" type="text" class="form-control" id="editionName"
-                                                   placeholder="Наименование издания" required>
+                                                   placeholder="Наименование издания" value="${documentFromSystemAttr.editionName}" required>
                                         </div>
                                     </div>
 

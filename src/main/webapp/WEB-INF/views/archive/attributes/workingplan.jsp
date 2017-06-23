@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Архивация</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -171,7 +160,7 @@
                                         <label class="control-label col-xs-3" for="specialtyName">Название специальности: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="specialtyName" type="text" class="form-control" id="specialtyName"
-                                                   placeholder="Название специальности" required>
+                                                   placeholder="Название специальности" value = "${documentFromSystemAttr.specialtyName}" required>
                                         </div>
                                     </div>
 
@@ -192,10 +181,8 @@
                                         <div class="col-xs-9">
                                             <select class="select2_group form-control" path="docType" id="studyForm"
                                                     name="studyForm" required>
-                                                <optgroup label="Учебный процесс">
                                                     <option value="Заочная">Заочная</option>
                                                     <option value="Стационарная">Стационарная</option>
-                                                </optgroup>
                                             </select>
                                         </div>
                                     </div>
@@ -204,7 +191,7 @@
                                         <label class="control-label col-xs-3" for="pilpitName">Кафедра: <span class="required">*</span></label>
                                         <div class="col-xs-9">
                                             <input name="pilpitName" type="text" class="form-control" id="pilpitName"
-                                                   placeholder="Название кафедры" required>
+                                                   placeholder="Название кафедры" value = "${documentFromSystemAttr.pilpitName}" required>
                                         </div>
                                     </div>
 

@@ -19,6 +19,7 @@ public class LecturerFormAttributes implements IAttributes {
     public LecturerFormAttributes() {
     }
 
+    @Override
     public LecturerFormAttributes getFromJson(JsonObject jsonObject) {
         return gson.fromJson(jsonObject.toString(), LecturerFormAttributes.class);
     }

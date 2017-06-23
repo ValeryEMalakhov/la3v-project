@@ -26,7 +26,7 @@
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
                                 <%--<li><a href="<spring:url value="profile/"/>"> Профиль </a></li>--%>
                                 <%--<li><a href="<spring:url value="settings/"/>"> Настройки </a></li>--%>
-                                <li><a href="<spring:url value="help/"/>"> Помощь </a></li>
+                                <%--<li><a href="<spring:url value="help/"/>"> Помощь </a></li>--%>
                                 <form id="logoutForm" method="post" action="${contextPath}/logout">
                                             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                                 </form>
@@ -39,7 +39,7 @@
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="<spring:url value="help/"/>"> Помощь </a></li>
+                                <%--<li><a href="<spring:url value="help/"/>"> Помощь </a></li>--%>
                                 <li><a href="/login"><i class="fa fa-sign-in pull-right"></i> Вход </a></li>
                             </ul>
                         </c:otherwise>

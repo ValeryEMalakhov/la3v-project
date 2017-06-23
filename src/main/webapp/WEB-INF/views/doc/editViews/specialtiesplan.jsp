@@ -86,17 +86,6 @@
                     <div class="title_left">
                         <h3>Редактирование</h3>
                     </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Искать</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -105,55 +94,22 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>${archivedDocument.name}</h2>
+                                <h2>${entityDocumentBase.docTitle}</h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Внешний вид 1</a>
-                                            </li>
-                                            <li><a href="#">Внешний вид 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+
                                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <spring:url value="/archive/archivation/${addressPart}/attributes/specialtiesPlan"
+                                <spring:url value="/document/edit/${addressPart}/attributes/specialtiesPlan"
                                             var="formUrl"/>
                                 <form:form method="post" modelAttribute="attributes"
-                                           action="/archive/archivation/{${addressPart}}/attributes/specialtiesPlan"
+                                           action="/document/edit/{${addressPart}}/attributes/specialtiesPlan"
                                            class="form-horizontal">
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="process">Процесс:</label>
-                                        <div class="col-xs-9">
-                                            <input name="process" type="text" class="form-control" id="process"
-                                                   readonly value="${documentFromSystem.docProcess}">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="docType">Тип документа:</label>
-                                        <div class="col-xs-9">
-                                            <input name="docType" type="text" class="form-control" id="docType"
-                                                   readonly value="${documentFromSystem.docType}">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-xs-3" for="approvalYear">Год утверждения: <span class="required">*</span></label>
-                                        <div class="col-xs-9">
-                                            <input name="approvalYear" type="number" min="1990" max="2017" step="1" value="2017" pattern="199[0-9]|20[0-9][0-9]" class="form-control"
-                                                   id="approvalYear" required>
-                                        </div>
-                                    </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-xs-3" for="specialtyName">Название специальности: <span class="required">*</span></label>
@@ -188,7 +144,8 @@
 
                                     <div class="form-group">
                                         <div class="col-xs-offset-3 col-xs-9">
-                                            <input type="submit" class="btn btn-primary" value="Архивировать"/>
+                                            <button class="btn btn-primary" type="reset">Сброс</button>
+                                            <input type="submit" class="btn btn-primary" value="Сохранить"/>
                                         </div>
                                     </div>
                                     <br/>
